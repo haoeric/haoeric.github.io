@@ -1,0 +1,79 @@
+---
+title: "The coolest way to build a R package"
+author: "haoeric"
+date: "Friday, October 03, 2014"
+output: html_document
+---
+
+
+### 1. why a R package and what?
+
+
+### 2. Requirements!
+To be cool, the most important requirement for building a R package is a [Rstudio](http://www.rstudio.com/products/RStudio/).
+If you are not or not willing to use **Rstudio**, then you can skip this blog and you must prefer reading the "corny" [Writing R extensions](http://cran.r-project.org/doc/manuals/R-exts.html) (well I don't mean that!). Anyway, it's not cool to build a package without Rstudio, and I promise you will love it.
+
+> Anything that can be automated, should be automated. Do as little as possible by hand.                            --- [Hadley Wickham](http://had.co.nz/)
+
+
+Open the Rstudio link above and download the suitable version for your computer and install. On Windows, you will get the interface as below when you launch Rstudio:
+
+![Rstudio GUI screenshot](pictures/Rstudio_screenshot.png)
+```{r, echo = FALSE, eval=FALSE}
+bookdown::embed_png("pictures/Rstudio_screenshot.png", dpi = 220)
+```
+
+Several imported places on this interface is labbled, take a look, and you will need them later.
+
+### 3. Let's get started:
+On the left panel of the Rstudio interface is your R console, where executes your R commands. One thing you may concern if where the working directory is. Using the commnad below to check your working directory and change to where you want to build you package.
+```{r, eval=FALSE}
+getwd()
+setwd("xxx/yyy/yourWorkingDirectory")
+```
+
+Well, we are ready to build our package, have you got the name for your package, how about **coolRer**. Let's start, type the commands below in your console following an Enter.
+```{r, eval=FALSE}
+devtools::creat("coolRer")
+```
+
+Check the **Files** button on the Rstudio and see **what happened**? Actually the skeleton for your package is created, cool or not? You can also locate to your selected working directory to check the files created for your R package:
+
+*  An RStudio project file, **pkgname.Rproj**.
+*  An **R/** directory.
+*  A basic **DESCRIPTION** file.
+*  A basic **NAMESPACE** file.
+
+#### 3.1 R pakcage structure introduction
+
+OK, seriously, we need a [tomato timer](http://tomato-timer.com/) now, there is something we need well understanding, then to be cool. For a simple package, the components listed above is enough for building a package, while, it's necessary for us to take a glance of the big structure of a poweful R package.
+
+```{r, eval=FALSE,highlight=FALSE}
+pkgName (the name of your package)
+ | 
+ |----DESCRIPTION 
+ |---- NAMESPACE
+ |---- R (R source codes)
+         |---- function1.R 
+         |---- function2.R 
+         |---- ... 
+ |---- man (help documentss)
+         |---- function1.Rd 
+         |---- function2.Rd 
+         |---- ... 
+|---- vignettes (vignette source files)
+|---- data (rda data)
+|---- demo (demo R codes)
+|---- src (code of other language)
+|---- inst (will remain in the root dir of the pkg)
+         |---- doc (vignettes result files)
+```
+
+Let's take a look at what each part of the package does...
+
+##### DESCRIPTION
+
+
+  
+
+
