@@ -1,0 +1,149 @@
+---
+title: "Create R GUI"
+author: "haoeric"
+date: "Tuesday, October 07, 2014"
+output: html_document
+---
+
+tcltk
+========================
+
+### Widgets
+
+A widget is a GUI element. Tk comes with a selection of basic widgets: 
+
+col_1 | col_2 |  col_3 | 
+--------- | ---------- | ----------
+text editing windows | Sliders | text entry fields 
+Buttons | Labels | Menus 
+Buttons | Labels | Menus
+list boxes |canvas for drawing graphics |
+
+```{r, eval=FALSE}
+ls("package:tcltk")
+```
+
+These can be combined to form more complex GUI applications.
+
+#### 1. Creating a container widget
+
++ `tktoplevel()`
++ `tkframe()`
+
+```{r, eval=FALSE}
+library(tcltk)
+tt <- tktoplevel()
+tt <- tktoplevel(bg="white", width=100, height=190)
+```
+
+The title of the window is "1" by default. To set a different title, use
+```{r, eval=FALSE}
+tktitle(tt) <- "My window"
+```
+
+Several widgets can be packed into the same container, which is the key to constructing complex applications out of elementary building blocks.
+
+Use frames if you want stack your widgets in dierent orientations.
+```{r, eval=FALSE}
+one <- tkframe(tt, bg = "white")
+two <- tkframe(tt, width = 100, height = 50, bg = "grey50")
+for(b in c("alpha", "beta", "gamma")) {
+assign(b, tkbutton(one, text = b))
+tkpack(get(b), side = "left")
+}
+tkpack(one, two, side = "top")
+```
+
+#### 2. Other widgets
+
++ `tklabel()`
++ `tkentry()`
++ `tkbutton()`
++ `tkradiobutton()`
++ `tkmessageBox()`
++ `tkcheckbutton()`
++ `tklixtbok()`
++ `tkmenu()`
++ ``tkadd()`
+
+```{r, eval=FALSE}
+edge <- c("top","right","bottom","left")
+buttons <- lapply(1:4, function(i) tkbutton(tt, text=edge[i]))
+for ( i in 1:4 ){
+    tkpack(buttons[[i]], side=edge[i], fill="both")
+}
+```
+
+```{r,eval=FALSE}
+tt <- tktoplevel()
+rb1 <- tkradiobutton(tt)
+rb2 <- tkradiobutton(tt)
+rbValue <- tclVar("import")
+tkconfigure(rb1,variable=rbValue,value="import")
+tkconfigure(rb2,variable=rbValue,value="random")
+tkgrid(tklabel(tt,text="Which kind of data set?"), columnspan=5)
+tkgrid(tklabel(tt,text="Import"),rb1)
+tkgrid(tklabel(tt,text="Random"),rb2)
+done <- tclVar(0)
+OnOK <- function() {
+    Data <<- as.character(tclvalue(rbValue))
+    tclvalue(done)<-1
+    tkdestroy(tt)
+}
+OK.but <- tkbutton(tt,text="OK",command=OnOK)
+tkgrid(OK.but,row=4, column=3)
+tkwait.variable(done)
+```
+
+A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.
+
+### Geometry managers
+
+A geometry manager controls the placement of slave widgets within a master widget. Three different geometry managers are available in Tcl/Tk. The simplest one is called the **placer** and is almost never used. The others are the **packer** and the **grid manager**.
+
++ `tkpack()`
++ `tkgrid()`
+
+1. **packer**: packs widgets in order around edges of cavity. Notice that there is a *packing order* and a *packing direction*.
+
+```{r, eval=FALSE}
+edge <- c("top","right","bottom","left")
+buttons <- lapply(1:4, function(i) tkbutton(tt, text=edge[i]))
+for ( i in 1:4 ){
+    tkpack(buttons[[i]], side=edge[i], fill="both")
+}
+```
+
+**packing order**   `side`: "top", "right", "bottom", "left"
+**packing direction**   `fill`: "x", "y", "both"
+**expands as much as possible**    `expand`: TRUE, FALSE
+**anchoring**    `anchor`: "n", "ne", "e", "se", "s", "sw", "w" and "nw".
+
+If a widget is left with more packing space than display space, you can position it within its packing space using the anchor packing option. The default anchor position is center. The other options correspond to points on a compass: n, ne, e, se, s, sw, w and nw.
+
+A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.
+
+2. **grid manager**: it lays out widgets in rows and columns.
+
+```{r, eval=FALSE}
+t2 <- tktoplevel()
+heading <- tklabel(t2, text="Registration form")
+l.name <- tklabel(t2, text="Name")
+l.age <- tklabel(t2, text="Age")
+e.name <- tkentry(t2, width=30)
+e.age <- tkentry(t2, width=3)
+tkgrid(heading, columnspan=2)
+tkgrid(l.name, e.name)
+tkgrid(l.age, e.age)
+tkgrid.configure(e.name, e.age, sticky="w")
+tkgrid.configure(l.name, l.age, sticky="e")
+```
+
+The `columnspan` argument joins grid cells horizontally. The `sticky` argument works somewhat like anchoring in the packer. The value can be any subset of n, s, e, and w and specifies that
+the widget should stick to the specified sides of the cell.
+
+### Communication with widgets
+
+We need a way to get data from widgets to and from R, and a way to make things happen in response to widget events. There are two general patterns for this, namely **control variables** and **callbacks**.
+
+1. 
