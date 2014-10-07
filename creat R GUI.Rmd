@@ -62,10 +62,11 @@ tkpack(one, two, side = "top")
 + `tkradiobutton()`
 + `tkmessageBox()`
 + `tkcheckbutton()`
-+ `tklixtbok()`
++ `tklistbok()`
 + `tkmenu()`
-+ ``tkadd()`
++ `tkadd()`
 
+1. Demo 1
 ```{r, eval=FALSE}
 edge <- c("top","right","bottom","left")
 buttons <- lapply(1:4, function(i) tkbutton(tt, text=edge[i]))
@@ -74,6 +75,7 @@ for ( i in 1:4 ){
 }
 ```
 
+2. Demo 2
 ```{r,eval=FALSE}
 tt <- tktoplevel()
 rb1 <- tkradiobutton(tt)
@@ -95,6 +97,20 @@ tkgrid(OK.but,row=4, column=3)
 tkwait.variable(done)
 ```
 
+3. Demo 3
+```{r, eval=FALSE}
+# message box
+ReturnVal <- tkmessageBox(title = "Help", message = Help5, icon = "info", type = "ok")
+# check button
+Bnex <- tkcheckbutton(one)
+# list box
+maliste<-tklistbox(tt, height=7, selectmode="single", background="white")
+# Menu
+topMenu <- tkmenu(tt)
+fileMenu <- tkmenu(topMenu, tearoff=FALSE)
+tkadd(topMenu,"cascade", label="Fichiers", menu=fileMenu)
+```
+
 A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.
 
 ### Geometry managers
@@ -112,6 +128,13 @@ buttons <- lapply(1:4, function(i) tkbutton(tt, text=edge[i]))
 for ( i in 1:4 ){
     tkpack(buttons[[i]], side=edge[i], fill="both")
 }
+```
+
+```{r, eval=FALSE}
+one <- tkframe(tt, width = 40, height = 40, bg = "white")
+two <- tkframe(tt, width = 100, height = 100, bg = "grey50")
+tkpack.propagate(tt, FALSE) ## Window wont resize
+tkpack(one, two, side = "top")
 ```
 
 **packing order**   `side`: "top", "right", "bottom", "left"
@@ -138,6 +161,35 @@ tkgrid(l.age, e.age)
 tkgrid.configure(e.name, e.age, sticky="w")
 tkgrid.configure(l.name, l.age, sticky="e")
 ```
+
+
+```{r, eval=FALSE}
+tt <- tktoplevel()
+titlepolice <- tkfont.create(size=10, weight="bold")
+titlegw<-tklabel(tt, text="Gap weighting (nexus)")
+tkconfigure(titlegw,font=titlepolice)
+lablistgw<-tklabel(tt, text="One or more value(s) for the number of states separated by a comma")
+OR<-tklabel(tt,text="Or")
+labseqgwF<-tklabel(tt, text="from")
+labseqgwT<-tklabel(tt, text="to")
+labseqgwB<-tklabel(tt, text="by")
+listgw<-tkentry(tt, width=20)
+gwF<-tkentry(tt, width=6)
+gwT<-tkentry(tt, width=6)
+gwB<-tkentry(tt, width=6)
+tkgrid(titlegw, row=0, columnspan=6,sticky="w")
+tkgrid(lablistgw, row=1, column=0,
+sticky="w",columnspan=10)
+tkgrid(listgw, row=1, column=11, sticky="w")
+tkgrid(OR,row=2, column=0, sticky="w")
+tkgrid(labseqgwF, row=2, column=1, sticky="w")
+tkgrid(gwF, row=2, column=2, sticky="w")
+tkgrid(labseqgwT, row=2, column=3, sticky="w")
+tkgrid(gwT, row=2, column=4, sticky="w")
+tkgrid(labseqgwB, row=2, column=5, sticky="w")
+tkgrid(gwB, row=2, column=6, sticky="w")
+```
+
 
 The `columnspan` argument joins grid cells horizontally. The `sticky` argument works somewhat like anchoring in the packer. The value can be any subset of n, s, e, and w and specifies that
 the widget should stick to the specified sides of the cell.
