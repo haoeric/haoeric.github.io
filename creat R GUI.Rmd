@@ -1,8 +1,10 @@
 ---
-title: "Create R GUI"
+title: "Create R GUI using tcltk"
 author: "haoeric"
 date: "Tuesday, October 07, 2014"
-output: html_document
+output:
+  html_document:
+    toc: yes
 ---
 
 tcltk
@@ -16,7 +18,6 @@ col_1 | col_2 |  col_3 |
 --------- | ---------- | ----------
 text editing windows | Sliders | text entry fields 
 Buttons | Labels | Menus 
-Buttons | Labels | Menus
 list boxes |canvas for drawing graphics |
 
 ```{r, eval=FALSE}
@@ -25,15 +26,16 @@ ls("package:tcltk")
 
 These can be combined to form more complex GUI applications.
 
-#### 1. Creating a container widget
+#### 1. Container widget
 
-+ `tktoplevel()`
-+ `tkframe()`
++ `tktoplevel()`  top-level window
++ `tkframe()`  Underlying frame container
 
+1.1 __top-level window__
 ```{r, eval=FALSE}
 library(tcltk)
 tt <- tktoplevel()
-tt <- tktoplevel(bg="white", width=100, height=190)
+tt <- tktoplevel(bg="white", width=200, height=190)
 ```
 
 The title of the window is "1" by default. To set a different title, use
@@ -41,31 +43,44 @@ The title of the window is "1" by default. To set a different title, use
 tktitle(tt) <- "My window"
 ```
 
-Several widgets can be packed into the same container, which is the key to constructing complex applications out of elementary building blocks.
+or 
+```{r, eval=FALSE}
+window <- tktoplevel ()
+tkwm.title(window , "My window")
+frame <- ttkframe(window , padding = c(3 ,3 ,12 ,12)) 
+tkpack ( frame , expand = TRUE , fill = "both" )
+```
 
-Use frames if you want stack your widgets in dierent orientations.
+In our example, the top-level window has a frame immediately packed inside of it through the commands. The arguments to tkpack are given so that the frame, will expand and fill all the space allocated by the top-level window. As the top- level window is not a themed widget, not doing this can leave odd-looking effects.
+
+1.2 __underlying frame container__
 ```{r, eval=FALSE}
 one <- tkframe(tt, bg = "white")
 two <- tkframe(tt, width = 100, height = 50, bg = "grey50")
 for(b in c("alpha", "beta", "gamma")) {
-assign(b, tkbutton(one, text = b))
-tkpack(get(b), side = "left")
+    assign(b, tkbutton(one, text = b))
+    tkpack(get(b), side = "left")
 }
 tkpack(one, two, side = "top")
 ```
 
-#### 2. Other widgets
+Several widgets can be packed into the same container, which is the key to constructing complex applications out of elementary building blocks.
 
-+ `tklabel()`
+#### 2. Other constructor widgets
+
++ `tklabel()`  arguments: parent container, anchor, background, font, foreground, justify, padding, relief, text, and wraplength.
 + `tkentry()`
-+ `tkbutton()`
++ `tkbutton()`  Button widgets are used to initiate some action or command, and the command option is used to specify this.
 + `tkradiobutton()`
 + `tkmessageBox()`
 + `tkcheckbutton()`
-+ `tklixtbok()`
++ `tklistbok()`
 + `tkmenu()`
-+ ``tkadd()`
++ `tkadd()`
 
+the construction of widgets in tcltk is linked to the widget hierarchy. Tk widgets are constructed as children of a parent object, with the parent specified to the constructor.
+
+2.1 Demo 1
 ```{r, eval=FALSE}
 edge <- c("top","right","bottom","left")
 buttons <- lapply(1:4, function(i) tkbutton(tt, text=edge[i]))
@@ -74,6 +89,7 @@ for ( i in 1:4 ){
 }
 ```
 
+2.2 Demo 2
 ```{r,eval=FALSE}
 tt <- tktoplevel()
 rb1 <- tkradiobutton(tt)
@@ -95,6 +111,20 @@ tkgrid(OK.but,row=4, column=3)
 tkwait.variable(done)
 ```
 
+2.3 Demo 3
+```{r, eval=FALSE}
+# message box
+ReturnVal <- tkmessageBox(title = "Help", message = Help5, icon = "info", type = "ok")
+# check button
+Bnex <- tkcheckbutton(one)
+# list box
+maliste<-tklistbox(tt, height=7, selectmode="single", background="white")
+# Menu
+topMenu <- tkmenu(tt)
+fileMenu <- tkmenu(topMenu, tearoff=FALSE)
+tkadd(topMenu,"cascade", label="Fichiers", menu=fileMenu)
+```
+
 A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.
 
 ### Geometry managers
@@ -114,14 +144,23 @@ for ( i in 1:4 ){
 }
 ```
 
-**packing order**   `side`: "top", "right", "bottom", "left"
-**packing direction**   `fill`: "x", "y", "both"
-**expands as much as possible**    `expand`: TRUE, FALSE
-**anchoring**    `anchor`: "n", "ne", "e", "se", "s", "sw", "w" and "nw".
+```{r, eval=FALSE}
+one <- tkframe(tt, width = 40, height = 40, bg = "white")
+two <- tkframe(tt, width = 100, height = 100, bg = "grey50")
+tkpack.propagate(tt, FALSE) ## Window wont resize
+tkpack(one, two, side = "top")
+```
+
+**packing order**   `side`: "top", "right", "bottom", "left"            
+**packing direction**   `fill`: "x", "y", "both"              
+**expands as much as possible**    `expand`: TRUE, FALSE             
+**anchoring**    `anchor`: "n", "ne", "e", "se", "s", "sw", "w" and "nw"         
+
+A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.               
 
 If a widget is left with more packing space than display space, you can position it within its packing space using the anchor packing option. The default anchor position is center. The other options correspond to points on a compass: n, ne, e, se, s, sw, w and nw.
 
-A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.
+
 
 2. **grid manager**: it lays out widgets in rows and columns.
 
@@ -139,6 +178,35 @@ tkgrid.configure(e.name, e.age, sticky="w")
 tkgrid.configure(l.name, l.age, sticky="e")
 ```
 
+
+```{r, eval=FALSE}
+tt <- tktoplevel()
+titlepolice <- tkfont.create(size=10, weight="bold")
+titlegw<-tklabel(tt, text="Gap weighting (nexus)")
+tkconfigure(titlegw,font=titlepolice)
+lablistgw<-tklabel(tt, text="One or more value(s) for the number of states separated by a comma")
+OR<-tklabel(tt,text="Or")
+labseqgwF<-tklabel(tt, text="from")
+labseqgwT<-tklabel(tt, text="to")
+labseqgwB<-tklabel(tt, text="by")
+listgw<-tkentry(tt, width=20)
+gwF<-tkentry(tt, width=6)
+gwT<-tkentry(tt, width=6)
+gwB<-tkentry(tt, width=6)
+tkgrid(titlegw, row=0, columnspan=6,sticky="w")
+tkgrid(lablistgw, row=1, column=0,
+sticky="w",columnspan=10)
+tkgrid(listgw, row=1, column=11, sticky="w")
+tkgrid(OR,row=2, column=0, sticky="w")
+tkgrid(labseqgwF, row=2, column=1, sticky="w")
+tkgrid(gwF, row=2, column=2, sticky="w")
+tkgrid(labseqgwT, row=2, column=3, sticky="w")
+tkgrid(gwT, row=2, column=4, sticky="w")
+tkgrid(labseqgwB, row=2, column=5, sticky="w")
+tkgrid(gwB, row=2, column=6, sticky="w")
+```
+
+
 The `columnspan` argument joins grid cells horizontally. The `sticky` argument works somewhat like anchoring in the packer. The value can be any subset of n, s, e, and w and specifies that
 the widget should stick to the specified sides of the cell.
 
@@ -146,4 +214,22 @@ the widget should stick to the specified sides of the cell.
 
 We need a way to get data from widgets to and from R, and a way to make things happen in response to widget events. There are two general patterns for this, namely **control variables** and **callbacks**.
 
-1. 
++ `tkconfigure`  adjust the parameters of a constructor widget.  Colors can be specified by name – for common colors – or by hex RGB values which are common in web programming
+
+```{r, eval=FALSE}
+text_var <- tclVar ( "" )
+entry <- ttkentry ( g , textvariable = text_var )
+```
+
+The first line defines a new object of class `tclVal` which is used for the textvariable option when defining the entry widget. This variable is dy- namically bound to the widget, so that changes to the variable are prop- agated to the GUI. (The Tcl variable is a model and the widget a view of the model.) The Tcl variable can be used with more than one widget, allowing a simple form of synchronization. The basic functions involved are tclVar to create a Tcl variable, tclvalue to get the assigned value, and tclvalue<- to modify the value.
+
+```{r, eval=FALSE}
+x <- tclArray()
+x$one <- 1
+x[[2]] <- 2 
+x[[1]]      # return NULL
+x[['one']]  # return 1
+x[['2']]    # return 2
+```
+
+`tclArray` to store an array of Tcl variables. The usual list methods, [[ and $, and their forms for assignment are available for arrays, but values are referred to only by name, not index:
