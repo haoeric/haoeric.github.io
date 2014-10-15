@@ -1,0 +1,32 @@
+---
+title: "BLAS"
+author: "Chen Hao"
+date: "Friday, October 10, 2014"
+output: html_document
+---
+
+BLAS
+=====================
+
+**BLAS** The Basic Linear Algebra Subprograms are a specified set of low-level subroutines that perform common linear algebra operations such as copying, vector scaling, vector dot products, linear combinations, and matrix multiplication. 
+
+[BLAS](https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms) subroutines are a de facto standard API for linear algebra libraries and routines, which are used as a building block in higher-level math programming languages and libraries, including LINPACK, LAPACK, MATLAB, GNU Octave, Mathematica, NumPy and R. Several BLAS library implementations have been tuned for specific computer architectures. Highly optimized implementations have been developed by hardware vendors such as __Intel__ and __AMD__, as well as by other authors, e.g. GotoBLAS and ATLAS (a portable self-optimizing BLAS). The LINPACK and HPL benchmarks rely heavily on DGEMM, a BLAS subroutine, for its performance measurements.
+
+R used the **ref BLAS** by default，which implemented the basic linear algebra functions but with low efficiency. The main reaseon why Revolution R Enterprise is much faster is that they adopt the **MKL BLAS** optimised by Intel(the same with Matlab). **OpenBlas** is an open source BLAS evolved from **GotoBLAS**，which is even faster than **Intel MKL**.
+
+Install OpenBLAS
+=====================
+
+#### 1. Linux or Unix
+
+Under Debian or Ubuntu，make R use OpenBLAS is quite easy, just run:
+
+```
+sudo apt-get install libopenblas-base
+```
+
+#### 2. Windows
+
+在（64位）windows下，之前这并不是那么直接的事情，需要你自己编译OpenBLAS的源代码。不过最近OpenBLAS官方提供了编译好的dll，事情变得容易多了。首先，在这里下载最新版的OpenBLAS包，在里面找到libopenblas.dll这个文件，将它解压缩到R的安装目录（类似D:\Program Files\R\R-2.15.2\bin\x64），替换掉Rblas.dll（记得备份）。不过这样还不行，还少两个文件。可以在这个页面下载libgfortran_64-3.dll和libquadmath_64-0.dll（这两个应该是cygwin里的文件，懒得找原始出处了），并将libgfortran_64-3.dll重命名成libgfortran-3.dll，一起放到R的安装目录。这样R就可以正常运行了，并且在做线性代数运算是会自动提速。
+
+[Reference 1](http://www.douban.com/note/296114898/)
