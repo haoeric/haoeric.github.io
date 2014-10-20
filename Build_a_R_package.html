@@ -142,7 +142,7 @@ Suggests: (suggested packages)</code></pre>
 </div>
 <div id="man-and-namespace" class="section level5">
 <h5>man/ and NAMESPACE</h5>
-<p><code>man/</code> contains the function documentation (<code>.Rd</code> files). It works like a dictionary, which can be accessed by <code>?</code> or <code>help()</code> to let the user check the details of your function. Let’s see one example below:</p>
+<p><code>man/</code> contains the function documentation (<code>.Rd</code> files). It works like a dictionary, which can be accessed by <code>?</code> or <code>help()</code> to let the user check the details of your function. Let’s see one <code>.Rd</code> example file below:</p>
 <pre class="r"><code>\name{myFunction}
 \alias{myFunction}
 \title{Add together two numbers}
@@ -182,7 +182,7 @@ myFunction &lt;- function(a, b){
     return(a + b)
 }</code></pre>
 <p>This seems much more simple but still confusing, right? Well, just a little pain to real this <a href="http://cran.r-project.org/web/packages/roxygen2/vignettes/rd.html">vignette</a>, you need to figure out the meaning of roxygen commnets. But I promise you will find it is worth learning after handling roxygen commnets.</p>
-<p>Are you ready to continue? Or wandering if these roxygen commnets can be automatically generated? Currently and unfortunately, this cannot be on Rstudio (I am also waiting) , while there is one tool can do what you want, the <a href="http://vgoulet.act.ulaval.ca/en/emacs/">Emacs</a> with ESS（Emacs Speaks Statistics）plugin. On Emacs, locate your cursor to the name of your function in your R code, and use the shortcut <code>C-c C-o</code>, you will find the roxygen commnets template are automatically generated, <a href="http://cos.name/2011/05/write-r-packages-like-a-ninja/">cool</a>!</p>
+<p>Are you ready to continue? Or wandering if these roxygen commnets can be automatically generated? Currently and unfortunately, this cannot be on Rstudio (I am also waiting) , while there is one tool can do what you want, the <a href="http://vgoulet.act.ulaval.ca/en/emacs/">Emacs</a> with <a href="http://ess.r-project.org/">ESS</a>（Emacs Speaks Statistics）plugin. On Emacs, locate your cursor to the name of your function in your R code, and use the shortcut <code>C-c C-o</code>, you will find the roxygen commnets template are automatically generated, <a href="http://cos.name/2011/05/write-r-packages-like-a-ninja/">cool</a>!</p>
 <p>As well as generating <code>.Rd</code> files, <code>roxygen2</code> can also manage your <code>NAMESPACE</code> and the Collate field in <code>DESCRIPTION</code>. To do this, only two simple steps:</p>
 <ol style="list-style-type: decimal">
 <li>Add roxygen comments to your <code>.R</code> files. (as the example above)</li>

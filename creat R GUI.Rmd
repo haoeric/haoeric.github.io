@@ -10,6 +10,30 @@ output:
 tcltk
 ========================
 
+Introduction
+--------------------
+
+**“Tool Command Language” (Tcl)** is a scripting language and interpreter of that language. Originally developed in the late 1980s by [John Ousterhout](http://wiki.tcl.tk/36). 
+
+**Tk** is an extension of Tcl that provides GUI components through **Tcl**. **Tk** was first developed in 1990, again by [John Ousterhout](http://wiki.tcl.tk/36). It quickly found widespread usage, as at the time it made programming GUIs for X11 easier and faster. Over the years, other graphical toolkits have evolved and surpassed this one, but Tk still has many users.
+
+There are a large number of language bindings available for **Tk**, including **Perl, Python, Ruby**, and, through the **tcltk** package, R. The **tcltk** package was developed by *Peter Dalgaard* and has been included with base R since version 1.1.0. Since then, the package has been used in a number of GUI projects for R, most notably the **Rcmdr** GUI. The **tcltk2** package provides additional bindings and bundles in some useful external TCL code. Despite **Tk**’s limitations as a graphical toolkit as compared to **GTK+** or **Qt**, the Tk libraries are widely used for R GUIs. sO Our focus here is limited to the base **tcltk** package.
+
+Clarification
+-----------------
+
+**Tk** had a major change between versions 8.4 and 8.5, with the latter introducing themed widgets. Many widgets were rewritten and their API dramatically simplified. In tcltk there can be two different functions to construct a similar widget. For example, **tklabel** or **ttklabel**. The latter, with the **ttk** prefix, corresponds to the newer themed variant of the widget. We assume the Tk version is 8.5 or higher, as this was a major step forward.
+
+R for Windows has been bundled with the necessary Tk version for years, so there are no
+installation issues for that platform. For Linux users, it is typically trivial to install the newer libraries, and for Mac OS X users, the provided binary installations include the newer Tk libraries.
+
+
+Buiding GUI procedure
+----------------------------
+
+The most usual case for building a R GUI using **tcltk** is to defines a top-level window first and the second an underlying frame container. We then define and place the widgets. Using **tcltk** does not necessarily require knowing anything about the underlying Tk or Tcl workings, though it can be useful to have a rough sense of these technologies and how tcltk interfaces with them.
+
+
 ### Widgets
 
 A widget is a GUI element. Tk comes with a selection of basic widgets: 
@@ -21,7 +45,7 @@ Buttons | Labels | Menus
 list boxes |canvas for drawing graphics |
 
 Take a look of all the export functions in **tcltk** package.
-```{r, eval=FALSE}
+```{r}
 library(tcltk)
 ls("package:tcltk")
 ```
@@ -48,12 +72,12 @@ tktitle(tt) <- "My window"
 or 
 ```{r, eval=FALSE}
 window <- tktoplevel ()
-tkwm.title(window , "My window")
+tkwm.title(window, "My window")
 frame <- ttkframe(window , padding = c(3 ,3 ,12 ,12)) 
-tkpack ( frame , expand = TRUE , fill = "both" )
+tkpack (frame, expand = TRUE, fill = "both")
 ```
 
-In our example, the top-level window has a frame immediately packed inside of it through the commands. The arguments to tkpack are given so that the frame, will expand and fill all the space allocated by the top-level window. As the top- level window is not a themed widget, not doing this can leave odd-looking effects.
+In our example, the top-level window has a frame immediately packed inside of it through the commands. The arguments to tkpack are given so that the frame, will expand and fill all the space allocated by the top-level window. As the top-level window is not a themed widget, not doing this can leave odd-looking effects.
 
 1.2 __underlying frame container__
 ```{r, eval=FALSE}
@@ -70,7 +94,7 @@ Several widgets can be packed into the same container, which is the key to const
 
 #### 2. Other constructor widgets
 
-+ `tklabel()`  arguments: parent container, anchor, background, font, foreground, justify, padding, relief, text, and wraplength.
++ `tklabel()`  arguments: parent container, text, anchor, background, font, foreground, justify, padding, relief, and wraplength.
 + `tkentry()`
 + `tkbutton()`  Button widgets are used to initiate some action or command, and the command option is used to specify this.
 + `tkradiobutton()`
@@ -136,8 +160,7 @@ A widget along the top or bottom is allocated a parcel just high enough to conta
 A geometry manager controls the placement of slave widgets within a master widget. Three different geometry managers are available in Tcl/Tk. The simplest one is called the **placer** and is almost never used. The others are the **packer** and the **grid manager**.
 
 + `tkpack()`
-+ `tkgrid()`
-+ `tkconfigure`  
++ `tkgrid()`  
 
 1. **packer**: packs widgets in order around edges of cavity. Notice that there is a *packing order* and a *packing direction*.
 
@@ -161,11 +184,7 @@ tkpack(one, two, side = "top")
 **expands as much as possible**    `expand`: TRUE, FALSE             
 **anchoring**    `anchor`: "n", "ne", "e", "se", "s", "sw", "w" and "nw"         
 
-A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it.               
-
-If a widget is left with more packing space than display space, you can position it within its packing space using the anchor packing option. The default anchor position is center. The other options correspond to points on a compass: n, ne, e, se, s, sw, w and nw.
-
-
+A widget along the top or bottom is allocated a parcel just high enough to contain the widget, but occupying as much of the width of the container as possible, whereas widgets along the sides get a parcel of maximal height, but just wide enough to contain it. If a widget is left with more packing space than display space, you can position it within its packing space using the anchor packing option. The default anchor position is center. The other options correspond to points on a compass: n, ne, e, se, s, sw, w and nw.
 
 2. **grid manager**: it lays out widgets in rows and columns.
 
@@ -210,11 +229,30 @@ tkgrid(labseqgwB, row=2, column=5, sticky="w")
 tkgrid(gwB, row=2, column=6, sticky="w")
 ```
 
-
 The `columnspan` argument joins grid cells horizontally. The `sticky` argument works somewhat like anchoring in the packer. The value can be any subset of n, s, e, and w and specifies that the widget should stick to the specified sides of the cell.
 
+### Configure the options of widgets
 
-3. **tkconfigure**: It adjusts the parameters of a constructor widget.  Colors can be specified by name – for common colors – or by hex RGB values which are common in web programming
+1. **tkconfigure**
+
+There are many options for each widget to make it customized. Option values can be set through the constructor or adjusted afterwards by **tkconfigure**. A listing (in Tcl code) of possible options that can be adjusted can be seen by calling tkconfigure with just the widget as an argument. Colors can be specified by name – for common colors – or by hex RGB values which are common in web programming. For example:
+
+```{r, eval=FALSE}
+window <- tktoplevel ( )
+label <- ttklabel ( window , text = "Enter your name:" )
+head(as.character(tkconfigure(label)))
+```
+
+2. **tkcget**
+
+The **tkcget** function returns the value of an option (again as a tclObj object). The option can be specified two ways: using the Tk style of a leading dash or using the R convention that NULL values mean to return the value and not set it.
+
+```{r, eval=FALSE}
+tkcget ( label , "-text" ) # retrieve text property
+<Tcl > Enter your name :
+tkcget ( label , text = NULL ) # alternate syntax
+<Tcl > Enter your name :
+```
 
 
 ### Communication with widgets
@@ -228,7 +266,7 @@ text_var <- tclVar ( "" )
 entry <- ttkentry ( g , textvariable = text_var )
 ```
 
-The first line defines a new object of class `tclVal` which is used for the textvariable option when defining the entry widget. This variable is dy- namically bound to the widget, so that changes to the variable are prop- agated to the GUI. (The Tcl variable is a model and the widget a view of the model.) The Tcl variable can be used with more than one widget, allowing a simple form of synchronization. The basic functions involved are tclVar to create a Tcl variable, tclvalue to get the assigned value, and tclvalue<- to modify the value.
+The first line defines a new object of class `tclVal` which is used for the textvariable option when defining the entry widget. This variable is dynamically bound to the widget, so that changes to the variable are propagated to the GUI. (The Tcl variable is a model and the widget a view of the model.) The Tcl variable can be used with more than one widget, allowing a simple form of synchronization. The basic functions involved are **tclVar** to create a Tcl variable, **tclvalue** to get the assigned value, and `tclvalue <-` to modify the value.
 
 
 + `tclArray`
@@ -243,3 +281,49 @@ x[['2']]    # return 2
 ```
 
 `tclArray` to store an array of Tcl variables. The usual list methods like [[ and $ and their forms for assignment are available for arrays, but values are referred to only by name, not index.
+
+
+### Colors and fonts
+
+The label color can be set through its foreground property. Colors can be specified by name – for common colors – or by hex RGB values which are common in web programming
+
+tkfont.create The tkfont.create function can be used to create a new font, as with the following commands:
+
+```{r, eval=FALSE}
+tkfont . create ( "our_font" , family = "Helvetica" , size = 12, weight = "bold" )
+tkconfigure ( label , font = "our_font" )
+```
+
+### Images
+
+Many tcltk widgets, including both labels and buttons, can show images (in these cases, either with or without an accompanying text label). Constructing images to display is similar to constructing new fonts, in that a new image object is created and can be reused by various widgets.
+
+The following command shows how an image object can be made from the file *tclp.gif* in the current directory:
+
+```{r, eval=FALSE}
+tkimage . create ( "photo" , "::img::tclLogo" , file = "tclp.gif" )
+```
+
+The first argument, "photo" specifies that a full-color image is being used (this option could also be "bitmap" but that is more a legacy option). The second argument specifies the name of the object. We follow the advice of the Tk manual and preface the name with `::img::` so that we don’t inadvertently overwrite any existing Tcl commands. NOTES: The basic Tk image command can only show GIF and PPM/PNM images. Unfortunately, not many R devices output in these formats.
+
+To use the image, one specifies the image name to the image option:
+
+```{r, eval=FALSE}
+label <- ttklabel ( window , image = "::img::tclLogo" , text = "logo text" , compound = "top" )
+```
+
+By default the text will not show. The compound argument takes a value of either "text", "image" (default), "center", "top", "left", "bottom", or "right" specifying where the label is in relation to the text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
