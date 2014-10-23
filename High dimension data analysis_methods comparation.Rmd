@@ -1,0 +1,23 @@
+---
+title: "High dimension data analysis_methods comparation"
+author: "haoeric"
+date: "Tuesday, September 30, 2014"
+output: html_document
+---
+
+### 1. Barnes-Hut-SNE (Barnes-Hut implementation of t-SNE)
+
+```{r}
+#install.packages("Rtsne") # Install Rtsne package from CRAN
+library(Rtsne) # Load package
+iris_unique <- unique(iris)[,1:4]         # Remove duplicates
+tsne_out <- Rtsne(as.matrix(iris_unique)) # Run TSNE
+plot(tsne_out$Y,col=iris$Species)         # Plot the result
+```
+
+### 2. PCA (Principal Component Analysis)
+
+```{r}
+pca_out <- prcomp(iris_unique)
+```
+

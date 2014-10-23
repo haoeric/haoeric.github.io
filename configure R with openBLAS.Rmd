@@ -1,0 +1,32 @@
+---
+title: "configure R with openBLAS"
+author: "haoeric"
+date: "Monday, October 13, 2014"
+output: html_document
+---
+
+Install openBLAS
+=========================
+
+In order to build OpenBLAS on Windows you will need:
+
+* MSYS (a collection of Unix tools) 
+* MinGW-w64 (GCC for Windows)
+
+Install MinGW, the most firendly way was to download **mingw-get-setup.exe** and isntall follow the instructions, then install the packages you need from **MinGW Installer**. Finally add the bin path of MinGW and to the system path.
+
+open the MSYS terminal, locate to the openBLAS directory, make the openBLAS and install 
+
+```
+make
+make PREFIX=/c/Program Files/openblas install
+```
+
+
+
+
+
+.libPaths("C:\\Users\\hchen\\Documents\\R\\win-library\\3.0")
+library(Rcpp)
+library(devtools)
+devtools::install_github("mschubert/bhtsneR")
