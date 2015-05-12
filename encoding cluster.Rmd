@@ -39,12 +39,55 @@ Main Procedure
 The key drawback of the pupular density based cluster methods like **DBSCAN** and **OPTICS** is that they expect some kind of density drop to detect cluster borders. Moreover, they cannot detect intrinsic cluster structures which are prevalent in the majority of real life data. A variation of DBSCAN, **EnDBSCAN**, efficiently detects such kinds of structures. On data sets with, for example, overlapping Gaussian distributions - a common use case in artificial data - the cluster borders produced by these algorithms will often look arbitrary, because the cluster density decreases continuously. On a data set consisting of mixtures of Gaussians, these algorithms are nearly always outperformed by methods such as **EM clustering** that are able to precisely model this kind of data.
 
 
+**Package ‘EMCluster’**
 
+```{r}
+library(EMCluster, quiet = TRUE)
+set.seed(1234)
+x1 <- da1$da
+plot(x1)
 
+emobj <- simple.init(x1, nclass = 9)
+emobj <- shortemcluster(x1, emobj)
+summary(emobj)
+
+ret <- emcluster(x1, emobj, assign.class = TRUE)
+summary(ret)
+
+x1$cluster <- as.factor(ret$class)
+library(ggplot2)
+ggplot(x1, aes(x=x, y=y, color = cluster)) + geom_point()
+
+```
+
+These utility functions are to convert matrices in different formats:
+
+LTSigma2variance(x)
+variance2LTSigma(x)
+LTsigma2var(x1, p = NULL)
+var2LTsigma(x1)
+class2Gamma(class)
+Gamma2class(Gamma)
+
+```{r}
+library(EMCluster, quiet = TRUE)
+x <- da2$LTSigma
+class <- da2$class
+y <- LTSigma2variance(x)
+str(y)
+y <- variance2LTSigma(y)
+str(y)
+sum(x != y)
+Gamma <- class2Gamma(class)
+class.new <- Gamma2class(Gamma)
+sum(class != class.new)
+```
 
 ### 2. Multiple Alignment and Phylogenetic trees based clustering
 
+score matrix
 
+http://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/src/chapter5.html
 
 
 

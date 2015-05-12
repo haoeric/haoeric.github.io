@@ -1,0 +1,19 @@
+---
+title: "R parallel"
+author: "haoeric"
+date: "29 October 2014"
+output: html_document
+---
+
+Introduction
+-----------------
+
+
+
+
+
+Resources
+----------------
+* [CRAN: High-Performance and Parallel Computing with R](http://cran.r-project.org/web/views/HighPerformanceComputing.html)
+* [Configure parallel R on clusters and supercomputers](http://www.glennklockwood.com/di/R-hpc.php)
+* [Parallel options for R](http://www.glennklockwood.com/di/R-para.php#lapply)
