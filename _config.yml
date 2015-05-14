@@ -1,0 +1,26 @@
+markdown: rdiscount 
+
+title:            haoeric
+tagline:          'Open to learn, and open to share, with a pure heart'
+description:      'Open to learn, and open to share, with a pure heart'
+url:              http://haoeric.com
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "my-site"
+  -
+    scope:
+      path: "projects"
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project" # overrides previous default layout
+      author: "Chen Hao"
+
+
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
