@@ -1,26 +1,35 @@
-markdown: rdiscount 
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
-title:            haoeric
-tagline:          'Open to learn, and open to share, with a pure heart'
-description:      'Open to learn, and open to share, with a pure heart'
-url:              http://haoeric.com
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "my-site"
-  -
-    scope:
-      path: "projects"
-      type: "pages" # previously `page` in Jekyll 2.2.
-    values:
-      layout: "project" # overrides previous default layout
-      author: "Chen Hao"
-
+# Setup
+title:               Chen Hao
+tagline:             Keep Simple Heart
+url:                 http://haoeric.com
+paginate:            1
+baseurl:             ""
 
 pages_list:       
   About: '/about'
-  Archive: '/archive'
+  Posts: '/archive'
+  Feed: '/atom.xml'
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Chen Hao
+  url:               http://haoeric.com
+  email:             haoeric@hotmail.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/haoeric/haoeric.github.io
