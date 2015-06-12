@@ -13,10 +13,6 @@ baseurl:             ""
 
 pages_list:       
   About: '/about'
-  Data Science Tour: '/dataScience'
-  R: '/R'
-  Python: '/Python'
-  Linux: '/Linux'
   Posts: '/archive'
   Feed: '/atom.xml'
 
