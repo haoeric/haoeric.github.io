@@ -2,11 +2,13 @@
 layout: post
 title: Say Something About My First Blog 
 comments: true
+categories: [life]
+tags: [github, blog, jekyll]
 ---
 
 >Hello, world...
 
-The story began with a [domain name](www.haoeric.com) that I bought from GoDaddy, and a tool called [github pages](https://pages.github.com/). When these two got on my mind, they motivate me to deploy this my personal blog.
+The story began with a [domain name](www.haoeric.com) that I bought from GoDaddy, and a tool called [github pages](https://pages.github.com/). When I got these two things on hand, they motivate me to deploy this my personal blog.
 
 > Thanks those pioneers
 
@@ -18,4 +20,4 @@ It hurts when you really start, for a newbie, seems always to be. But it deserve
 
 > OK, It's just a start
 
-Once start, never give up easily. Mr Chen, please start from [gekyll](http://jekyllrb.com/docs/structure/). 
+Once start, never give up easily. Mr Chen, please start from [jekyll](http://jekyllrb.com/docs/structure/). 
