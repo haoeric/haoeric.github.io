@@ -1,1 +1,6 @@
 _site/
+.Rproj.user
+haoeric.github.io.Rproj
+.sass-cache
+_drafts
+.Rhistory
