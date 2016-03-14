@@ -2,7 +2,7 @@
 layout: post
 title: Say Something About My First Blog 
 comments: true
-categories: [life]
+categories: [Life]
 tags: [github, blog, jekyll]
 ---
 
