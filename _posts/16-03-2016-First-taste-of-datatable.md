@@ -74,7 +74,7 @@ splitFactorGenerator <- function(rowNum, colNum){
 }
 {% endhighlight %}
 
-But this is fairly slow, especially when the matrix is big. So I started to search some fast methods. I found this similar question on [stackoverflow](http://stackoverflow.com/questions/9316946/comparing-rows-between-two-matrices) which shows the usage of *data.table*. But that doesn't return the original ID of y, so I modified a little bit to get my second version of `rowMatch` as below:
+But this is fairly slow, especially when the matrix is big. So I started to search for some fast methods. I found this similar question on [stackoverflow](http://stackoverflow.com/questions/9316946/comparing-rows-between-two-matrices) which shows the usage of *data.table*. But that doesn't return the original ID of y, so I modified a little bit to get my second version of `rowMatch` as below:
 
 {% highlight r linenos %}
 require(data.table)
