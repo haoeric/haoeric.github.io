@@ -17,6 +17,7 @@ tags: [english, abbreviation]
 |双引号|完全匹配|内容和顺序完全匹配|  
 |减号|不包含减号后面的词|减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词|  
 |星号|通配符|代表任何文字|  
+|波浪号|近义词|搜索与关键词相关的词汇|
 |filetype|搜索特定文件格式|e.g. filetype:pdf 关键词|  
 |inurl|搜索查询词出现在url中的页面|结果都是网址url中包含关键词的页面|   
 |site|搜索某个域名下的所有文件|e.g. site:haoeric.com google|  
