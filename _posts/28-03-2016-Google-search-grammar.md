@@ -1,0 +1,35 @@
+---
+layout: default
+title: 常用Google搜索语法
+comments: true
+author: Chen Hao
+categories: [Notes]
+tags: [english, abbreviation]
+---
+
+## 常用Google搜索语法
+---
+
+### 1. 常用语法
+
+|符号|表达意思|解释|  
+|:---:|:------|:---|
+|双引号|完全匹配|内容和顺序完全匹配|  
+|减号|不包含减号后面的词|减号前面必须是空格，减号后面没有空格，紧跟着需要排除的词|  
+|星号|通配符|代表任何文字|  
+|filetype|搜索特定文件格式|e.g. filetype:pdf 关键词|  
+|inurl|搜索查询词出现在url中的页面|结果都是网址url中包含关键词的页面|   
+|site|搜索某个域名下的所有文件|e.g. site:haoeric.com google|  
+
+
+### 2. 实例图解
+
+![](/images/google_grammar/1.png)
+![](/images/google_grammar/2.png)
+![](/images/google_grammar/3.png)
+
+
+
+### 3. 参考
+
+- https://www.zhihu.com/question/20161362
