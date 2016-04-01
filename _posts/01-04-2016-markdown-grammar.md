@@ -114,13 +114,14 @@ puts markdown.to_html
 ### 加入视频
 
 视频不能直接加载，但可以使用照片加链接的形式来模拟，比如
+
 ```
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
 " target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=https://www.youtube.com/watch?v=FyfwLX4HAxM
 " target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
@@ -130,42 +131,32 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 ```
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/https://www.youtube.com/watch?v=FyfwLX4HAxM/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/watch?v=FyfwLX4HAxM)
 
 
 <a name="标题" id="6"></a>
 
-#### 一级标题
+#### 标题
 
 `# 一级标题`  
 
 # 一级标题
 
-#### 二级标题
-
 `## 二级标题` 
 
 ## 二级标题
-
-#### 三级标题
 
 `### 三级标题`
 
 ### 三级标题
 
-#### 四级标题
-
 `#### 四级标题`
 
 #### 四级标题
 
-#### 五级标题
-
 `##### 五级标题`
 
 ##### 五级标题
-
-#### 六级标题
 
 `###### 六级标题`
 
@@ -188,6 +179,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 #### 无序列表
 
 可以使用`*`,`+` `-`， 比如：
+
 ```
 * 星号、减号、加号开始列表。
 
@@ -266,6 +258,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 <a name="任务列表" id="10"></a>
 
+
+#### 任务列表
+
 ```
 - [x] 买西红柿
 - [x] 买鸡蛋
@@ -284,7 +279,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ```
 | 左对齐 | 中间对齐 | 右对齐 |
-| :---   |  :---:   |   ---: |
+| :---  |  :---:   |   ---: |
 | 你好   | 你好     | 你好   |
 | 你不好 | 你好     | 你好   |
 ```
@@ -307,6 +302,4 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 ### 参考 
-
-
-[3] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
+[1] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
