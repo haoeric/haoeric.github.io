@@ -17,8 +17,16 @@ pages_list:
   Blog Categories: '/category'
   Feed: '/atom.xml'
 
+## 
 kramdown:
   input: GFM
+
+# Plugins
+#
+# use GitHub-flavored Emoji plugin for Jekyll(https://github.com/jekyll/jemoji)  
+gems:
+  - jemoji
+  
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.

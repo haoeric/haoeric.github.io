@@ -7,7 +7,7 @@ categories: [Notes]
 tags: [markdown, 标记语言]
 ---
 
-## Github-flavored-markdown语法表
+## Markdown-知道这些就够了
 ---
 
 
@@ -57,7 +57,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 ### 示例
 <a name="引用" id="1"></a>
 
-#### 引用  
+#### 1. 引用  
 
 在引用内容前加\>, 比如：
 
@@ -66,7 +66,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 <a name="插入图片" id="2"></a>
 
-#### 插入图片  
+#### 2. 插入图片  
 
 比插入链接多了个`!`, 例如插入markdown logo: `![markdown logo](/images/markdown_grammar/Markdown_mark_log.png)`
 
@@ -75,7 +75,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 <a name="使用emoji" id="3"></a>
 
-#### 使用emoji
+#### 3. 使用emoji
 
 各种emoji的标识符见[相关资源](#xg), 举个例子：
 
@@ -86,7 +86,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 <a name="引用" id="4"></a>
 
-#### 忽略md标记符
+#### 4. 忽略md标记符
 
 在markdown标识符前加`\`就会忽略后面的markdown标记， 比如：`我想保留\*星号\*`  
 
@@ -95,7 +95,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 <a name="插入代码" id="5"></a>
 
-#### 插入代码
+#### 5. 插入代码
 
 用单 \` 包住即嵌入代码：
 
@@ -111,32 +111,30 @@ puts markdown.to_html
 
 <a name="加入视频" id="12"></a>
 
-### 加入视频
+#### 6. 加入视频
 
 视频不能直接加载，但可以使用照片加链接的形式来模拟，比如
 
-```
+```html
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
 " target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=https://www.youtube.com/watch?v=FyfwLX4HAxM
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=FyfwLX4HAxM
+" target="_blank"><img src="http://img.youtube.com/vi/FyfwLX4HAxM/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 或者用存markdown,但是不能调整图片大小：
 
-```
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-```
+`[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)`
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/https://www.youtube.com/watch?v=FyfwLX4HAxM/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/watch?v=FyfwLX4HAxM)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/FyfwLX4HAxM/0.jpg)](http://www.youtube.com/watch?v=FyfwLX4HAxM)
 
 
 <a name="标题" id="6"></a>
 
-#### 标题
+#### 7. 标题
 
 `# 一级标题`  
 
@@ -166,7 +164,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 <a name="分割线" id="7"></a>
 
-#### 分割线
+#### 8. 分割线
 
 使用三条或更多短线（或星号、下划线）画下华丽丽的分割线：
 `---`
@@ -176,7 +174,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 <a name="列表" id="9"></a>
 
-#### 无序列表
+#### 9. 无序列表
 
 可以使用`*`,`+` `-`， 比如：
 
@@ -198,7 +196,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 * 返回一级列表。
 
-#### 有序列表
+#### 10. 有序列表
 
 用数字加`.`， 比如：
 
@@ -227,7 +225,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 2. 返回一级列表。
 
 
-#### 列表续行、段落和代码块
+#### 11. 列表续行、段落和代码块
 
 ```
 1. 列表项可以折行，
@@ -259,7 +257,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 <a name="任务列表" id="10"></a>
 
 
-#### 任务列表
+#### 12. 任务列表
 
 ```
 - [x] 买西红柿
@@ -267,6 +265,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 - [x] 买葱花
 - [ ] 做西红柿炒鸡蛋
 ```
+
 - [x] 买西红柿
 - [x] 买鸡蛋
 - [x] 买葱花
@@ -275,7 +274,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 <a name="表格" id="11"></a>
 
-#### 表格
+#### 13. 表格
 
 ```
 | 左对齐 | 中间对齐 | 右对齐 |
@@ -297,8 +296,6 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 * [github markdown](http://github.github.com/github-flavored-markdown/)
 * [Emoji cheatsheet](http://www.emoji-cheat-sheet.com)
 * learn HTML [THE WORLD'S LARGEST WEB DEVELOPER SITE](http://www.w3schools.com/default.asp)
-
-
 
 
 ### 参考 
