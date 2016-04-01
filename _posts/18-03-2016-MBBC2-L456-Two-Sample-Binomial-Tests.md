@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MBBC2 L4,5,6,7,8 Two Sample Binomial Tests
 comments: true
 author: Chen Hao

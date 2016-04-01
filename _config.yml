@@ -17,7 +17,6 @@ pages_list:
   Blog Categories: '/category'
   Feed: '/atom.xml'
 
-## 
 kramdown:
   input: GFM
 

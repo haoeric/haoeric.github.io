@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: My First Taste of data.table
 comments: true
 author: Chen Hao

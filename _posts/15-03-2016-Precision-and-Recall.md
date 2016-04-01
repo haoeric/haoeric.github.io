@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Precision and Recall
 comments: true
 categories: [Stastics]

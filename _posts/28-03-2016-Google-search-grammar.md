@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 常用Google搜索语法
 comments: true
 author: Chen Hao

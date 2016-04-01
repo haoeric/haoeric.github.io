@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MBBC2 L1 Hypothesis Test (Z-test)
 comments: true
 categories: [Notes]

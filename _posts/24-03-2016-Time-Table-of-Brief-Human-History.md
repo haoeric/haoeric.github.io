@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 人类发展历史年表
 comments: true
 categories: [History]

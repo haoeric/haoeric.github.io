@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MBBC2 L3 Two Sample Tests (Matched or Independent)
 comments: true
 categories: [Notes]
