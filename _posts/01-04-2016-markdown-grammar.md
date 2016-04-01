@@ -1,20 +1,19 @@
 ---
 layout: default
-title: Github-flavored-markdown语法表
+title: Markdown知道这些就够用了
 comments: true
 author: Chen Hao
 categories: [Notes]
 tags: [markdown, 标记语言]
 ---
 
-## Markdown-知道这些就够了
+## Markdown知道这些就够用了
 ---
 
 
 Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混用HTML(标准markup语言)。[标准的Markdown语法](http://daringfireball.net/projects/markdown/syntax)缺乏如表格等关键特性的支持，虽然不同的解析器都对其语法进行了扩展，但实现各有不同，造成一定的混乱。
 
 GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工具([Starting May 1st 2016](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0))，并添加了额外的语法扩展。以下归纳github-flavored-markdown的语法表以及一些HTML拓展，让你的markdown使用起来得心应手。
-
 
 
 |类别|语法格式|示例|
@@ -52,8 +51,6 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 
 
-
-
 ### 示例
 <a name="引用" id="1"></a>
 
@@ -81,7 +78,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 `笑脸 :smile: 转尖叫 :scream:`
 
-笑脸 :smile: 转尖叫 :scream:
+笑脸:smile:转尖叫:scream:
 
 
 <a name="引用" id="4"></a>
