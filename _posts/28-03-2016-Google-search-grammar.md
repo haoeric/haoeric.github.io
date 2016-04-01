@@ -4,7 +4,7 @@ title: 常用Google搜索语法
 comments: true
 author: Chen Hao
 categories: [Notes]
-tags: [english, abbreviation]
+tags: [google, 语法]
 ---
 
 ## 常用Google搜索语法
