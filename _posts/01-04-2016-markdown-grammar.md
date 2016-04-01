@@ -11,9 +11,9 @@ tags: [markdown, 标记语言]
 ---
 
 
-Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混用HTML(标准markup语言)。[标准的Markdown语法](http://daringfireball.net/projects/markdown/syntax)缺乏如表格等关键特性的支持，虽然不同的解析器都对其语法进行了扩展，但实现各有不同，造成一定的混乱。GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工具([Starting May 1st 2016](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0))，并添加了额外的语法扩展。
+Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混用HTML(标准markup语言)。[标准的Markdown语法](http://daringfireball.net/projects/markdown/syntax)缺乏如表格等关键特性的支持，虽然不同的解析器都对其语法进行了扩展，但实现各有不同，造成一定的混乱。
 
-以下归纳github-flavored-markdown的语法表以及一些HTML拓展，让你的markdown使用起来得心应手。
+GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工具([Starting May 1st 2016](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0))，并添加了额外的语法扩展。以下归纳github-flavored-markdown的语法表以及一些HTML拓展，让你的markdown使用起来得心应手。
 
 
 
@@ -33,6 +33,7 @@ Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混�
 |使用emoji|`:EMOJICODE:`|[见下文](#3)|
 |忽略md标记符|`标记符前加\`|[见下文](#4)|
 |插入代码|`见下文`|[见下文](#5)|
+|插入视频|`见下文`|[见下文](#12)|
 ||**格式组**||
 |一级标题(最大)|`# 一级标题`|[见下文](#6)|
 |二级标题|`## 二级标题`|[见下文](#6)|
@@ -41,9 +42,9 @@ Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混�
 |五级标题|`##### 五级标题`|[见下文](#6)|
 |六级标题(最小)|`###### 六级标题`|[见下文](#6)|
 |分割线|`三条或更多短线（或星号、下划线）`|[见下文](#7)|
-|分段|`第二段和第一段间有一空行`|[见下文](#8)|
-|换行|`行尾两空格换行`|[见下文](#8)|
-|续行|`一个回车不分段，本行续上行`|[见下文](#8)|
+|分段|`第二段和第一段间有一空行`|略|
+|换行|`行尾两空格换行`|略|
+|续行|`一个回车不分段，本行续上行`|略|
 |无序列表|`星号、减号、加号开始列表`|[见下文](#9)|
 |有序列表|`数字和点开始有序列表`|[见下文](#9)|
 |任务列表|`[] and [x]`|[见下文](#10)|
@@ -102,31 +103,101 @@ Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混�
 
 用三个连续 \` 包住即插入代码块：
 
-```
+```ruby
 require 'redcarpet'  
 markdown = Redcarpet.new("Hello World!")  
 puts markdown.to_html  
 ```
 
-<a name="引用" id="6"></a>
+<a name="加入视频" id="12"></a>
+
+### 加入视频
+
+视频不能直接加载，但可以使用照片加链接的形式来模拟，比如
+```
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+```
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+或者用存markdown,但是不能调整图片大小：
+
+```
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+```
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+
+<a name="标题" id="6"></a>
+
+#### 一级标题
+
+`# 一级标题`  
+
+# 一级标题
+
+#### 二级标题
+
+`## 二级标题` 
+
+## 二级标题
+
+#### 三级标题
+
+`### 三级标题`
+
+### 三级标题
+
+#### 四级标题
+
+`#### 四级标题`
+
+#### 四级标题
+
+#### 五级标题
+
+`##### 五级标题`
+
+##### 五级标题
+
+#### 六级标题
+
+`###### 六级标题`
+
+###### 六级标题
 
 
 
-<a name="引用" id="7"></a>
+<a name="分割线" id="7"></a>
+
+#### 分割线
+
+使用三条或更多短线（或星号、下划线）画下华丽丽的分割线：
+`---`
+
+---
 
 
-<a name="引用" id="8"></a>
+<a name="列表" id="9"></a>
 
+#### 无序列表
 
-<a name="引用" id="9"></a>
+可以使用`*`,`+` `-`， 比如：
+```
+* 星号、减号、加号开始列表。
 
+  - 列表层级和缩进有关。
 
-<a name="引用" id="10"></a>
+    + 和具体符号无关。
 
+* 返回一级列表。
+```
 
-<a name="引用" id="11"></a>
-
-----
 * 星号、减号、加号开始列表。
 
   - 列表层级和缩进有关。
@@ -135,7 +206,23 @@ puts markdown.to_html
 
 * 返回一级列表。
 
-----
+#### 有序列表
+
+用数字加`.`， 比如：
+
+```
+1. 数字和点开始有序列表。
+
+   1. 注意子列表的缩进位置。
+
+      1. 三级列表。
+      1. 编号会自动更正。
+
+   1. 二级列表，编号自动更正为2。
+
+2. 返回一级列表。
+```
+
 1. 数字和点开始有序列表。
 
    1. 注意子列表的缩进位置。
@@ -147,7 +234,23 @@ puts markdown.to_html
 
 2. 返回一级列表。
 
-----
+
+#### 列表续行、段落和代码块
+
+```
+1. 列表项可以折行，
+   对齐则自动续行。
+
+2. 列表项可包含多个段落。
+
+    空行开始的新段落必须缩进四个空格，
+    段落才属于列表项。
+
+3. 列表中的代码块要缩进8个空格。
+
+        $ printf "Hello, world.\n"
+```
+
 1. 列表项可以折行，
    对齐则自动续行。
 
@@ -161,7 +264,35 @@ puts markdown.to_html
         $ printf "Hello, world.\n"
 
 
+<a name="任务列表" id="10"></a>
 
+```
+- [x] 买西红柿
+- [x] 买鸡蛋
+- [x] 买葱花
+- [ ] 做西红柿炒鸡蛋
+```
+- [x] 买西红柿
+- [x] 买鸡蛋
+- [x] 买葱花
+- [ ] 做西红柿炒鸡蛋
+
+
+<a name="表格" id="11"></a>
+
+#### 表格
+
+```
+| 左对齐 | 中间对齐 | 右对齐 |
+| :---   |  :---:   |   ---: |
+| 你好   | 你好     | 你好   |
+| 你不好 | 你好     | 你好   |
+```
+
+| 左对齐 | 中间对齐 | 右对齐 |
+| :---   |  :---:   |   ---: |
+| 你好   | 你好     | 你好   |
+| 你不好 | 你好     | 你好   |
 
 
 <a name="xg" id="xg"></a>
