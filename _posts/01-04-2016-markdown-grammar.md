@@ -297,3 +297,4 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ### 参考 
 [1] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
+[2] [gitbook markdown](http://github.github.com/github-flavored-markdown/)
