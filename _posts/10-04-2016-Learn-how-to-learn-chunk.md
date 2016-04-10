@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Learn How to Learn-Chunk
+title: LHL P2 Chunk
 comments: true
 author: Chen Hao
 categories: [Notes]
 tags: [learn, chunk]
 ---
 
-## Learn How to Learn-Chunk
+## Learn How to Learn P2 Chunk
 ---
 
 > My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
