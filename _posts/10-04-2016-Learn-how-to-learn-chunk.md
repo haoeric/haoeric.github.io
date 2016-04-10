@@ -10,12 +10,11 @@ tags: [learn, chunk]
 ## Learn How to Learn-Chunk
 ---
 
+> My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
 
 ### 1. What is a Chunk
 
-Just memorizing a fact without understanding or context doesn't help you understand what's really going on or how the concept fits together with other concepts you're learning.
-
-A chunk is a way of compressing information much more compactly, forming a chunk is like converting a cumbersome computer file into a ZIP file. As you gain more experience in chunking in particular subject, you'll see that the chunks you're able to create are bigger. Neuroscientifically speaking, a chunk means a network of neurons that are used to firing together so you can think a thought or perform an action smoothly and effectively. Once you chunk an idea, a concept, or an action, you don't know need to remember all the little underlying details. You've got the main idea, the chunk, and that's enough.
+A **chunk** is a way of compressing information much more compactly, creating a chunk is like converting a cumbersome computer file into a ZIP file. As you gain more experience in chunking in particular subject, you'll see that the chunks you're able to create are bigger. Neuroscientifically speaking, a chunk means a network of neurons that are used to firing together so you can think a thought or perform an action smoothly and effectively. Once you chunk an idea, a concept, or an action, you don't know need to remember all the little underlying details. You've got the main idea, the chunk, and that's enough.
 
 ![](/images/LHL_chunk/c_1.png) 
 
@@ -29,8 +28,8 @@ If you're learning to play a difficult song on the guitar, you often have to gra
 
 The best chunks are the ones that are so well ingrained, that you don't even have to consciously think about connecting the neural pattern together. That, actually, is the point of making complex ideas, movements or reactions into a single chunk. 
 
+Basic steps behind how to make a chunk:
 
-basic steps behind how to make a chunk:
 1. **Focus** your undivided attention on the information you want to chunk. Your octopus tentacles, so to speak, can't reach very well if some of them are off on other thoughts using up some of the limited slots in your working memory.  
 
 2. **Understand** the basic idea you're trying to chunk. Understanding is like a superglue that helps hold the underlying memory traces together. You actually understand something is when you can actually do it yourself.
@@ -75,8 +74,6 @@ Your brain has a set of diffusely projecting systems of **neuromodulators**, tha
 
 - **Dopamine** is found in a small set of neurons in our brain stem shown below in orange. These dopamine neurons are part of a large brain system that controls **reward learning** and in particular in the basal ganglia, which is located in the green region above the dopamine neurons and below the cortex at the top of the brain. Dopamine is released from these neurons, when we receive an unexpected reward. Dopamine is in the business of predicting future rewards and not just the immediate reward. This can motivate you to do something that may not be rewarding right now but will lead to a much better reward in the future. When you promise to treat yourself something after a study section you are tapping into your dopamine system. Addictive drugs artificially increase dopamine activity and fool your brain into thinking that something wonderful has just happened. In fact just the opposite has just happened. This leads to craving and dependence, which can hijack your free will and can motivate actions that are harmful to you. Loss of Dopamine neurons leads to a lack of motivation; and something called anhedonia, which is a loss of interest in things that once gave you pleasure. Severe loss of Dopamine neurons causes resting tremor, slowness, rigidity, this is called Parkinson's disease. Ultimately it leads to catatonia, a complete lack of any movement.
     ![](/images/LHL_chunk/c_4.png) 
-    ![](/images/LHL_chunk/c_4_2.png) 
-
 
 - **Serotonin** strongly affects your social life. In monkey troops the alpha male has the highest level of serotonin activity and the lowest ranking male has the lowest levels. Prozac, which is prescribed for clinical depression, raises the level of Serotonin activity. The level of Serotonin is also closely linked to risk taking behavior. With higher risk in lower Serotonin monkeys. Inmates in jail for violent crimes have some of the lowest levels of serotonin activity in society.
 
