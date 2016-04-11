@@ -21,7 +21,6 @@ A **chunk** is a way of compressing information much more compactly, creating a 
 When you're focusing your attention on something it's almost as if you have an octopus. The octopus of attention that slips it's tentacles through those four slots of working memory when necessary to help you make connections to information that you might have in various parts of your brain. Remember, this is different from the random connections of the diffuse mode. Focusing your attention to connect parts of the brain to tie together ideas is an important part of the focused mode of learning. It is also often what helps get you started in creating a chunk.
 
 
-
 ### 2. How to form a Chunk
 
 If you're learning to play a difficult song on the guitar, you often have to grasp little bits of songs that become neuro mini-chunks, which will later join together into larger chunks. For example, over several days, you might learn how to smoothly place the musical passages on a guitar, and when you've grasped those passages, you could join them together with other passages that you've learned, gradually putting everything together so you can play the song.

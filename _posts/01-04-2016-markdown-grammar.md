@@ -55,18 +55,27 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 ### 示例
 <a name="引用" id="1"></a>
 
-#### 1. 角标与引用  
+#### 1. 角注与引用  
 
-角标示例：
+角注示例：
 
 ```
-Text prior to footnote reference.[^2]
-[^2]: Comment to include in footnote.
+Text prior to footnote reference 1.[^1]
+
+[^1]: 1 Comment to include in footnote.
+
+Text prior to footnote reference 2.[^2]
+
+[^2]: 2 Comment to include in footnote.
 ```
 
-Text prior to footnote reference.[^2]  
+Text prior to footnote reference 1.[^1]
 
-[^2]: Comment to include in footnote.
+[^1]: 1 Comment to include in footnote.
+
+Text prior to footnote reference 2.[^2]
+
+[^2]: 2 Comment to include in footnote.
 
 在引用内容前加\>, 比如：
 
