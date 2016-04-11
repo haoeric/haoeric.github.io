@@ -57,7 +57,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 #### 1. 角注与引用  
 
-角注示例：
+<u>角注示例：</u>
 
 ```
 Text prior to footnote reference 1.[^1]
@@ -77,7 +77,12 @@ Text prior to footnote reference 2.[^2]
 
 [^2]: 2 Comment to include in footnote.
 
-在引用内容前加\>, 比如：
+<u>引用示例：</u>
+
+```
+在引用内容前加>, 比如：
+>Anything that can be automated, should be automated.    ------Hadley Wickham
+```
 
 >Anything that can be automated, should be automated.    ------Hadley Wickham
 
@@ -92,6 +97,7 @@ Text prior to footnote reference 2.[^2]
 
 
 <a name="使用emoji" id="3"></a>
+
 
 #### 3. 使用emoji
 
@@ -302,9 +308,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ```
 
 | 左对齐 | 中间对齐 | 右对齐 |
-| :---   |  :---:   |   ---: |
+| :---   |  :---: |  ---: |
 | 你好   | 你好     | 你好   |
-| 你不好 | 你好     | 你好   |
+| 你不好 | 你不好     | 你不好   |
 
 
 <a name="xg" id="xg"></a>
@@ -317,5 +323,5 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 ### 参考 
-[1] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)
+[1] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)  
 [2] [gitbook markdown](http://github.github.com/github-flavored-markdown/)
