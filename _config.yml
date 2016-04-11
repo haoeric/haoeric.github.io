@@ -25,8 +25,7 @@ kramdown:
 # use GitHub-flavored Emoji plugin for Jekyll(https://github.com/jekyll/jemoji)  
 gems:
   - jemoji
-  
-gems: [jekyll-paginate]
+
   
 # Assets
 #
