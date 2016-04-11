@@ -25,7 +25,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 |下划线|`<u>下划内容</u>`|<u>下划内容</u>|
 |上标|`<sub>上标内容</sub>`|Water: H<sub>2</sub>O|
 |下标|`<sup>上标内容</sup>`|E = mc<sup>2</sup>|
-|角标|`[^角标]`|[见下文](#1)|
+|角注|`[^角注]`|[见下文](#1)|
 |文字链接|`[链接标签](链接网址)`|[github](http://daringfireball.net/projects/markdown/syntax)|
 |内部跳转|`<a name="tt" id="tt"></a> 跳转至 [文内链接](#tt)`|<a name="md-anchor" id="md-anchor"></a>跳转至 [文内链接](#md-anchor)|
 |引用|`> 引用内容`|[见下文](#1)|

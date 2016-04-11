@@ -7,7 +7,7 @@ categories: [Notes]
 tags: [LH2L, chunk]
 ---
 
-## Learn How to Learn P2 Chunk
+## Learn How to Learn-P2 Chunk
 ---
 
 > My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
