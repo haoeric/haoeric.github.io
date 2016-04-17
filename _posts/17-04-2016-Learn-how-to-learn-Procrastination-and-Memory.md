@@ -13,12 +13,12 @@ tags: [LH2L, procrastination, memory]
 > My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
 
 
-### Procrastinate
+### 1. Procrastinate
 
 > Learning well often involves bit by bit, day by day building of solid neural scaffolds. Rather like a weight lifter builds muscle with day to day exercise. This is why tackling procrastination is so incredibly important.
 
 
-#### Why do we 
+#### Why do we procrastinate
 
 we procrastinate because the thing makes us a little bit uncomfortable. You think about something you don't particularly like and the pain centers of your brain light up so you shift and narrow your focus of attention to something more enjoyable. This causes you to feel better. At least temporarily but sadly the long term effects of habitual avoidance can be nasty. When you put off your studies it can become even more painful to think about studying it. You can choke on tests because you haven't laid the firm neural foundations you need to feel comfortable with the material.
 
@@ -91,15 +91,15 @@ Time after time, those who are committed to maintaining healthy leisure time alo
 
 ---
 
-### Diving Deeper into Memory
+### 2. Diving Deeper into Memory
 
 > It may surprise you to learn that we have outstanding visual and spatial memory systems that can help form part of our long-term memory.
 
 #### Two main memory systems
 
-![](/images/LHL_ Procrastination_and_Memory/p_5.png)
-
 The first is long term memory, which is like a storage warehouse. You need to practice and repeat in order to help store items in long term memory so you can retrieve them more easily. Practicing and repeating, all in one day, is a bad idea. You want to extend your practice to several days. This is why tackling procrastination is important. It helps you build better memories because you start earlier. The second, is working memory, which is like a poor blackboard that quickly fades. You can only hold about four items in your working memory. When you master a technique or concept in some sense, it compacts the ideas so they can occupy less space in your working memory when you do bring them to mind. This frees your mental thinking space so that it can more easily grapple with other ideas.
+
+![](/images/LHL_ Procrastination_and_Memory/p_5.png)
 
 #### Apply our visual memory and repetition
 

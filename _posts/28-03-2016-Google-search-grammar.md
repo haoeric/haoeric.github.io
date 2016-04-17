@@ -3,7 +3,7 @@ layout: post
 title: 常用Google搜索语法
 comments: true
 author: Chen Hao
-categories: [Notes]
+categories: [Essential Skills]
 tags: [google, 语法]
 ---
 

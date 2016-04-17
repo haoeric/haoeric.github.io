@@ -3,7 +3,7 @@ layout: post
 title: Markdown知道这些就够用了
 comments: true
 author: Chen Hao
-categories: [Notes]
+categories: [Essential Skills]
 tags: [markdown, 标记语言]
 ---
 
