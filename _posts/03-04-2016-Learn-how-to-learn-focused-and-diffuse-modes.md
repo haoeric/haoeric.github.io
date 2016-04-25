@@ -58,3 +58,12 @@ You might be surprised to learn that just plain being awake creates toxic produc
 But sleep does more than just allow your brain to wash away toxins. It's actually important part of the memory and learning process. It's seems that during sleep your brain tidies up ideas and concepts your thinking about and learning. It erases the less important parts of memories and simultaneously strengthens areas that you need or want to remember. During sleep your brain also rehearses some of the tougher parts of whatever you're trying to learn, going over and over neural patterns to deepen and strengthen them. Sleep has also been shown to make a remarkable difference in your ability to figure out difficult problems and to understand what you're trying to learn. It's as if the complete deactivation of the conscious you in the pre- frontal cortex at the forefront of your brain helps other areas of your brain start talking more easily to one another, allowing them to put together the neural solution to your learning task while you're sleeping.
 
 If you're going over what you're learning right before you take a nap or going to sleep for the evening you have an increased chance of dreaming about it. If you go even further and set it in mind that you want to dream about the material, it seems to improve your chances of dreaming about it still further. Dreaming about what you're studying can substantially enhance your ability to understand. It somehow consolidates your memories into easier to grasp chunks.
+
+### 6. How to Become a Better Learner
+
+1. The best gift that you can give your brain is **Physical Exercise**. Exercise helps new neurons survive. Exercise is by far, more effective than any drug on the market today to help you learn better. It benefits all of your vital organisms, not just your brain.
+
+2. **Practice making perfect**, but only when your brain is prepared. There are certain critical periods in the development of your brain. When sudden improvements occur in specific abilities, expect them to happen and prepare your brain for them. 
+
+
+
