@@ -21,6 +21,6 @@ title: Welcome
 
 - Find a data analysis competetion on [Kaggle](https://www.kaggle.com)
 
-- Read my [posts](https://www.haoeric.com/posts/) 
+- Read my [posts](http://haoeric.com/posts/) 
 
-- Look into my [portfolio](https://www.haoeric.com/posts/portfolio/)
+- Look into my [portfolio](http://haoeric.com/portfolio/)
