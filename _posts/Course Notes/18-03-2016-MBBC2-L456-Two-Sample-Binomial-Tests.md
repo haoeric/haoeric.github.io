@@ -3,13 +3,10 @@ layout: post
 title: MBBC2 L4,5,6,7,8 Two Sample Binomial Tests
 comments: true
 author: Chen Hao
-categories: [Notes]
+categories: [Course Notes]
 tags: [MBBC2, stastics, R]
 ---
 
-
-## MBBC2 Lecture 4,5,6,7,8 - Two Sample Binomial Tests
----
 
 
 >This is my course notes for [Mathematical Biostatistics Boot Camp 2](https://www.coursera.org/learn/biostatistics-2/home/welcome), course materials are free on [github](https://github.com/bcaffo/MathematicsBiostatisticsBootCamp2).

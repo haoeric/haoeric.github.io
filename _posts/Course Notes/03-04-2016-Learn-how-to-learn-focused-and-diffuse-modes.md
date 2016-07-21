@@ -3,12 +3,10 @@ layout: post
 title: LH2L P1 Focused and Diffuse Modes
 comments: true
 author: Chen Hao
-categories: [Notes]
+categories: [Course Notes]
 tags: [LH2L, procrastination, focused, diffuse]
 ---
 
-## Learn How to Learn-P1-Focused and Diffuse Modes
----
 
 > My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
 

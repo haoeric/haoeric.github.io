@@ -1,16 +1,19 @@
 ---
 layout: page
-title: Blog Categories
-header: Blog Categories
+title: Post Categories
+header: Post Categories
 group: navigation
 ---
 
-<!-- Tab panes -->
+<hr>
+
+<!-- all categories except data analysis -->
 <article>
   {% for category in site.categories %}
-    <div>
+    {% if category[0] != "Data Analysis" %}
+      <div>
       <a name="{{category[0]}}"></a>
-      <h2 style="margin-top: 0px">{{ category[0] }}</h2>
+      <h3 style="margin-top: 0px">{{ category[0] }}</h3>
       <ul class="list-unstyled">
         {% assign pages_list = category[1] %}
         {% for node in pages_list %}
@@ -22,7 +25,8 @@ group: navigation
         {% endfor %}
         {% assign pages_list = nil %}
       </ul>
-    </div>
+      </div>
+    {% endif %}
   {% endfor %}
 </article>
 

@@ -3,12 +3,10 @@ layout: post
 title: LH2L P3 Procrastination and Memory
 comments: true
 author: Chen Hao
-categories: [Notes]
+categories: [Course Notes]
 tags: [LH2L, procrastination, memory]
 ---
 
-## Learn How to Learn-P3-Procrastination and Memory
----
 
 > My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
 

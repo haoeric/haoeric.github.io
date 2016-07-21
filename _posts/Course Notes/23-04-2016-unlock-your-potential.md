@@ -3,12 +3,10 @@ layout: post
 title: LH2L P4 Renaissance Learning and Unlocking Your Potential
 comments: true
 author: Chen Hao
-categories: [Notes]
+categories: [Course Notes]
 tags: [LH2L, Renaissance Learning, Potential]
 ---
 
-## Learn How to Learn-P4-Renaissance Learning and Unlocking Your Potential
----
 
 > My Course notes for [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn/home/welcome). 
 

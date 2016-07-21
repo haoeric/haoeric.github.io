@@ -2,12 +2,10 @@
 layout: post
 title: Precision and Recall
 comments: true
-categories: [Stastics]
-tags: [Stastics, R]
+categories: [Statistics]
+tags: [Statistics, R]
 ---
 
-## Precision and Recall
----
 
 In binary classification, **precision** (also called **positive predictive value**) is the fraction of retrieved instances that are relevant, while **recall** (also known as **sensitivity**) is the fraction of relevant instances that are retrieved. Both precision and recall are therefore based on an understanding and measure of **relevance**. 
 

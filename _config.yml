@@ -4,7 +4,7 @@
 permalink:           pretty
 
 # Setup
-title:               Chen Hao
+title:               Home
 tagline:             Keep Simple Heart
 url:                 http://haoeric.com
 paginate:            1
@@ -12,9 +12,9 @@ baseurl:             ""
 markdown:            kramdown
 
 pages_list:       
-  About: '/about'
-  Posts: '/archive'
-  Blog Categories: '/category'
+  Posts: '/posts'
+  Data Analysis: '/dataAnalysis'
+  Portfolio: '/portfolio'
   Feed: '/atom.xml'
 
 kramdown:

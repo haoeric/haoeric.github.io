@@ -3,12 +3,10 @@ layout: post
 title: 常用Google搜索语法
 comments: true
 author: Chen Hao
-categories: [Essential Skills]
+categories: [Skills]
 tags: [google, 语法]
 ---
 
-## 常用Google搜索语法
----
 
 ### 1. 常用语法
 

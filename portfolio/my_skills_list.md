@@ -1,10 +1,10 @@
 ---
-layout: post
-title: 技能表 
-comments: true
-categories: [Essential Skills]
-tags: [github, blog, jekyll]
+title: "My Skills List"
 ---
+    
+
+---------------
+
 
 如果时间跳到七年后，我会后悔某个技能依然没有掌握，那么现在是时候行动了。
 

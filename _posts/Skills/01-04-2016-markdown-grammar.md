@@ -3,12 +3,10 @@ layout: post
 title: Markdown知道这些就够用了
 comments: true
 author: Chen Hao
-categories: [Essential Skills]
+categories: [Skills]
 tags: [markdown, 标记语言]
 ---
 
-## Github-flavored-markdown语法表
----
 
 Markdown是在Ruby应用中广泛使用的标记语言，语法简洁并可混用HTML(标准markup语言)。[标准的Markdown语法](http://daringfireball.net/projects/markdown/syntax)缺乏如表格等关键特性的支持，虽然不同的解析器都对其语法进行了扩展，但实现各有不同，造成一定的混乱。
 
@@ -26,6 +24,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 |上标|`<sub>上标内容</sub>`|Water: H<sub>2</sub>O|
 |下标|`<sup>上标内容</sup>`|E = mc<sup>2</sup>|
 |角注|`[^角注]`|[见下文](#1)|
+|首行缩进|`&ensp;` 或 `&emsp;`|缩进一个，或两个空格|
 |文字链接|`[链接标签](链接网址)`|[github](http://daringfireball.net/projects/markdown/syntax)|
 |内部跳转|`<a name="tt" id="tt"></a> 跳转至 [文内链接](#tt)`|<a name="md-anchor" id="md-anchor"></a>跳转至 [文内链接](#md-anchor)|
 |引用|`> 引用内容`|[见下文](#1)|
@@ -79,8 +78,9 @@ Text prior to footnote reference 2.[^2]
 
 <u>引用示例：</u>
 
+在引用内容前加\>, 比如：
+
 ```
-在引用内容前加>, 比如：
 >Anything that can be automated, should be automated.    ------Hadley Wickham
 ```
 
@@ -91,9 +91,24 @@ Text prior to footnote reference 2.[^2]
 
 #### 2. 插入图片  
 
-比插入链接多了个`!`, 例如插入markdown logo: `![markdown logo](/images/markdown_grammar/Markdown_mark_log.png)`
+比插入链接多了个`!`, 例如插入markdown logo:  
+
+```
+![markdown logo](/images/markdown_grammar/Markdown_mark_log.png)
+```
 
 ![markdown logo](/images/markdown_grammar/Markdown_mark_log.png)
+
+
+使用如下命令`<img src="图片地址" width="图片显示宽度" height="显示高度" alt="图片名称"/>`设置图片大小.
+
+```
+<img src="/images/markdown_grammar/Markdown_mark_log.png" width="400" height="400" alt="markdown logo"/>
+```
+
+
+<img src="/images/markdown_grammar/Markdown_mark_log.png" width="400" height="400" alt="markdown logo"/>
+
 
 
 <a name="使用emoji" id="3"></a>
@@ -324,4 +339,5 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ### 参考 
 [1] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)  
-[2] [gitbook markdown](http://github.github.com/github-flavored-markdown/)
+[2] [gitbook markdown](http://github.github.com/github-flavored-markdown/)   
+[3] [MarkDown使用小技巧](http://www.jianshu.com/p/9d94660a96f1)

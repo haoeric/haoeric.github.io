@@ -1,6 +1,7 @@
 _site/
+_drafts/
 .Rproj.user
 haoeric.github.io.Rproj
 .sass-cache
-_drafts
 .Rhistory
+.DS_Store

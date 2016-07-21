@@ -2,14 +2,9 @@
 layout: post
 title: My First Taste of data.table
 comments: true
-author: Chen Hao
-categories: [R]
+categories: [Data Analysis]
 tags: [R, data.table, match]
 ---
-
-## My First Taste of data.table
----
-
 
 
 Even though I have heared about [data.table](https://cran.r-project.org/web/packages/data.table/index.html) many times, but this is the first time I tasted the sweetness of it. It's really fast.

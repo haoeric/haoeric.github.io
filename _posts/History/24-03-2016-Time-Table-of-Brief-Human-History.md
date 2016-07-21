@@ -6,8 +6,6 @@ categories: [History]
 tags: [Human, history]
 ---
 
-## 人类发展历史年表 （Time Table of Brief Human History）
----
 
 > **[《人类简史：从动物到上帝》](https://book.douban.com/subject/25985021/)**（作者：【以】尤瓦尔·赫拉利） *"大约7万年前，一些属于“智人”（Homo sapiens）这一物种的生物，开始创造出更复杂的架构，称为“文化”。而这些人类文化继续发展，就成了“历史学”。在历史的路上，有三大重要革命：<u>大约7万年前</u>，**“认知革命”（Cognitive Revolution）**让历史正式启动。<u>大约12000年前</u>，**“农业革命”（Agricultural Revolution）**让历史加速发展。而到了大约不过是<u>500年前</u>，**“科学革命”（Scientific Revolution）**可以说是让历史画下句点而另创新局。这本书的内容，讲述的就是这三大革命如何改变了人类和其他生物。"*
 
