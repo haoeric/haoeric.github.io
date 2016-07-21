@@ -1,10 +1,11 @@
 ---
-title: "My Skills List"
----
+layout: postPortfolio
+title: Skills List
+comments: true
+categories: [Portfolio]
+tags: [skills]
+---  
     
-
----------------
-
 
 如果时间跳到七年后，我会后悔某个技能依然没有掌握，那么现在是时候行动了。
 

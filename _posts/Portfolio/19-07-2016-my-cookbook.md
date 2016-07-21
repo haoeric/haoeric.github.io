@@ -1,10 +1,10 @@
 ---
-title: "My Cookbook"
----
-    
-
----------------
-    
+layout: postPortfolio
+title: My Cookbook
+comments: true
+categories: [Portfolio]
+tags: [cookbook]
+---  
     
 ### 家常烧鸡块
 

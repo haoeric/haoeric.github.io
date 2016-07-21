@@ -1,9 +1,10 @@
 ---
-title: "Research Work"
----
-
-
-----------------------
+layout: postPortfolio
+title: Research Work
+comments: true
+categories: [Portfolio]
+tags: [research]
+---  
 
 ### <u>Paper</u>
 

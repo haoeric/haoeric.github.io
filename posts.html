@@ -10,7 +10,7 @@ group: navigation
 <!-- all categories except data analysis -->
 <article>
   {% for category in site.categories %}
-    {% if category[0] != "Data Analysis" %}
+    {% if category[0] != "Data Analysis" and category[0] != "Portfolio"%}
       <div>
       <a name="{{category[0]}}"></a>
       <h3 style="margin-top: 0px">{{ category[0] }}</h3>
