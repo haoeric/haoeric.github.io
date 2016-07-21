@@ -19,6 +19,8 @@ title: Welcome
 
 - Search for good books, movies or songs, [豆瓣](https://www.douban.com) fits all these. 
 
+- Learn some interesting staff on [Wait But Why](http://waitbutwhy.com)
+
 - Find a data analysis competetion on [Kaggle](https://www.kaggle.com)
 
 - Read my [posts](http://haoeric.com/posts/) 
