@@ -27,8 +27,8 @@ tags: [toolbox]
     [百度 Mac 输入法](https://srf.baidu.com/input/mac.html) -- Mac 上体验最好的中文输入法
 - <u>Password Manegament:</u>    
     [1Password](https://1password.com) -- generates high strength password and stores them together
-- <u>Clean My Macbook:</u>    
-    [Dr. Cleaner](https://itunes.apple.com/us/app/dr.-cleaner-disk-memory-clean/id921458519?mt=12)   
+- <u>Clean My Macbook:</u>     
+    [CleanMyMac](http://macpaw.com/cleanmymac)
 - <u>Download:</u>   
     [Thunder](http://mac.xunlei.com)
 - <u>Watching Movies:</u>   
@@ -55,7 +55,8 @@ tags: [toolbox]
     [caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12) -- make the screen on when presentation    
     [AnkiApp](https://www.ankiapp.com) -- knowledge accumulation using flashcard       
     [Noizio](http://noiz.io) -- noise cancelling    
-    [CleanMyMac](http://macpaw.com/cleanmymac)
+    [Dr. Cleaner](https://itunes.apple.com/us/app/dr.-cleaner-disk-memory-clean/id921458519?mt=12) -- profile of memory, storage, and network.     
+    [Snappy](http://go-snappy.com) -- easy manage, edit and share screen snapshots
 - <u>Dictionary:</u>       
     [欧陆词典](http://www.eudic.net)     
     [有道词典](http://www.youdao.com)
