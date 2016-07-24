@@ -1,0 +1,23 @@
+---
+layout: postPortfolio
+title: Online Learning
+comments: true
+categories: [Portfolio]
+tags: [research]
+---  
+
+
+### Coursera
+
+- [Data Analysis](https://www.coursera.org/course/dataanalysis), Coursera 2013
+- [R programming](https://www.coursera.org/course/dataanalysis), Coursera 2014
+- [The Data Scientist’s Toolbox](https://www.coursera.org/course/datascitoolbox), Coursera 2014
+- [Getting and Cleaning Data](https://www.coursera.org/course/getdata), Coursera 2014
+- [Exploratory Data Analysis](https://www.coursera.org/course/exdata), Coursera 2014
+- [Reproducible Research](https://www.coursera.org/course/repdata), Coursera 2014
+
+
+### Edx   
+
+- [Introduction to Computer Science and Programming Using Python](https://verify.edx.org/cert/dcb2d0a5fc6444a2b0209cf77688d2a3), edX 2014
+

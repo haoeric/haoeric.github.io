@@ -15,7 +15,7 @@ title: Welcome
 
 - Have a question? Ask [Quora](https://www.quora.com) or [知乎](https://www.zhihu.com)
 
-- Wanna watch a talk [TED](https://www.ted.com/talks?sort=newest)
+- Wanna watch a talk? open [TED](https://www.ted.com/talks?sort=newest)
 
 - Search for good books, movies or songs, [豆瓣](https://www.douban.com) fits all these. 
 
@@ -23,7 +23,9 @@ title: Welcome
 
 - Find a data analysis competetion on [Kaggle](https://www.kaggle.com)
 
-- Read my [posts](http://haoeric.com/posts/) 
+- Search for interesting open source projects using [Github](https://github.com/haoeric)
 
-- Look into my [portfolio](http://haoeric.com/portfolio/)
+- Read my [posts]({{ site.BASE_PATH }}/posts/) 
+
+- Look into my [portfolio]({{ site.BASE_PATH }}/portfolio/)
 
