@@ -26,3 +26,4 @@ title: Welcome
 - Read my [posts](http://haoeric.com/posts/) 
 
 - Look into my [portfolio](http://haoeric.com/portfolio/)
+
