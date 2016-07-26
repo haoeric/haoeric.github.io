@@ -1,0 +1,327 @@
+---
+layout: postDataAnalysis
+title: "Transformation Methods for FCM data"
+comments: true
+categories: [Data Analysis]
+tags: [Transformation, cytometry]
+---
+
+
+## Introduction 
+
+
+
+
+
+### Loading the raw data of a FCS file
+
+```{r}
+library(flowCore)
+library(ggplot2)
+file <- "~/Ranalysis/Sanofi Day 0 Myeloid panel_SNF002 D0.fcs"
+fcs <- read.FCS(file, transformation = FALSE)
+```
+
+
+### Summary Information of the data
+
+```{r}
+fs <- pData(fcs@parameters)
+fs$minExprs <- apply(fcs@exprs, 2, min)
+fs$maxExprs <- apply(fcs@exprs, 2, max)
+fs$range <- NULL
+fs
+```
+
+
+### Linear Transformation
+
+The formula for linear transformation is `x <- a*x+b`, and the crrosponding funciton is `linearTransform(transformationId="defaultLinearTransform", a = 1, b = 0)`.
+
+#### Transformation function 
+
+```{r}
+ggplot(data.frame(x=c(-5,5)), aes(x)) +
+  stat_function(fun=function(x) 1*x+0, geom="line", aes(colour="a=1,b=0")) +
+  stat_function(fun=function(x) 2*x+0, geom="line", aes(colour="a=2,b=0")) +
+  stat_function(fun=function(x) 2*x+5, geom="line", aes(colour="a=2,b=5")) +
+  scale_colour_manual(name="a*x+b", values=c("a=1,b=0"="blue","a=2,b=0"="red", "a=2,b=5"="green")) +
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20") + coord_fixed()
+```
+
+
+#### Example
+
+```{r, warning=FALSE}
+linearTrans <- linearTransform(transformationId="Linear-transformation", a=0.00001, b=1)
+lt_fcs <- transform(fcs, transformList('FSC-H' ,linearTrans))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'FSC-H']), main = "Before Transformation")
+plot(density(lt_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
+```
+
+
+### Natural Logarithm Transformation (ln transformation)
+
+The formula for ln transformation if `x<-log(x)*(r/d)`, and the crrosponding function is `lnTransform(transformationId="defaultLnTransform", r=1, d=1)`.
+
+#### Transformation function 
+
+```{r}
+ggplot(data.frame(x=c(1e-20,10)), aes(x)) +
+  stat_function(fun=function(x) log(x)*(1/1), geom="line", aes(colour="r=1,d=1")) +
+  stat_function(fun=function(x) log(x)*(2/1), geom="line", aes(colour="r=2,d=1")) +
+  stat_function(fun=function(x) log(x)*(1/2), geom="line", aes(colour="r=1,d=2")) +
+  scale_colour_manual(name="log(x)*(r/d)", values=c("r=1,d=1"="blue","r=2,d=1"="red", "r=1,d=2"="green")) + 
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20")
+```
+
+#### Example
+
+```{r}
+lnTrans <- lnTransform(transformationId="ln-transformation", r=1, d=1)
+ln_fcs <- transform(fcs, transformList('FSC-H', lnTrans))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'FSC-H']), main = "Before Transformation")
+plot(density(ln_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
+```
+
+
+### Logarithmic Transformation
+
+The formula for logarithmic transformation if `x<-log(x,logbase)*(r/d)`, and the crrosponding function is `logTransform(transformationId="defaultLogTransform", logbase=10, r=1, d=1)`. Compared with ln transformation, you can specify the base with `logbase`.
+
+#### Transformation function 
+
+```{r}
+ggplot(data.frame(x=c(1e-20,1000)), aes(x)) +
+  stat_function(fun=function(x) log(x,exp(1))*(1/1), geom="line", aes(colour="logbase=e")) +
+  stat_function(fun=function(x) log(x,10)*(1/1), geom="line", aes(colour="logbase=10")) +
+  stat_function(fun=function(x) log(x,20)*(1/1), geom="line", aes(colour="logbase=20")) +
+  scale_colour_manual(name="log(x,logbase)", values=c("logbase=e"="blue","logbase=10"="red", "logbase=20"="green")) + 
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20")
+```
+
+#### Example
+
+```{r}
+logTrans <- logTransform(transformationId="log10-transformation", logbase=10, r=1, d=1)
+log_fcs <- transform(fcs, transformList('FSC-H', logTrans))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'FSC-H']), main = "Before Transformation")
+plot(density(log_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
+```
+
+
+### Quadratic Transformation
+
+The formula for quadratic transformation if `x <- a*x^2 + b*x + c`, and the crrosponding function is `quadraticTransform(transformationId="defaultQuadraticTransform", a = 1, b = 1, c = 0)`.
+
+#### Transformation function 
+
+```{r}
+ggplot(data.frame(x=c(-10,10)), aes(x)) +
+  stat_function(fun=function(x) 1*x^2 + 0*x + 0, geom="line", aes(colour="a=1,b=0,c=0")) +
+  stat_function(fun=function(x) -1*x^2 + 0*x + 0, geom="line", aes(colour="a=-1,b=0,c=0")) +
+  stat_function(fun=function(x) 1*x^2 + -10*x + 25, geom="line", aes(colour="a=1,b=-10,c=25")) +
+  stat_function(fun=function(x) 4*x^2 + 0*x + 100, geom="line", aes(colour="a=4,b=0,c=100")) +
+  scale_colour_manual(name="a*x^2 + b*x + c", values=c("a=1,b=0,c=0"="blue", "a=-1,b=0,c=0"="purple", "a=1,b=-10,c=25"="red", "a=4,b=0,c=100"="green")) + 
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20")
+```
+
+#### Example
+
+```{r}
+quadTrans <- quadraticTransform(transformationId="Quadratic-transformation", a=1, b=1, c=0)
+qd_fcs <- transform(fcs, transformList('FSC-H', quadTrans))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'FSC-H']), main = "Before Transformation")
+plot(density(qd_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
+```
+
+
+### Hyperbolic arc-sine Transformation
+
+The formula for arcsinh transformation if `x<-asinh(a+b*x)+c where asinh <- function(x) {log(x + sqrt(x^2 + 1))}`, and the crrosponding function is `arcsinhTransform(transformationId="defaultArcsinhTransform", a=1, b=1, c=0)`.
+
+#### Transformation function 
+
+```{r}
+ggplot(data.frame(x=c(-10,10)), aes(x)) +
+  stat_function(fun=function(x) asinh(0+1*x)+0 , geom="line", aes(colour="a=0,b=1,c=0")) +
+  stat_function(fun=function(x) asinh(0+4*x)+0, geom="line", aes(colour="a=0,b=4,c=0")) +
+  stat_function(fun=function(x) asinh(5+1*x)+5, geom="line", aes(colour="a=5,b=1,c=5")) +
+  stat_function(fun=function(x) asinh(0+-1*x)+0, geom="line", aes(colour="a=0,b=-1,c=0")) +
+  scale_colour_manual(name="asinh(a+b*x)+c", values=c("a=0,b=1,c=0"="blue", "a=0,b=4,c=0"="purple", "a=5,b=1,c=5"="red", "a=0,b=-1,c=0"="green")) + 
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20")
+```
+
+#### Example
+
+```{r}
+asinhTrans <- arcsinhTransform(transformationId="ln-transformation", a=1, b=1, c=1)
+as_fcs <- transform(fcs, transformList('FSC-H', asinhTrans))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'FSC-H']), main = "Before Transformation")
+plot(density(as_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
+```
+
+
+### Biexponential Transformation
+
+Biexponential Transformation is an over-parameterized inverse of the hyperbolic sine, the formula to be inverted takes the form `f(x) = a*exp(b*(x-w))-c*exp(-d*(x-w))+f `, and the crrosponding function is `biexponentialTransform(transformationId="defaultBiexponentialTransform", a = 0.5, b = 1, c = 0.5, d = 1, f = 0, w = 0, tol = .Machine$double.eps^0.25, maxit = as.integer(5000))`
+
+#### Transformation function 
+
+```{r}
+
+biexp <- function(x, a = 0.5, b = 1, c = 0.5, d = 1, f = 0, w = 0, 
+                  tol = .Machine$double.eps^0.25, 
+                  maxit = as.integer(5000)){
+    
+    flowCore:::biexponential_transform(input = x, 
+                                       A = a, 
+                                       B = b, 
+                                       C = c, 
+                                       D = d, 
+                                       F = f, 
+                                       W = w, 
+                                       Tol = tol, 
+                                       MaxIt = maxit)
+}
+
+ggplot(data.frame(x=c(-5000,5000)), aes(x)) +
+  stat_function(fun=function(x) biexp(x, a = 0.5, b = 1, c = 1, d = 1, f = 0, w = 0), geom="line", aes(colour="a=0.5,b=1,c=1,d=1,f=0,w=0")) +
+  stat_function(fun=function(x) biexp(x, a = 0.5, b = 2, c = 10, d = 1, f = 0, w = 0), geom="line", aes(colour="a=0.5,b=2,c=10,d=1,f=0,w=0")) +
+  stat_function(fun=function(x) biexp(x, a = 1, b = 1, c = 0.5, d = 1, f = 0, w = 0), geom="line", aes(colour="a=1,b=1,c=0.5,d=1,f=0,w=0")) +
+  stat_function(fun=function(x) biexp(x, a = 0.5, b = 1, c = 1000, d = 1, f = 0, w = 0), geom="line", aes(colour="a=0.5,b=1,c=1000,d=1,f=0,w=0")) +
+  scale_colour_manual(name="biexponential", 
+                      values=c("a=0.5,b=1,c=1,d=1,f=0,w=0"="blue", 
+                               "a=0.5,b=2,c=10,d=1,f=0,w=0"="purple", 
+                               "a=1,b=1,c=0.5,d=1,f=0,w=0"="red", 
+                               "a=0.5,b=1,c=1000,d=1,f=0,w=0"="green")) + 
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20")
+```
+
+#### Example
+
+```{r}
+biexp <- biexponentialTransform("myTransform")
+biexp_fcs <- transform(fcs, transformList('FSC-H', biexp))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'FSC-H']), main = "Before Transformation")
+plot(density(biexp_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
+```
+
+
+### Logicle Transformation
+
+Logicle transformation creates a subset of hyperbolic sine transformation functions that provides several advantages over linear/log transformations for display of flow cytometry data.
+
+and the crrosponding function is `logicleTransform(transformationId="defaultLogicleTransform", w = 0.5, t = 262144, m = 4.5, a = 0)`
+
+#### Transformation function 
+
+```{r}
+
+lgcl <- function(x, w = 0.5, t = 262144, m = 4.5, a = 0){
+    
+    flowCore:::logicle_transform(input = x, 
+                                 T = t, 
+                                 W = w, 
+                                 M = m, 
+                                 A = a, 
+                                 isInverse = FALSE)
+}
+
+ggplot(data.frame(x=c(-5000,5000)), aes(x)) +
+  stat_function(fun=function(x) lgcl(x, w = 0.5, t = 5000, m = 4.5, a = 1), geom="line", aes(colour="w=0.5,t=5000,m=4.5,a=1")) +
+  stat_function(fun=function(x) lgcl(x, w = 0.5, t = 2500, m = 4.5, a = 0), geom="line", aes(colour="w=0.5,t=2500,m=4.5,a=0")) +
+  stat_function(fun=function(x) lgcl(x, w = 0.5, t = 5000, m = 3, a = 0), geom="line", aes(colour="w=0.5,t=5000,m=3,a=0")) +
+  stat_function(fun=function(x) lgcl(x, w = 1, t = 5000, m = 4.5, a = 0), geom="line", aes(colour="w=1,t=5000,m=4.5,a=0")) +
+  scale_colour_manual(name="logicle", 
+                      values=c("w=0.5,t=5000,m=4.5,a=1"="blue", 
+                               "w=0.5,t=2500,m=4.5,a=0"="purple", 
+                               "w=0.5,t=5000,m=3,a=0"="red", 
+                               "w=1,t=5000,m=4.5,a=0"="green")) + 
+    theme_bw() + geom_hline(yintercept = 0, colour = "gray20") + geom_vline(xintercept = 0, colour = "gray20")
+```
+
+
+We can see that `m` controls the range of positive values, `w` controls the range of negative values,
+ `a` changes the slope, `t` is the maximal `x` value corresponds to `m`. A nice explanation is included in paper[]
+ 
+ ![](/figures/25-07-2016-cytometry-transformation/logicle_trans.png)
+
+
+#### Example
+
+```{r}
+lgcl <- logicleTransform("myTransform", w = 0.5, t= 262144, m = 4.5)
+lgcl_fcs <- transform(fcs, transformList("PE-A", lgcl))
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'PE-A']), main = "Before Transformation")
+plot(density(lgcl_fcs@exprs[ ,'PE-A']), main = "After Transformation")
+```
+
+And in `flowCore`, there is a funciton `estimateLogicle` which can help automatic determine the parameters for `logicleTransform`.
+
+And it works as below:
+
+```{r, eval=FALSE}
+# flowCore:::.lgclTrans
+function (dat, p, t, m, a = 0, q = 0.05, type = "instrument") 
+{
+    type <- match.arg(type, c("instrument", "data"))
+    transId <- paste(p, "logicleTransform", sep = "_")
+    rng <- range(dat)
+    dat <- exprs(dat)[, p]
+    if (missing(t)) {
+        if (type == "instrument") 
+            t <- rng[, p][2]
+        else t <- max(dat)
+    }
+    if (missing(m)) {
+        if (type == "instrument") 
+            m <- 4.5
+        else m <- log10(t) + 1
+    }
+    dat <- dat[dat < 0]
+    w <- 0
+    if (length(dat)) {
+        r <- .Machine$double.eps + quantile(dat, q)
+        w = (m - log10(t/abs(r)))/2
+        if (w < 0) 
+            stop("w is negative!Try to increase 'm'")
+    }
+    logicleTransform(transformationId = transId, w = w, t = t, 
+        m = m, a = a)
+}
+```
+
+
+```{r}
+algcl <- estimateLogicle(fcs, channels = c('PE-A'))
+algcl_fcs <- transform(fcs, algcl)
+
+par(mfrow=c(1,2))
+plot(density(fcs@exprs[ ,'PE-A']), main = "Before Transformation")
+plot(density(algcl_fcs@exprs[ ,'PE-A']), main = "After Transformation")
+```
+
+
+## Reference
+
+## Session Information
+
+```{r}
+sessionInfo()
+```
+

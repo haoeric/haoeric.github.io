@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: postDataAnalysis
 title: My First Taste of data.table
 comments: true
 categories: [Data Analysis]
