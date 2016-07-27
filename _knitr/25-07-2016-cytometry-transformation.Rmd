@@ -270,7 +270,7 @@ ggplot(data.frame(x=c(-5000,5000)), aes(x)) +
 
 
 We can see that `m` controls the range of positive values, `w` controls the range of negative values,
- `a` changes the slope, `t` is the maximal `x` value corresponds to `m`. A nice explanation is included in paper[]
+ `a` changes the slope, `t` is the maximal `x` value corresponds to `m`. A nice explanation is included in [\[4\]](#ref).
  
  ![](/figures/25-07-2016-cytometry-transformation/logicle_trans.png)
 
@@ -424,6 +424,8 @@ To compare the transformation methods (autoLgcl, logicle, cytofAsinh, arcsinh) f
 [2] Finak G, Perez J, Weng A, Gottardo R. Optimizing transformations for automated, high throughput analysis of flow cytometry data. BMC Bioinformatics. 2010;11: 546. doi:10.1186/1471-2105-11-546.
 
 [3] Berg RA Van Den, Hoefsloot HCJ, Westerhuis J a, Smilde AK, Werf MJ Van Der, van den Berg R a, et al. Centering, scaling, and transformations: improving the biological information content of metabolomics data. BMC Genomics. 2006;7: 142. doi:10.1186/1471-2164-7-142. 
+
+[4] Parks DR, Roederer M, Moore WA. A new “logicle” display method avoids deceptive effects of logarithmic scaling for low signals and compensated data. Cytom Part A. 2006;69: 541–551.
 
 
 ## Session Information
