@@ -7,8 +7,6 @@ title: Welcome
 
 - Get news from [Tweet](https://twitter.com) 
 
-- Search Information using [Google](https://www.google.com)
-
 - Learn R news from [R-bloggers](http://www.r-bloggers.com)
 
 - Read a technology review on [MIT Technology Review](https://www.technologyreview.com)

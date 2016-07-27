@@ -9,8 +9,15 @@ tags: [Transformation, cytometry]
 
 ## Introduction 
 
+In biotechnology, **flow cytometry** is a laser- or impedance-based, biophysical technology employed in cell counting, cell sorting, biomarker detection and protein engineering, by suspending cells in a stream of fluid and passing them by an electronic detection apparatus. It allows simultaneous multiparametric analysis of the physical and chemical characteristics of up to thousands of particles per second. [\[1\]](#ref) 
 
+Flow cytometry measurements can vary over several orders of magnitude, cell populations can have variances that depend on their mean fluorescence intensities, and may exhibit heavily-skewed distributions. Consequently, the choice of data transformation can influence the output of subsequent analysis. An appropriate data transformation aids in data visualization and gating of cell populations across the range of data. [\[2\]](#ref) 
 
+BioConductor [flowCore](http://bioconductor.org/packages/flowCore/) which is the most bacis R pacakge for parsing FCM data. It provides many different transfromations including [linearTransform](#linT), [lnTransform](#lnT), [logTransform](#logT), [quadraticTransform](#quadT), [arcsinhTransform](#asinT), [biexponentialTransform](#biexpT), [logicleTransform](#lgclT).
+
+As stated in [\[3\]](#ref), The goal of visualizing data of a measured parameter is to determine the actual probability function (APF) of the property being investigated. However the APF is never known, the selection of a proper transformation and parameters tuning is mainly determined by visual checking of the distribution to see if the populations are clearly segerated. 
+
+For this post, the seven transformation methods provided in **flowCore** are explored, parameters for each transformation are slightly investigated to gain a rough understanding of their theories and the corresponding effects. At the end, a shiny APP is provided to visually and interactively compare the two most popular transformations (logicle and arcsin) for a given FCS dataset.
 
 
 ### Loading the raw data of a FCS file
@@ -24,7 +31,7 @@ fcs <- read.FCS(file, transformation = FALSE)
 {% endhighlight %}
 
 
-### Summary Information of the data
+### Summary Information of the FCS data
 
 
 {% highlight r %}
@@ -64,6 +71,7 @@ fs
 ## $P23              Time    <NA>        0   262143        0.00  14422.9
 {% endhighlight %}
 
+<a name="linT" id="linT"></a>
 
 ### Linear Transformation
 
@@ -99,6 +107,8 @@ plot(density(lt_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
 ![plot of chunk unnamed-chunk-4](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-4-1.svg)
 
 
+<a name="lnT" id="lnT"></a>
+
 ### Natural Logarithm Transformation (ln transformation)
 
 The formula for ln transformation if `x<-log(x)*(r/d)`, and the crrosponding function is `lnTransform(transformationId="defaultLnTransform", r=1, d=1)`.
@@ -131,6 +141,7 @@ plot(density(ln_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
 
 ![plot of chunk unnamed-chunk-6](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-6-1.svg)
 
+<a name="logT" id="logT"></a>
 
 ### Logarithmic Transformation
 
@@ -164,6 +175,7 @@ plot(density(log_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
 
 ![plot of chunk unnamed-chunk-8](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-8-1.svg)
 
+<a name="quadT" id="quadT"></a>
 
 ### Quadratic Transformation
 
@@ -198,6 +210,7 @@ plot(density(qd_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
 
 ![plot of chunk unnamed-chunk-10](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-10-1.svg)
 
+<a name="asinT" id="asinT"></a>
 
 ### Hyperbolic arc-sine Transformation
 
@@ -232,6 +245,7 @@ plot(density(as_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
 
 ![plot of chunk unnamed-chunk-12](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-12-1.svg)
 
+<a name="biexpT" id="biexpT"></a>
 
 ### Biexponential Transformation
 
@@ -285,6 +299,7 @@ plot(density(biexp_fcs@exprs[ ,'FSC-H']), main = "After Transformation")
 
 ![plot of chunk unnamed-chunk-14](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-14-1.svg)
 
+<a name="lgclT" id="lgclT"></a>
 
 ### Logicle Transformation
 
@@ -392,7 +407,100 @@ plot(density(algcl_fcs@exprs[ ,'PE-A']), main = "After Transformation")
 ![plot of chunk unnamed-chunk-18](/figures/25-07-2016-cytometry-transformation/unnamed-chunk-18-1.svg)
 
 
-## Reference
+### Shiny APP
+
+In our [cytofkit](https://www.bioconductor.org/packages/cytofkit/) pacakge, we provide another two customized transfomations: autoLgcl (modified from logicle) and cytofAsinh (modified from arcsinh). 
+
+
+{% highlight r %}
+#' Noise reduced arsinh transformation 
+#' 
+#' Inverse hyperbolic sine transformation (arsinh) with a cofactor of 5, reduce noise from negative values
+#' Adopted from Plos Comp reviewer
+#' 
+#' @param value A vector of numeric values.
+#' @param cofactor Cofactor for asinh transformation, default 5 for mass cytometry data.
+#' @noRd
+#' @return transformed value
+cytofAsinh <- function(value, cofactor = 5) {
+    value <- value-1
+    loID <- which(value < 0)
+    if(length(loID) > 0)
+        value[loID] <- rnorm(length(loID), mean = 0, sd = 0.01)
+    value <- value / cofactor
+    value <- asinh(value) # value <- log(value + sqrt(value^2 + 1))
+    return(value)
+}
+
+
+#' a modified version of "estimateLogicle" from flowCore
+#' 
+#' Used boxplot outlier detection to filter outliers in negative values 
+#' before calculating the r using the fifth percnetile of the negative values.
+#' 
+#' @param x A flowFrame object.
+#' @param channels Channel names to be transformed.
+#' @param m The full width of the transformed display in asymptotic decades. m should be greater than zero.
+#' @param q The percentile of negative values used as reference poiont of negative range.
+#' @importFrom methods is
+#' @importFrom flowCore logicleTransform
+#' @noRd
+#' @return a list of autoLgcl transformations
+autoLgcl <- function(x, channels, m = 4.5, q = 0.05) {
+    if (!is(x, "flowFrame")) 
+        stop("x has to be an object of class \"flowFrame\"")
+    if (missing(channels)) 
+        stop("Please specify the channels to be logicle transformed")
+    indx <- channels %in% colnames(x@exprs)
+    if (!all(indx)) 
+        stop(paste("Channels", channels[!indx], "were not found in the FCS file.\n ", 
+            sep = " "))
+
+    trans <- lapply(channels, function(p) {
+        data <- x@exprs[, p]
+        w <- 0
+        t <- max(data)
+        ndata <- data[data < 0]
+        ## use 1.5 * IQR to filter outliers in negative values
+        nThres <- quantile(ndata, 0.25) - 1.5 * IQR(ndata)
+        ndata <- ndata[ndata >= nThres]
+        transId <- paste(p, "autolgclTransform", sep = "_")
+        
+        if (length(ndata)) {
+            r <- .Machine$double.eps + quantile(ndata, q)
+            ## Check to avoid failure of negative w
+            if (10^m * abs(r) <= t) {
+                w <- 0  
+            } else {
+                w <- (m - log10(t/abs(r)))/2
+                if(w>2) {
+                    w <- 0.5
+                }
+            }
+        }
+        logicleTransform(transformationId = transId, 
+                         w = w, t = t, m = m, a = 0)
+    })
+    transformList(channels, trans)
+}
+{% endhighlight %}
+
+
+To compare the transformation methods (autoLgcl, logicle, cytofAsinh, arcsinh) for a given FCS file, a shiny APP is build and provided with link https://chenhao.shinyapps.io/TransformationComparation_shinyAPP/. A screenshot of the app is as below:
+
+![](/figures/25-07-2016-cytometry-transformation/shiny_app.png)
+
+
+<a name="ref" id="ref"></a>
+
+## Reference    
+
+[1] From wikipedia [Flow cytometry](http://www.wikiwand.com/en/Flow_cytometry)
+
+[2] Finak G, Perez J, Weng A, Gottardo R. Optimizing transformations for automated, high throughput analysis of flow cytometry data. BMC Bioinformatics. 2010;11: 546. doi:10.1186/1471-2105-11-546.
+
+[3] Berg RA Van Den, Hoefsloot HCJ, Westerhuis J a, Smilde AK, Werf MJ Van Der, van den Berg R a, et al. Centering, scaling, and transformations: improving the biological information content of metabolomics data. BMC Genomics. 2006;7: 142. doi:10.1186/1471-2164-7-142. 
+
 
 ## Session Information
 

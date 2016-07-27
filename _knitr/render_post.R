@@ -7,7 +7,16 @@ require(knitr)
 # convert_file: name/path to specific Rmd file to convert
 # overwrite: flag that tells us whether to overwrite md files
 #            when converting all Rmd files
-KnitPost <- function(bashwd = "", convert_file = "", ifCache = TRUE, overwrite = TRUE) {
+knitPost <- function(bashwd = "", convert_file = "", 
+                     toPostFolder = c("Data Analysis",
+                                      "Course Notes",
+                                      "History",
+                                      "Portfolio",
+                                      "Skills",
+                                      "Statistics",
+                                      "Trivia"),
+                     ifCache = FALSE, overwrite = TRUE) {
+    
     
     # directory of jekyll blog (including trailing slash)
     site.path <- "~/GitProject/haoeric.github.io/"
@@ -17,7 +26,8 @@ KnitPost <- function(bashwd = "", convert_file = "", ifCache = TRUE, overwrite =
     # directory to save figures
     fig.dir <- "figures/"
     # directory for converted markdown files
-    posts.path <- paste0(site.path, "_posts/Data Analysis")
+    toPostFolder <- match.arg(toPostFolder)
+    posts.path <- paste0(site.path, "_posts/", toPostFolder)
     
     render_jekyll(highlight = "pygments")
     # "base.dir is never used when composing the URL of the figures; it is
