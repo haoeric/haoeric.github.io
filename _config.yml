@@ -17,8 +17,11 @@ pages_list:
   Portfolio: '/portfolio'
   Feed: '/atom.xml'
 
+# Using Rouge with Jekyll
+# https://sacha.me/articles/jekyll-rouge/
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
 
 # Plugins
 #

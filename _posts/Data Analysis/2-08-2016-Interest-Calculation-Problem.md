@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: "Coding Marathon Caused by A Interest Calculation Problem"
+title: "Coding Marathon Caused by An Interest Calculation Problem"
 comments: true
 categories: [Data Analysis]
 tags: [Transformation, cytometry]
@@ -18,7 +18,7 @@ Here is an interest calculation problem, for simplicity, I put the model in this
 
 I contributed my first draft of R codes as below:
 
-```
+```R
 saveEarn <- function(yearPut, yearInterest, yearTime){
   sum <- 0
   base <- 0
@@ -42,7 +42,7 @@ saveEarn(yearPut=200*12, yearInterest=0.03, yearTime=21)
 
  The output is: 
 
-```
+```R
 --Year 0; Sum:0
   --Year 1; Sum:2472
   --Year 2; Sum:5018.16
@@ -78,7 +78,7 @@ After I sent these out, I got the reply from my colleague W:
 
 With an invitation that "Talk is cheap, show me your codes", W send us his C implementation
 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
  
@@ -109,7 +109,7 @@ And he also pointed that:
 
 With claps and cheers, my colleague B sent his impressive python version:
 
-```
+```python
 interest = 0.03
 injection = 2400
 years = 21
@@ -130,14 +130,14 @@ And my colleague M is also motivated to try using CUDA, but what a pity that we 
 
 So inspired by the codes from B, I tried to implement it using one line R codes:
 
-```
+```R
 annualPut <- 200*12; annualInterest <- 0.03; saveYears <- 21
 sum(sapply(seq_len(saveYears), function(i){annualPut*(1+annualInterest)**i}))
 ```
 
 And I also gave me a second change to modify my R version 1 code (here I tidied the version 1 codes and remove the function declaration in function):
 
-```
+```R
 saveEarn <- function(annualPut, annualInterest, saveYears){
     base <- annualPut
     for(i in seq_len(saveYears)){
@@ -164,14 +164,14 @@ saveEarn(annualPut=200*12, annualInterest=0.03, saveYears=21)
 
 The above one line python or R code looks cool, but they only output the final total money, it lost the yearly details. So W showed out his ultimate weapon: Perl.
 
-```
+```perl
 ($a,$term,$r) = (12*200, 21, 0.03);
 printf("saved: %f\tinterest: %8.2f\tfinal: %.2f\n", $a*$_,$i=($t+=$a)*$r, $t+=$i) foreach (1..$term);
 ```
 
 This is really cool and with all the details printed. 
 
-```
+```perl
 saved: 2400.000000	interest:    72.00	final: 2472.00
 saved: 4800.000000	interest:   146.16	final: 5018.16
 saved: 7200.000000	interest:   222.54	final: 7640.70
@@ -197,7 +197,7 @@ saved: 50400.000000	interest:  2064.71	final: 70888.27
 
 And he gives an even more short version if we only want the final amount:
 
-```
+```perl
 $t=($t+$a)*(1+$r) foreach (1..$term);
 ```
 
@@ -218,7 +218,7 @@ My benchmark is designed in this way, for all three variables in the model, I on
 
 The perl codes from W is wrapped in a file `testPerl.pl`, contents as below:
 
-```
+```perl
 #! usr/bin/perl
 
 use Time::HiRes qw( time );
@@ -235,7 +235,7 @@ printf("Time elapse: %.4f\n", $diff_time);
 
 The test example code for 100 years is `perl testPerl.pl 2400 100 0.03`. The time elapsed for each value of `yearSpan` is recorded in variable `perlCost`, as below:
 
-```
+```perl
 yearSpan:   100     200     500    1000    5000   10000   1e+05   1e+06 
 perlCost: 0.0004  0.0022  0.0050  0.0128  0.0866  0.2450  2.0141 13.3940
 ```
@@ -246,7 +246,7 @@ perlCost: 0.0004  0.0022  0.0050  0.0128  0.0866  0.2450  2.0141 13.3940
 
 I saved W's C codes in to file `testC.c` file, time elapsed calculation is added:
 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -275,13 +275,13 @@ int main (int argc, char** argv){
 
 Then I compiled it on my mac:
 
-```
+```c
 gcc -o testC testC.c
 ```
 
 The test example code for 100 years is `./cTest 2400 0.03 100`. The time elapsed for each value of `yearSpan` is recorded in variable `cCost` as below:
 
-```
+```c
 yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06 
    cCost: 0.0004 0.0007 0.0017 0.0039 0.0335 0.1075 0.8337 2.8035 
 ```
@@ -292,7 +292,7 @@ yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06
 
 Test codes for R version 1 is as below:
 
-```
+```R
 saveEarn <- function(annualPut, annualInterest, saveYears){
     base <- annualPut
     for(i in seq_len(saveYears)){
@@ -322,7 +322,7 @@ for(years in yearSpan){
 
 The time elapsed for each value of `yearSpan` is recorded in variable `R1Cost` as below:
 
-```
+```R
 yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06 
   R1Cost: 0.002  0.005 0.013  0.027  0.171 0.332  3.702  32.343
 ```
@@ -333,7 +333,7 @@ yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06
 
 Test code for R version 2 is as below:
 
-```
+```R
 yearSpan <- c(100, 200, 500, 1000, 5000, 10000, 100000, 1000000)
 R2Cost <- NULL
 
@@ -350,7 +350,7 @@ for(years in yearSpan){
 
 The time elapsed for each value of `yearSpan` is recorded in variable `R2Cost` as below:
 
-```
+```R
 yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06 
   R2Cost: 0.0001 0.0001 0.001 0.002 0.007 0.015  0.179  2.135
 ```
@@ -361,7 +361,7 @@ yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06
 
 I organised B's python codes in to one file named `testPython.py` with contents below:
 
-```
+```python
 #!/usr/bin/python
 import time
 import sys
@@ -380,7 +380,7 @@ print end - start
 
 Then I tested this with different `years`, one example is like `python testPython.py 100`. I run this with no problem with `years` less than 100000, however when I goes to `python testPython.py 100000`, it shows the error below:
 
-```
+```python
 $ python testPython.py 1000000
 Traceback (most recent call last):
   File "testPython.py", line 10, in <module>
@@ -395,7 +395,7 @@ So unlike Perl or R which give a Inf when the output value is extremely big, Pyt
 
 The time elapsed for each value of `yearSpan` is recorded in variable `pythonCost` as below:
 
-```
+```python
   yearSpan:  100    200    500   1000   5000  10000  1e+05  1e+06 
 pythonCost: 0.001  0.002  0.0001 0.002  0.002  0.004  NA      NA
 ```
@@ -406,7 +406,7 @@ pythonCost: 0.001  0.002  0.0001 0.002  0.002  0.004  NA      NA
 
 So I organize all the time elapsed records into one R data frame as below:
 
-```
+```R
 testRes <- data.frame(
     yearSpan = c(100, 200, 500, 1000, 5000, 10000, 100000, 1000000),
     perlCost = c(0.0004, 0.0022, 0.005, 0.0128, 0.0866, 0.2450, 2.0141, 13.3940),
@@ -419,7 +419,7 @@ testRes <- data.frame(
 
 Since `pythonCost` has `NA` values and the corresponding total money amount is `Inf`, I removed those `NA` cases and plotted the time cost using following R codes:
 
-```
+```R
 testRes <- data.frame(
     yearSpan = c(100, 200, 500, 1000, 5000, 10000, 100000, 1000000),
     perlCost = c(0.0004, 0.0022, 0.005, 0.0128, 0.0866, 0.2450, 2.0141, 13.3940),
@@ -448,7 +448,7 @@ We can observe that my R1 version is the slowest, but R2 version is extremly fas
 
 For a complete view of all tests, I also created a plot with all values:
 
-```
+```R
 melt_testRes <- melt(testRes, 
                      id.vars = "yearSpan", 
                      variable.name = "Language", 

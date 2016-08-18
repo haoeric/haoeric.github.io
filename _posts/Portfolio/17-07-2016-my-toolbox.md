@@ -52,7 +52,7 @@ tags: [toolbox]
     [Marxico](https://marxi.co) -- for evernote     
     [Mou](http://25.io/mou/) -- for PC
 - <u>Widgets:</u>       
-    [caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12) -- make the screen on when presentation    
+    [caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12) -- keep the screen on when presentation    
     [AnkiApp](https://www.ankiapp.com) -- knowledge accumulation using flashcard       
     [Noizio](http://noiz.io) -- noise cancelling    
     [Dr. Cleaner](https://itunes.apple.com/us/app/dr.-cleaner-disk-memory-clean/id921458519?mt=12) -- profile of memory, storage, and network.     
@@ -62,6 +62,11 @@ tags: [toolbox]
     [有道词典](http://www.youdao.com)
 
 
+### Macbook 开发环境配置
+
+
+- <u>Terminal:</u>    
+    [bash-it](https://github.com/Bash-it/bash-it) -- a collection of community Bash commands and scripts. (And a shameless ripoff of oh-my-zsh
 
 
 
@@ -73,6 +78,21 @@ tags: [toolbox]
 
 
 
+
+
+
+
+
+
+### 参考链接
+
+- [1] 一个收集非常好用的Mac应用程序,软件以及工具的github仓库 [Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README.md)
+
+- [2] Github仓库 [Mac OS X Dev Setup](https://github.com/nicolashery/mac-dev-setup)
+
+- [3] 李笑来写的[基本开发环境设置](http://xiaolai.li/2016/06/16/makecs-basic-dev-env-settup/)
+
+- [4] 池建强写的[终极shell](http://macshuo.com/?p=676)
 
 
 

@@ -1,11 +1,12 @@
 // Code
 //
 // Inline and block-level code snippets. Includes tweaks to syntax highlighted
-// snippets from Pygments/Rouge and Gist embeds.
+// snippets from Pygments/Rouge and Gist embeds. 
+// font-family:  Menlo, Monaco, "Courier New", monospace;
 
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family:  "Courier New", "Courier New", "Courier New", "Courier New";
 }
 
 code {
@@ -19,6 +20,7 @@ code {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
+  overflow-x: auto;
 }
 
 pre code {
@@ -26,6 +28,7 @@ pre code {
   font-size: 100%;
   color: inherit;
   background-color: transparent;
+  white-space: pre;   
 }
 
 // Pygments via Jekyll
@@ -33,7 +36,7 @@ pre code {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: .8rem;
-  line-height: 1.4;
+  line-height: 1.2;
   background-color: #f9f9f9;
   border-radius: .25rem;
 
@@ -53,26 +56,3 @@ pre code {
             user-select: none;
   }
 }
-
-
-// Gist via GitHub Pages
-// .gist .gist-file {
-//   font-family: Menlo, Monaco, "Courier New", monospace !important;
-// }
-// .gist .markdown-body {
-//   padding: 15px;
-// }
-// .gist pre {
-//   padding: 0;
-//   background-color: transparent;
-// }
-// .gist .gist-file .gist-data {
-//   font-size: .8rem !important;
-//   line-height: 1.4;
-// }
-// .gist code {
-//   padding: 0;
-//   color: inherit;
-//   background-color: transparent;
-//   border-radius: 0;
-// }
