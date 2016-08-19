@@ -13,7 +13,6 @@ markdown:            kramdown
 
 pages_list:       
   Posts: '/posts'
-  Data Analysis: '/dataAnalysis'
   Portfolio: '/portfolio'
   Feed: '/atom.xml'
 
