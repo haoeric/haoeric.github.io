@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 给自己一个赏心悦目的命令行工具
+title: 给自己一个赏心悦目的命令行终端
 comments: true
 categories: [Trivia]
-tags: [github, blog, jekyll]
+tags: [commander, shell, theme]
 ---
 
 > 持续地关注大牛，时间久了就会不断地有意外惊喜（serendipity）发生。大牛们散发出来的光辉，和他们所思考的世界会不断的激励我们去探索，并且绕开许多坑。所以，我想说，**持续地关注大牛是一个优秀的习惯**，数量不要多，一边关注一边思考，持续地学习...最后不一定成为大牛，但是肯定会变优秀，并且更开心。
