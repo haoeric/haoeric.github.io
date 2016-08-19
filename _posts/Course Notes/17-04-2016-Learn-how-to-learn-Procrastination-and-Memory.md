@@ -20,7 +20,7 @@ tags: [LH2L, procrastination, memory]
 
 we procrastinate because the thing makes us a little bit uncomfortable. You think about something you don't particularly like and the pain centers of your brain light up so you shift and narrow your focus of attention to something more enjoyable. This causes you to feel better. At least temporarily but sadly the long term effects of habitual avoidance can be nasty. When you put off your studies it can become even more painful to think about studying it. You can choke on tests because you haven't laid the firm neural foundations you need to feel comfortable with the material.
 
-![](/images/LHL_ Procrastination_and_Memory/p_1.png)
+![](/images/LHL_Procrastination_and_Memory/p_1.png)
 
 Procrastination can be a single monumentally important keystone bad habit, a habit in other words that influences many important areas of your life. If you improve your abilities in this area many other positive changes will gradually begin to unfold. The higher you go in your studies however the more important it is to take control of procrastination. Habits that worked in earlier years can turn around and bite you. You should be making the decisions, not your well-meaning but unthinking zombies, your habits. 
 
@@ -29,7 +29,7 @@ Procrastination can be a single monumentally important keystone bad habit, a hab
 
 The reason that learning to avoid procrastination is so important is that good learning is a bit by bit activity. You want to avoid cramming which doesn't build solid neural structures. By putting the same amount of time into your learning but spacing that learning out by starting earlier you'll learn better. First things first.And you shouldn't waste willpower on fending off procrastination except when absolutely necessary，because willpower uses a lot of neural resources. 
 
-![](/images/LHL_ Procrastination_and_Memory/p_2.png)
+![](/images/LHL_Procrastination_and_Memory/p_2.png)
 
 
 #### Understand habit
@@ -77,11 +77,11 @@ The trick to overriding a habit is to look to change your reaction to a cue. The
 
 Learning for most people involves a complex balancing of many different tasks. A good way for you to keep perspective about what you're trying to learn and accomplish, is to once a week write a brief weekly list of key tasks in a planner journal. 
 
-![](/images/LHL_ Procrastination_and_Memory/p_3.png)
+![](/images/LHL_Procrastination_and_Memory/p_3.png)
 
 Try to write this daily task list the evening before. Why the evening before? Research has shown that this helps your subconscious to grapple with the tasks on the list so you can figure out how to accomplish them. Writing the list before you go to sleep, enlists your zombies, to help you accomplish the items on the list the next day. If you don't write your tasks down on a list, they lurk at the edge of the four or so slots of your working memory, taking up valuable mental real estate. But once you make a task list, it frees working memory for problem solving. 
 
-![](/images/LHL_ Procrastination_and_Memory/p_4.png)
+![](/images/LHL_Procrastination_and_Memory/p_4.png)
 
 let's look at one of my daily task lists. As you can see here, there are only six items. Some are process oriented. For example, I have a paper due to a journal in several months. So, I spend a little focus time on most days working towards completing it. A few items are product oriented. But that is only because they are doable within a limited period of time. Note my reminders. I wanted to keep my focus on each item when I'm working on it. And I want to have fun. Notice my goal finish time for the day, 5 p.m. doesn't seem quite right, does it? But it is right, and it's one of the most important components of your daily planner journal. Planning your quitting time is as important as planning your working time.
 
@@ -97,7 +97,7 @@ Time after time, those who are committed to maintaining healthy leisure time alo
 
 The first is long term memory, which is like a storage warehouse. You need to practice and repeat in order to help store items in long term memory so you can retrieve them more easily. Practicing and repeating, all in one day, is a bad idea. You want to extend your practice to several days. This is why tackling procrastination is important. It helps you build better memories because you start earlier. The second, is working memory, which is like a poor blackboard that quickly fades. You can only hold about four items in your working memory. When you master a technique or concept in some sense, it compacts the ideas so they can occupy less space in your working memory when you do bring them to mind. This frees your mental thinking space so that it can more easily grapple with other ideas.
 
-![](/images/LHL_ Procrastination_and_Memory/p_5.png)
+![](/images/LHL_Procrastination_and_Memory/p_5.png)
 
 #### Apply our visual memory and repetition
 
