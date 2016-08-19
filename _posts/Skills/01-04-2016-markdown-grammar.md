@@ -340,3 +340,4 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 [1] [worldhello:轻量级标记语言](http://www.worldhello.net/gotgithub/appendix/markups.html)  
 [2] [gitbook markdown](http://github.github.com/github-flavored-markdown/)   
 [3] [MarkDown使用小技巧](http://www.jianshu.com/p/9d94660a96f1)
+[4] [用Markdown写blog的常用操作](http://www.cnblogs.com/mo-wang/p/5117819.html)

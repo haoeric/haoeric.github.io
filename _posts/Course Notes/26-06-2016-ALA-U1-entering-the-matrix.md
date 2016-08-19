@@ -39,6 +39,11 @@ A **linear equation** looks like any other equation. It is made up of two expres
 create your own [ASCII Art](http://math365.org/lifeislinear/ASCIIart/ASCIIart.html) 
 
 
+$$
+\forall x \in X, \quad \exists y \leq \epsilon
+$$
+
+
 
 
 
