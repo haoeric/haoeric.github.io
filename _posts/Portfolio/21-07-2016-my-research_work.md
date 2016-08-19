@@ -1,6 +1,6 @@
 ---
 layout: postPortfolio
-title: Research Work
+title: My Research Work
 comments: true
 categories: [Portfolio]
 tags: [research]
@@ -15,7 +15,7 @@ tags: [research]
 - *"Optimization of production conditions for mushroom polysaccharides with high yield and antitumor activity"*. **Carbohydrate Polymers**, 2012. ([Third Author](https://www.researchgate.net/publication/256975016_Optimization_of_production_conditions_for_mushroom_polysaccharides_with_high_yield_and_antitumor_activity))
 
 
-### <u>Bioinformatics Tools Development</u>
+### <u>Bioinformatics Tools</u>
 
 &emsp; ***R packages*** 
 

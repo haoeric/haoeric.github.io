@@ -57,7 +57,7 @@ GitHub使用[kramdown](http://kramdown.gettalong.org)作为Markdown的解析工�
 
 <u>角注示例：</u>
 
-```
+```R
 Text prior to footnote reference 1.[^1]
 
 [^1]: 1 Comment to include in footnote.
