@@ -23,14 +23,12 @@ kramdown:
   syntax_highlighter: rouge
 
 # Plugins
-#
 # use GitHub-flavored Emoji plugin for Jekyll(https://github.com/jekyll/jemoji)  
 gems:
   - jemoji
 
   
 # Assets
-#
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir:          _sass

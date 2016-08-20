@@ -14,7 +14,7 @@ tags: [commander, shell, theme]
 
 MacBook自带的命令行工具其实已经很不错了，只是这个世界上有那么一群默默的开发者，它们对美有一种极致的理解，对懒惰有着某种疯狂的追求，更重要的是他们还天赋异禀。在无数个寂寞的白天和黑夜中，为这个世界打造出各种神兵利器。是他们创造了比Terminal更优秀的[iTerm](https://www.iterm2.com/)，比Finder更好用的[TotalFinder](http://totalfinder.binaryage.com/)，比Spotlight更强大的[Alfred](https://www.alfredapp.com/)...。
 
-好东西要用起来。相比好评如潮的zsh+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)，我还是依然喜欢古典的bash+[bash-it](https://github.com/Bash-it/bash-it)，在`.bash_profile`设置主题`export BASH_IT_THEME='nwinkler'`。换上[iTerm](https://www.iterm2.com/), 然后挨个装[Homebrew](http://brew.sh)，[Git](https://git-scm.com)，[rvm](https://rvm.io)。一气呵成，瞬间觉得一切美好，可是唯独这个字体和配色让我看着有点别扭。平常用R最多，[Rstudio](https://www.rstudio.com)是我的主力开发工具，并且我一直使用其自带的`Cobalt`主题，字体我选`Monaco`。如下：
+好东西要用起来。相比好评如潮的zsh+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)，我还是依然喜欢朴素的bash+[bash-it](https://github.com/Bash-it/bash-it)，在`.bash_profile`设置主题`export BASH_IT_THEME='nwinkler'`。换上[iTerm](https://www.iterm2.com/), 然后挨个装[Homebrew](http://brew.sh)，[Git](https://git-scm.com)，[rvm](https://rvm.io)。一气呵成，瞬间觉得一切美好，可是唯独这个字体和配色让我看着有点别扭。平常用R最多，[Rstudio](https://www.rstudio.com)是我的主力开发工具，并且我一直使用其自带的`Cobalt`主题，字体我选`Monaco`。如下：
 
 ![](/images/codingTheme/Rstudio_theme.png)
 
