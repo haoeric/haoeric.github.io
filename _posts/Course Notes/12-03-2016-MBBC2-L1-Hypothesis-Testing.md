@@ -64,10 +64,8 @@ For example:
 
 ### 6. R test codes
 
-{% highlight r linenos %}
-
+```R
 qnorm(.95)
-
 
 xval <- seq(-3.2, 3.2, length = 1000)
 yval<- dnorm(xval)
@@ -77,7 +75,6 @@ x <- seq(qnorm(.95), 3.2, length = 100)
 polygon(c(x, rev(x)),c(dnorm(x), rep(0, length(x))), col = "salmon")
 text(mean(x), mean(dnorm(x))+.02, "5%", cex = 2)
 text(qnorm(.95), .01, "1.645", cex = 2)
-
 
 plot(xval, yval, type = "l", axes = TRUE, frame = FALSE, lwd = 3, xlab = "", ylab = "")
 x <- seq(qnorm(.975), 3.2, length = 100)
@@ -111,6 +108,5 @@ x <- seq(.8, 4, length = 100)
 polygon(c(x, rev(x)),c(dt(x, 15), rep(0, length(x))), col = "salmon")
 text(mean(x), mean(dt(x, 15))+.02, "22%", cex = 2)
 text(0.8, .01, "0.8", cex = 2)
-
-{% endhighlight %}
+```
 

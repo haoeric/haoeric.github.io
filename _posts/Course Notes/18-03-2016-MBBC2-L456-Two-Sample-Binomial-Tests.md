@@ -65,7 +65,8 @@ In the one sample case, the Wald interval and test performs poorly relative to t
 ![](/images/MBBC2_L456/14.png)
 
 #### 3.2. R code
-{% highlight r linenos %}
+
+```R
 fisher.test(matrix(c(17, 25-17, 8, 20-8), ncol=2))
     Fisher's Exact Test for Count Data
 # data:  matrix(c(17, 25 - 17, 8, 20 - 8), ncol = 2)
@@ -76,9 +77,7 @@ fisher.test(matrix(c(17, 25-17, 8, 20-8), ncol=2))
 # sample estimates:
 # odds ratio 
 #   3.101466 
-{% endhighlight %}
-
-
+```
 
 ### 4. Chi-squared testing
 
@@ -93,7 +92,8 @@ fisher.test(matrix(c(17, 25-17, 8, 20-8), ncol=2))
 ![](/images/MBBC2_L456/19.png)
 
 #### 4.3. R code
-{% highlight r linenos %}
+
+```R
 prop.test(c(17,8),c(25,20),correct=FALSE)
 # 
 #     2-sample test for equality of proportions without continuity correction
@@ -106,7 +106,7 @@ prop.test(c(17,8),c(25,20),correct=FALSE)
 # sample estimates:
 # prop 1 prop 2 
 #   0.68   0.40 
-{% endhighlight %}
+```
 
 In the case of small samples (low value of n), you must specify `correct = TRUE`, so as to change the computation of chi-square based on the continuity of Yates
 

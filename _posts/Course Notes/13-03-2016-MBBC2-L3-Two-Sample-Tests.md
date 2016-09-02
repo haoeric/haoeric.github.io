@@ -25,8 +25,7 @@ tags: [MBBC2, stastics, R]
 
 #### R Code
 
-{% highlight r linenos %}
-
+```R
 diff <- test2 - test1
 n <- sum(!is.na(diff)) #49
 mean(diff) #2.88
@@ -36,8 +35,7 @@ testStat <- sqrt(n) * mean(diff) / sd(diff) #2.65
 2 * pt(abs(testStat), n -1, lower.tail = FALSE)
 ##uses the R function
 t.test(diff)
-
-{% endhighlight %}
+```
 
 #### Discussion of matched data
 

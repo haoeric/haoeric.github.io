@@ -13,7 +13,7 @@ My problem is to compare rows between two matrix and get the match ID. More exac
 
 My first idea was to claculate the distance between rows of matrix x and matrix y. To solve the memory limit for big distance matrix, I cut matrix x into chunks. Without *data.table*, I wrote a funciton like this below:
 
-{% highlight r linenos %}
+```R
 
 rowMatch <- function(x,y){
     mid <- NULL
@@ -67,11 +67,11 @@ splitFactorGenerator <- function(rowNum, colNum){
     }
     return(splitFactor)
 }
-{% endhighlight %}
+```
 
 But this is fairly slow, especially when the matrix is big. So I started to search for some fast methods. I found this similar question on [stackoverflow](http://stackoverflow.com/questions/9316946/comparing-rows-between-two-matrices) which shows the usage of *data.table*. But that doesn't return the original ID of y, so I modified a little bit to get my second version of `rowMatch` as below:
 
-{% highlight r linenos %}
+```R
 require(data.table)
 rowMatch2 <- function(x,y){
 
@@ -103,6 +103,6 @@ rowMatch2 <- function(x,y){
   }
   return(as.integer(mo))
 }
-{% endhighlight %}
+```
 
 It's incrediablely fast, I will figure it out and really need to equip with this hack tool for data manipulation.

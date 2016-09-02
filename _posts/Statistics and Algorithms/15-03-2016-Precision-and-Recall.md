@@ -2,7 +2,7 @@
 layout: post
 title: Precision and Recall
 comments: true
-categories: [Statistics]
+categories: [Statistics and Algorithms]
 tags: [Statistics, R]
 ---
 

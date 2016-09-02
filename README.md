@@ -21,8 +21,9 @@
 - add formula support: add file `mathJax_support.html` under `_include`[^1], and modify the `styles.scss` file[^2].
   [^1]: http://www.cnblogs.com/mo-wang/p/5117819.html
   [^2]: http://galaxysd.us/blog/20120723/latex-in-jekyll
-- add code highlight: add file `_sass/_syntax.scss` with contents copied from[^3], modify the background color to `#04213a`, modify the fonts in `_sass/_code.scss` with `font-family:  "Courier New", "Courier New", "Courier New", "Courier New";`. In `_config.yml` file, add `syntax_highlighter: rouge` following[^4].
-  [^3]: https://github.com/vgaidarji/vgaidarji.github.io/blob/master/css/theme-son-of-obsidian.css
+  
+- add code highlight: add file `_sass/_syntax.scss` with contents copied from[^3], modify the fonts in `_sass/_code.scss` with `font-family:  "Courier New", "Courier New", "Courier New", "Courier New";`. In `_config.yml` file, add `syntax_highlighter: rouge` following[^4].
+  [^3]: https://gist.github.com/demisx/8408522
   [^4]: https://sacha.me/articles/jekyll-rouge/
     
 
