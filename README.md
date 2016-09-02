@@ -18,7 +18,7 @@
 
 ## Configuration
 
-- add formula support: add file `mathJax_support.html` under `_include`[^1], and modify the `styles.scss` file[^2].
+- add formula support: add file `mathJax_support.html` under `_include`[^1], and modify the `styles.scss` file[^2]. Now can use [LaTeX](https://en.wikibooks.org/wiki/LaTeX/Mathematics) syntax to write formulas.
   [^1]: http://www.cnblogs.com/mo-wang/p/5117819.html
   [^2]: http://galaxysd.us/blog/20120723/latex-in-jekyll
   
