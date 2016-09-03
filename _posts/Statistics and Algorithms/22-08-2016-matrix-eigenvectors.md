@@ -99,7 +99,6 @@ $$
     ||\overrightarrow{u}|| \ ||\overrightarrow{v}|| \cdot 0 = 0
     $$
 
-这几个特性先了解一下(Keep in mind)，在后续的[PCA一文]()中我们再来看这几个运算的妙用。
 
 ## 3. 两个矩阵点乘的几何意义
 
