@@ -1,5 +1,6 @@
 _site/
 _drafts/
+_cache/
 .Rproj.user
 haoeric.github.io.Rproj
 .sass-cache

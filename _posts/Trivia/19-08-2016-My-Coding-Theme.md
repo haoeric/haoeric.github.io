@@ -24,7 +24,7 @@ ASCII编码和non-ASCII编码我都使用相同的`Monaco`字体，这个字体�
 
 ![](/images/codingTheme/iterm_font.png)  
 
-颜色使用Mac自带的取色器，在Rstudio中获取对应的颜色，非常方便。
+颜色使用Mac自带的取色器（或者[sip](http://sipapp.io)），在Rstudio中获取对应的颜色，非常方便。
 ![](/images/codingTheme/iterm_color.png)   
 
 配置完之后保存profile, 然后重启iTerm。一切都好了，全身舒畅，终于可以踏实地工作了...
