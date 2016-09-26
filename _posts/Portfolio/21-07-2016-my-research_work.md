@@ -8,6 +8,8 @@ tags: [research]
 
 ### <u>Paper</u>
 
+- *"Cytofkit: A Bioconductor Package for an Integrated Mass Cytometry Data Analysis Pipeline"*. **PLoS Comput Biol**, 2016.([First Author](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1005112))
+
 - *"flowAI: automatic and interactive anomaly discerning tools for flow cytometry"*. **Bioinformatics**, 2016. ([Second Author](http://bioinformatics.oxfordjournals.org/content/early/2016/05/06/bioinformatics.btw191))
 
 - *"ARG-walker: Inference of Individual Specific Strengths of Meiotic Recombination Hotspots by Population Genomics Analysis"*. **BMC Bioinformatics**, 2015. ([First Author](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S12-S1))
@@ -23,7 +25,7 @@ tags: [research]
 - [flowAI](https://bioconductor.org/packages/flowAI/) Automatic and interactive quality control for flow cytometry data. (Ranked among top 50% on [Bioconductor](http://bioconductor.org/packages/stats/bioc/flowAI/), with average 100 download times per month)
 - [ClusterX](https://github.com/JinmiaoChenLab/ClusterX) A tool for visualizing the high-dimensional mass cytometry data as well as automatically detecting cell populations by fast density-based clustering, generally applicable to any multi-parametric data.
 - [RphenoGraph](https://github.com/JinmiaoChenLab/Rphenograph) R implementation of PhenoGraph , a fast and accurate high-dimensional clustering algorithm.
-- [uSPIN](https://github.com/SIgNBioinfo/uSPIN) An integrated single cell ordering pipeline.
+- [uSORT](https://github.com/JinmiaoChenLab/uSORT) A self-refining ordering pipeline for gene selection.
 
 &emsp; ***Shiny APP*** 
 
