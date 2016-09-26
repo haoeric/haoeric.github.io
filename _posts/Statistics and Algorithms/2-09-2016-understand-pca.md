@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一文捋清PCA（No Bullshit PCA）
+title: 一文缕清PCA（No Bullshit PCA）
 comments: true
 categories: [Statistics and Algorithms]
 tags: [PCA, eigenvalues, eigenvectors, 降维]
