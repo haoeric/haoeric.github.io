@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 人类发展历史年表
+title: 人类大历史
 comments: true
 categories: [History]
 tags: [big, history]

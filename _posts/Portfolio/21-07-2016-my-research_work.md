@@ -8,7 +8,7 @@ tags: [research]
 
 ### <u>Paper</u>
 
-- *"Cytofkit: A Bioconductor Package for an Integrated Mass Cytometry Data Analysis Pipeline"*. **PLoS Comput Biol**, 2016.([First Author](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1005112))
+- *"Cytofkit: A Bioconductor Package for an Integrated Mass Cytometry Data Analysis Pipeline"*. **PLoS Comput Biol**, 2016. ([First Author](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1005112))
 
 - *"flowAI: automatic and interactive anomaly discerning tools for flow cytometry"*. **Bioinformatics**, 2016. ([Second Author](http://bioinformatics.oxfordjournals.org/content/early/2016/05/06/bioinformatics.btw191))
 
