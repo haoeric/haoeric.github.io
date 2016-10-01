@@ -143,3 +143,4 @@ For 2–class models, Receiver Operating Characteristic (**ROC**) curves can be 
  * [Accuracy and precision](http://www.wikiwand.com/en/Accuracy_and_precision)
  * [Binary classification](http://www.wikiwand.com/en/Binary_classification)
  * [Cohen's Kappa](http://www.wikiwand.com/en/Cohen%27s_kappa)
+ * [Kappa statistic in plain English](http://stats.stackexchange.com/questions/82162/kappa-statistic-in-plain-english)
