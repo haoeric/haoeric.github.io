@@ -50,20 +50,24 @@ tags: [toolbox]
     Keynotes + Powerpoint
 - <u>Markdown:</u>      
     [Marxico](https://marxi.co) -- for evernote     
-    [Mou](http://25.io/mou/) -- for PC
+    [Mou](http://25.io/mou/) -- for PC    
+    [Typora](http://www.typora.io) -- a minimal markdown writing reading & writing app  
+    [MWeb](http://www.mweb.im) -- the most powerful markdown editor    
 - <u>Widgets:</u>       
     [caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12) -- keep the screen on when presentation    
     [AnkiApp](https://www.ankiapp.com) -- knowledge accumulation using flashcard       
     [Noizio](http://noiz.io) -- noise cancelling    
     [Dr. Cleaner](https://itunes.apple.com/us/app/dr.-cleaner-disk-memory-clean/id921458519?mt=12) -- profile of memory, storage, and network.     
-    [Snappy](http://go-snappy.com) -- easy manage, edit and share screen snapshots
-- <u>Dictionary:</u>       
+    [Snappy](http://go-snappy.com) -- easy manage, edit and share screen snapshots   
+    [Go2Shell](http://zipzapmac.com/go2shell) -- go to shell from Finder   
+    [CheatSheet](https://www.mediaatelier.com/CheatSheet/) -- cheat sheet for any app   
+    [Pngyu](http://nukesaq88.github.io/Pngyu/) -- simple PNG image file compression tool 
+- <u>Dictionary:</u>  
     [欧陆词典](http://www.eudic.net)     
     [有道词典](http://www.youdao.com)
 
 
 ### Macbook 开发环境配置
-
 
 - <u>Terminal:</u>    
     [bash-it](https://github.com/Bash-it/bash-it) -- a collection of community Bash commands and scripts. (And a shameless ripoff of oh-my-zsh
