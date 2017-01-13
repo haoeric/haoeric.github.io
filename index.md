@@ -21,7 +21,7 @@ title: Welcome
 
 - Find a data analysis competetion on [Kaggle](https://www.kaggle.com)
 
-- Search for interesting open source projects using [Github](https://github.com/haoeric)
+- Search for interesting open source projects from [Github](https://github.com/haoeric)
 
 - Read my [posts]({{ site.BASE_PATH }}/posts/) 
 
