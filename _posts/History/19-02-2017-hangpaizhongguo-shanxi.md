@@ -1,10 +1,9 @@
 ---
-title: "航拍中国-陕西"
-author: "Chen Hao"
-comments: yes
 layout: post
-tags: 陕西
-categories: History
+title: "航拍中国-陕西"
+comments: yes
+categories: [History]
+tags: [陕西, history]
 ---
 
 

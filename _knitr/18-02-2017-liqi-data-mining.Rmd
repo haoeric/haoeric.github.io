@@ -1,0 +1,93 @@
+---
+layout: postDataAnalysis
+title: "利器排行榜"
+comments: true
+categories: [Data Analysis]
+tags: [liqi, data mining]
+---
+
+关注[利器](http://liqi.io)这个网站有些时间了，某天突然想把里面推荐的利器写个爬虫程序爬下来然后做个分析。找个周末，就把这个事做了，有了这个MVP (minimum variable product)。爬虫用python强大的scrapy包完成，代码放在[github](https://github.com/haoeric/liqiSpider)。
+
+```{r}
+## loading data, file "liqi_data_tidy.csv" can be found in above github link
+library(dplyr)
+library(wordcloud)
+library(ggplot2)
+
+liqi_data <- read.csv(file="liqi_data_tidy.csv", header = TRUE, row.names = 1, stringsAsFactors = FALSE)
+```
+
+
+## 分享达人榜单
+
+```{r}
+fxdr <- liqi_data %>% 
+    group_by(author) %>%
+    summarise(toolCounts = n(), source = unique(source)) %>%
+    arrange(desc(toolCounts)) 
+```
+
+### 分享达人前二十名
+
+> 排名标准：推荐的利器数量越多，排名越靠前
+
+```{r}
+kable(fxdr[1:20, ])
+```
+
+### 分享达人云图
+
+```{r, dev='png'}
+par(family = "STHeiti")
+wordcloud(fxdr$author, fxdr$toolCounts, colors=brewer.pal(8, "Dark2"))
+```
+
+
+## 利器排行
+
+```{r}
+lqph <- liqi_data %>% 
+    group_by(tools) %>%
+    summarise(toolCounts = n(), link = links[1], source = source[1]) %>%
+    arrange(desc(toolCounts)) 
+```
+
+### 利器推荐榜前20名
+
+> 排名标准：被推荐的次数越多，排名越靠前
+
+用柱状图来看看：
+
+```{r}
+ggplot(lqph[1:20, ], aes(x = factor(tools, levels = lqph$tools[1:20]), y = toolCounts)) + geom_bar(stat = "identity", fill="lightgreen") + theme_bw() + theme(axis.text.x = element_text(angle = 90, hjust = 1, face = "bold")) + geom_text(stat='identity',aes(label=toolCounts), vjust=-0.1) + xlab("") + ylab("sharetimes")
+```
+
+详情：
+
+```{r}
+kable(lqph[1:20, ])
+```
+
+
+## 利器云图
+
+被推荐一次以上的利器总共有`lqph[lqph$toolCounts > 1, ]`个，放在云图里如下
+    
+```{r, dev='png'}
+par(family = "STHeiti")
+wordcloud(lqph$tools, lqph$toolCounts, min.freq=2, colors=brewer.pal(8, "Dark2"))
+```
+
+
+## 看看那些冷门的推荐利器
+
+那些只被推荐一次的利器总共有`lqph[lqph$toolCounts == 1, ]`个, 随机挑选20个来看看：
+
+```{r}
+set.seed(20)
+lmlq <- lqph[lqph$toolCounts == 1, ]
+lmlq_count <- nrow(lmlq)
+kable(lmlq[sample(1:lmlq_count, 20), ])
+```
+
+
