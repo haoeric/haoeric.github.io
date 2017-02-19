@@ -18,7 +18,7 @@ liqi_data <- read.csv(file="liqi_data_tidy.csv", header = TRUE, row.names = 1, s
 ```
 
 
-## 分享达人榜单
+## 1. 分享达人榜单
 
 ```{r}
 fxdr <- liqi_data %>% 
@@ -27,7 +27,7 @@ fxdr <- liqi_data %>%
     arrange(desc(toolCounts)) 
 ```
 
-### 分享达人前二十名
+#### 分享达人前二十名
 
 > 排名标准：推荐的利器数量越多，排名越靠前
 
@@ -35,15 +35,15 @@ fxdr <- liqi_data %>%
 kable(fxdr[1:20, ])
 ```
 
-### 分享达人云图
+#### 分享达人云图
 
 ```{r, dev='png', fig.retina = 2}
 par(family = "STHeiti")
-wordcloud(fxdr$author, fxdr$toolCounts, colors=brewer.pal(8, "Dark2"))
+wordcloud(fxdr$author, fxdr$toolCounts, random.order = FALSE, colors=brewer.pal(8, "Dark2"))
 ```
 
 
-## 利器排行
+## 2. 利器排行
 
 ```{r}
 lqph <- liqi_data %>% 
@@ -52,7 +52,7 @@ lqph <- liqi_data %>%
     arrange(desc(toolCounts)) 
 ```
 
-### 利器推荐榜前20名
+#### 利器推荐榜前20名
 
 > 排名标准：被推荐的次数越多，排名越靠前
 
@@ -69,17 +69,17 @@ kable(lqph[1:20, ])
 ```
 
 
-## 利器云图
+#### 利器云图
 
-被推荐一次以上的利器总共有`r nrow(lqph[lqph$toolCounts > 1, ])`个，放在云图里如下
+被推荐两次以上的利器总共有`r nrow(lqph[lqph$toolCounts > 2, ])`个，放在云图里如下
     
 ```{r, dev='png', fig.retina = 2}
 par(family = "STHeiti")
-wordcloud(lqph$tools, lqph$toolCounts, min.freq=2, colors=brewer.pal(8, "Dark2"))
+wordcloud(lqph$tools, lqph$toolCounts, min.freq=3, random.order = FALSE, colors=brewer.pal(8, "Dark2"))
 ```
 
 
-## 看看那些冷门的推荐利器
+#### 看看那些冷门的推荐利器
 
 那些只被推荐一次的利器总共有`r nrow(lqph[lqph$toolCounts == 1, ])`个, 随机挑选20个来看看：
 

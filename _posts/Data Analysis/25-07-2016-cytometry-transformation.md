@@ -764,20 +764,20 @@ sessionInfo()
 ## 
 ## other attached packages:
 ## [1] flowCore_1.40.3    ggplot2_2.2.1      knitr_1.15.1      
-## [4] dplyr_0.5.0        wordcloud_2.5      RColorBrewer_1.1-2
+## [4] wordcloud_2.5      RColorBrewer_1.1-2 dplyr_0.5.0       
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] pcaPP_1.9-61        Rcpp_0.12.9         DEoptimR_1.0-8     
-##  [4] plyr_1.8.4          highr_0.6           tools_3.3.2        
-##  [7] digest_0.6.12       evaluate_0.10       tibble_1.2         
-## [10] gtable_0.2.0        lattice_0.20-34     graph_1.52.0       
-## [13] DBI_0.5-1           parallel_3.3.2      mvtnorm_1.0-5      
-## [16] stringr_1.1.0       cluster_2.0.5       stats4_3.3.2       
-## [19] grid_3.3.2          robustbase_0.92-7   Biobase_2.34.0     
-## [22] R6_2.2.0            rrcov_1.4-3         corpcor_1.6.8      
-## [25] magrittr_1.5        scales_0.4.1        matrixStats_0.51.0 
-## [28] BiocGenerics_0.20.0 assertthat_0.1      colorspace_1.3-2   
-## [31] labeling_0.3        stringi_1.1.2       lazyeval_0.2.0     
-## [34] munsell_0.4.3       slam_0.1-40
+##  [1] graph_1.52.0        Rcpp_0.12.9         cluster_2.0.5      
+##  [4] magrittr_1.5        BiocGenerics_0.20.0 munsell_0.4.3      
+##  [7] lattice_0.20-34     colorspace_1.3-2    rrcov_1.4-3        
+## [10] R6_2.2.0            pcaPP_1.9-61        stringr_1.1.0      
+## [13] highr_0.6           plyr_1.8.4          tools_3.3.2        
+## [16] parallel_3.3.2      grid_3.3.2          Biobase_2.34.0     
+## [19] gtable_0.2.0        DBI_0.5-1           corpcor_1.6.8      
+## [22] matrixStats_0.51.0  digest_0.6.12       lazyeval_0.2.0     
+## [25] assertthat_0.1      tibble_1.2          robustbase_0.92-7  
+## [28] evaluate_0.10       slam_0.1-40         labeling_0.3       
+## [31] stringi_1.1.2       DEoptimR_1.0-8      scales_0.4.1       
+## [34] stats4_3.3.2        mvtnorm_1.0-5
 {% endhighlight %}
 

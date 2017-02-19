@@ -19,7 +19,7 @@ liqi_data <- read.csv(file="liqi_data_tidy.csv", header = TRUE, row.names = 1, s
 {% endhighlight %}
 
 
-## 分享达人榜单
+## 1. 分享达人榜单
 
 
 {% highlight r %}
@@ -29,7 +29,7 @@ fxdr <- liqi_data %>%
     arrange(desc(toolCounts)) 
 {% endhighlight %}
 
-### 分享达人前二十名
+#### 分享达人前二十名
 
 > 排名标准：推荐的利器数量越多，排名越靠前
 
@@ -63,18 +63,18 @@ kable(fxdr[1:20, ])
 |大狗熊    |         49|http://liqi.io/bearbig/     |
 |江宏      |         49|http://liqi.io/jianghong/   |
 
-### 分享达人云图
+#### 分享达人云图
 
 
 {% highlight r %}
 par(family = "STHeiti")
-wordcloud(fxdr$author, fxdr$toolCounts, colors=brewer.pal(8, "Dark2"))
+wordcloud(fxdr$author, fxdr$toolCounts, random.order = FALSE, colors=brewer.pal(8, "Dark2"))
 {% endhighlight %}
 
 <img src="/figures/18-02-2017-liqi-data-mining/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="504" />
 
 
-## 利器排行
+## 2. 利器排行
 
 
 {% highlight r %}
@@ -84,7 +84,7 @@ lqph <- liqi_data %>%
     arrange(desc(toolCounts)) 
 {% endhighlight %}
 
-### 利器推荐榜前20名
+#### 利器推荐榜前20名
 
 > 排名标准：被推荐的次数越多，排名越靠前
 
@@ -130,20 +130,20 @@ kable(lqph[1:20, ])
 |iPad        |         16|http://www.apple.com/ipad/                                      |http://liqi.io/songshaopeng/ |
 
 
-## 利器云图
+#### 利器云图
 
-被推荐一次以上的利器总共有454个，放在云图里如下
+被推荐两次以上的利器总共有229个，放在云图里如下
     
 
 {% highlight r %}
 par(family = "STHeiti")
-wordcloud(lqph$tools, lqph$toolCounts, min.freq=2, colors=brewer.pal(8, "Dark2"))
+wordcloud(lqph$tools, lqph$toolCounts, min.freq=3, random.order = FALSE, colors=brewer.pal(8, "Dark2"))
 {% endhighlight %}
 
 <img src="/figures/18-02-2017-liqi-data-mining/unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="504" />
 
 
-## 看看那些冷门的推荐利器
+#### 看看那些冷门的推荐利器
 
 那些只被推荐一次的利器总共有2996个, 随机挑选20个来看看：
 
