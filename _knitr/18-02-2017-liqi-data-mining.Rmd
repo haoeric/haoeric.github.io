@@ -37,7 +37,7 @@ kable(fxdr[1:20, ])
 
 ### 分享达人云图
 
-```{r, dev='png'}
+```{r, dev='png', fig.retina = 2}
 par(family = "STHeiti")
 wordcloud(fxdr$author, fxdr$toolCounts, colors=brewer.pal(8, "Dark2"))
 ```
@@ -71,9 +71,9 @@ kable(lqph[1:20, ])
 
 ## 利器云图
 
-被推荐一次以上的利器总共有`lqph[lqph$toolCounts > 1, ]`个，放在云图里如下
+被推荐一次以上的利器总共有`r nrow(lqph[lqph$toolCounts > 1, ])`个，放在云图里如下
     
-```{r, dev='png'}
+```{r, dev='png', fig.retina = 2}
 par(family = "STHeiti")
 wordcloud(lqph$tools, lqph$toolCounts, min.freq=2, colors=brewer.pal(8, "Dark2"))
 ```
@@ -81,13 +81,13 @@ wordcloud(lqph$tools, lqph$toolCounts, min.freq=2, colors=brewer.pal(8, "Dark2")
 
 ## 看看那些冷门的推荐利器
 
-那些只被推荐一次的利器总共有`lqph[lqph$toolCounts == 1, ]`个, 随机挑选20个来看看：
+那些只被推荐一次的利器总共有`r nrow(lqph[lqph$toolCounts == 1, ])`个, 随机挑选20个来看看：
 
 ```{r}
 set.seed(20)
 lmlq <- lqph[lqph$toolCounts == 1, ]
 lmlq_count <- nrow(lmlq)
-kable(lmlq[sample(1:lmlq_count, 20), ])
+kable(lmlq[sample(1:lmlq_count, 20), c(1,2,4)])
 ```
 
 

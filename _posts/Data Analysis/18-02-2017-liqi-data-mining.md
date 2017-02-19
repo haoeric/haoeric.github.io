@@ -71,7 +71,7 @@ par(family = "STHeiti")
 wordcloud(fxdr$author, fxdr$toolCounts, colors=brewer.pal(8, "Dark2"))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-4](/figures/18-02-2017-liqi-data-mining/unnamed-chunk-4-1.png)
+<img src="/figures/18-02-2017-liqi-data-mining/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="504" />
 
 
 ## 利器排行
@@ -132,7 +132,7 @@ kable(lqph[1:20, ])
 
 ## 利器云图
 
-被推荐一次以上的利器总共有`lqph[lqph$toolCounts > 1, ]`个，放在云图里如下
+被推荐一次以上的利器总共有454个，放在云图里如下
     
 
 {% highlight r %}
@@ -140,44 +140,44 @@ par(family = "STHeiti")
 wordcloud(lqph$tools, lqph$toolCounts, min.freq=2, colors=brewer.pal(8, "Dark2"))
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-8](/figures/18-02-2017-liqi-data-mining/unnamed-chunk-8-1.png)
+<img src="/figures/18-02-2017-liqi-data-mining/unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="504" />
 
 
 ## 看看那些冷门的推荐利器
 
-那些只被推荐一次的利器总共有`lqph[lqph$toolCounts == 1, ]`个, 随机挑选20个来看看：
+那些只被推荐一次的利器总共有2996个, 随机挑选20个来看看：
 
 
 {% highlight r %}
 set.seed(20)
 lmlq <- lqph[lqph$toolCounts == 1, ]
 lmlq_count <- nrow(lmlq)
-kable(lmlq[sample(1:lmlq_count, 20), ])
+kable(lmlq[sample(1:lmlq_count, 20), c(1,2,4)])
 {% endhighlight %}
 
 
 
-|tools                                                       | toolCounts|link                                                                              |source                        |
-|:-----------------------------------------------------------|----------:|:---------------------------------------------------------------------------------|:-----------------------------|
-|樱木A4 透写台                                               |          1|http://item.jd.com/1605427084.html                                                |http://liqi.io/shine/         |
-|单行道                                                      |          1|https://book.douban.com/subject/1729284/                                          |http://liqi.io/miyu/          |
-|GoPro Hero 4 Silver                                         |          1|http://www.amazon.com/GoPro-CHDHY-401-HERO4-SILVER/dp/B00NIYJF6U                  |http://liqi.io/bearbig/       |
-|PowerBook G4 667                                            |          1|https://zh.wikipedia.org/wiki/PowerBook_G4                                        |http://liqi.io/gongchen/      |
-|论中国                                                      |          1|https://book.douban.com/subject/19920715/                                         |http://liqi.io/wangtao/       |
-|钟颖                                                        |          1|https://www.zhihu.com/people/ios_dev                                              |http://liqi.io/zhongying/     |
-|Aquamacs                                                    |          1|http://aquamacs.org/                                                              |http://liqi.io/yedingding/    |
-|AirPort Time Capsule                                        |          1|http://www.apple.com/cn/airport-time-capsule/                                     |http://liqi.io/guling/        |
-|Hue                                                         |          1|http://www2.meethue.com/zh-CN/                                                    |http://liqi.io/liuchengyin/   |
-|JPEGmini                                                    |          1|http://www.jpegmini.com                                                           |http://liqi.io/tangshenggang/ |
-|X500                                                        |          1|http://detail.zol.com.cn/cell_phone/index1100714.shtml                            |http://liqi.io/lvyesu/        |
-|养猫                                                        |          1|http://luckycats.org.cn/adopt                                                     |http://liqi.io/sunqi/         |
-|《Bakuman》                                                 |          1|https://zh.wikipedia.org/wiki/%E7%88%86%E6%BC%AB%E7%8E%8B%E3%80%82                |http://liqi.io/lvmunan/       |
-|三星 WD80J7260GX/SC 洗烘一体机                              |          1|https://item.jd.com/1791056862.html                                               |http://liqi.io/guotingting/   |
-|Dell UltraSharp U2414H 23.8 inch Widescreen IPS LCD Monitor |          1|http://item.jd.com/1003062.html                                                   |http://liqi.io/maobojue/      |
-|Moto X                                                      |          1|https://www.motorola.com/us/motomaker?pid=FLEXR2                                  |http://liqi.io/cuiqiwen/      |
-|http://www.mobile-patterns.com/                             |          1|http://www.mobile-patterns.com/                                                   |http://liqi.io/duanxianzhou/  |
-|Ballpark                                                    |          1|http://www.getballpark.com/                                                       |http://liqi.io/duxiao/        |
-|G胖                                                         |          1|https://zh.wikipedia.org/wiki/%E5%8A%A0%E5%B8%83%C2%B7%E7%BA%BD%E7%BB%B4%E5%B0%94 |http://liqi.io/haimaoluohewu/ |
-|小米智能家居套装                                            |          1|http://home.mi.com/index.html                                                     |http://liqi.io/cuiqiwen/      |
+|tools                                                       | toolCounts|source                        |
+|:-----------------------------------------------------------|----------:|:-----------------------------|
+|樱木A4 透写台                                               |          1|http://liqi.io/shine/         |
+|单行道                                                      |          1|http://liqi.io/miyu/          |
+|GoPro Hero 4 Silver                                         |          1|http://liqi.io/bearbig/       |
+|PowerBook G4 667                                            |          1|http://liqi.io/gongchen/      |
+|论中国                                                      |          1|http://liqi.io/wangtao/       |
+|钟颖                                                        |          1|http://liqi.io/zhongying/     |
+|Aquamacs                                                    |          1|http://liqi.io/yedingding/    |
+|AirPort Time Capsule                                        |          1|http://liqi.io/guling/        |
+|Hue                                                         |          1|http://liqi.io/liuchengyin/   |
+|JPEGmini                                                    |          1|http://liqi.io/tangshenggang/ |
+|X500                                                        |          1|http://liqi.io/lvyesu/        |
+|养猫                                                        |          1|http://liqi.io/sunqi/         |
+|《Bakuman》                                                 |          1|http://liqi.io/lvmunan/       |
+|三星 WD80J7260GX/SC 洗烘一体机                              |          1|http://liqi.io/guotingting/   |
+|Dell UltraSharp U2414H 23.8 inch Widescreen IPS LCD Monitor |          1|http://liqi.io/maobojue/      |
+|Moto X                                                      |          1|http://liqi.io/cuiqiwen/      |
+|http://www.mobile-patterns.com/                             |          1|http://liqi.io/duanxianzhou/  |
+|Ballpark                                                    |          1|http://liqi.io/duxiao/        |
+|G胖                                                         |          1|http://liqi.io/haimaoluohewu/ |
+|小米智能家居套装                                            |          1|http://liqi.io/cuiqiwen/      |
 
 
