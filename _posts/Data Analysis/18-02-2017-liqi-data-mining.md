@@ -6,7 +6,7 @@ categories: [Data Analysis]
 tags: [liqi, data mining]
 ---
 
-关注[利器](http://liqi.io)这个网站有些时间了，某天突然想把里面推荐的利器写个爬虫程序爬下来然后做个分析。找个周末，就把这个事做了，有了这个MVP (minimum variable product)。爬虫用python强大的scrapy包完成，代码放在[github](https://github.com/haoeric/liqiSpider)。
+关注[利器](http://liqi.io)这个网站有些时间了，某天突然想把里面推荐的利器写个爬虫程序爬下来然后做个分析。找个周末，就把这个事给做了，然后有了这个MVP (minimum variable product)。爬虫用python强大的scrapy包完成，代码放在[github](https://github.com/haoeric/liqiSpider)。这里只是初步的分析，有很多地方需要改善，同时也有很多有意思的事情可以做，会在这里陆续更新。
 
 
 {% highlight r %}
@@ -18,6 +18,7 @@ library(ggplot2)
 liqi_data <- read.csv(file="liqi_data_tidy.csv", header = TRUE, row.names = 1, stringsAsFactors = FALSE)
 {% endhighlight %}
 
+截至到2017年2月18号，爬虫出来总共180 位利器分享者，分享工具总计3450个。
 
 ## 1. 分享达人榜单
 

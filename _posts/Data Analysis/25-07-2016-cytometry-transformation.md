@@ -763,8 +763,8 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] flowCore_1.40.3    ggplot2_2.2.1      knitr_1.15.1      
-## [4] wordcloud_2.5      RColorBrewer_1.1-2 dplyr_0.5.0       
+## [1] flowCore_1.40.3    ggplot2_2.2.1      wordcloud_2.5     
+## [4] RColorBrewer_1.1-2 dplyr_0.5.0        knitr_1.15.1      
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] graph_1.52.0        Rcpp_0.12.9         cluster_2.0.5      
