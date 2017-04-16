@@ -9,9 +9,7 @@ group: navigation
 
 <!-- all categories except data analysis -->
 <article>
-  <h3>{{ site.categories.size }}</h3>
   {% for category in site.categories %}
-    <h3>{{ category[0] }}</h3>
     {% if category[0] != "Portfolio"%}
       <div>
       <a name="{{category[0]}}"></a>

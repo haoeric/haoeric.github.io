@@ -26,6 +26,7 @@ tags: [research]
 - [ClusterX](https://github.com/JinmiaoChenLab/ClusterX) A tool for visualizing the high-dimensional mass cytometry data as well as automatically detecting cell populations by fast density-based clustering, generally applicable to any multi-parametric data.
 - [RphenoGraph](https://github.com/JinmiaoChenLab/Rphenograph) R implementation of PhenoGraph , a fast and accurate high-dimensional clustering algorithm.
 - [uSORT](https://github.com/JinmiaoChenLab/uSORT) A self-refining ordering pipeline for gene selection.
+- [StackedDensityPlot](https://github.com/haoeric/StackedDensityPlot) A flexible and easy-to-use function for building stacked density plot based on ggplot2.
 
 &emsp; ***Shiny APP*** 
 
