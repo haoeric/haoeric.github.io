@@ -10,6 +10,7 @@ url:                 http://haoeric.com
 paginate:            5
 baseurl:             ""
 markdown:            kramdown
+encoding:            "utf-8"
 
 pages_list:       
   Posts: '/posts'
