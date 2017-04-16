@@ -23,6 +23,8 @@ title: Welcome
 
 - Search for interesting open source projects from [Github](https://github.com/haoeric)
 
+- Practice your keyboard typing from [typing](https://www.typing.com/student)
+
 - Read my [posts]({{ site.BASE_PATH }}/posts/) 
 
 - Look into my [portfolio]({{ site.BASE_PATH }}/portfolio/)
