@@ -6,16 +6,14 @@ group: navigation
 
 <hr>
 
-<!-- posts under category data analysis -->
+<!-- posts under category Portfolio -->
 {% for category in site.categories %}
    {% if category[0] == "Portfolio" %}
         {% assign pages_list = category[1] %}
         {% for node in pages_list %}
           {% if node.title != null %}
-            {% if group == null or group == node.group %}
-               &raquo; <a href="{{ site.BASE_PATH }}{{node.url}}">{{ node.title }}</a>
-               <br>
-            {% endif %}
+            &raquo; <a href="{{ site.BASE_PATH }}{{node.url}}">{{ node.title }}</a>
+            <br>
           {% endif %}
         {% endfor %}
         {% assign pages_list = nil %}

@@ -18,9 +18,7 @@ group: navigation
         {% assign pages_list = category[1] %}
         {% for node in pages_list %}
           {% if node.title != null %}
-            {% if group == null or group == node.group %}
-              <li>[{{ node.date | date: "%Y-%m-%d" }}] &raquo; <a href="{{ site.BASE_PATH }}{{node.url}}">{{ node.title }}</a></li>
-            {% endif %}
+            <li>[{{ node.date | date: "%Y-%m-%d" }}] &raquo; <a href="{{ site.BASE_PATH }}{{node.url}}">{{ node.title }}</a></li>
           {% endif %}
         {% endfor %}
         {% assign pages_list = nil %}
@@ -30,4 +28,3 @@ group: navigation
   {% endfor %}
 </article>
 
-<div class="clearfix"></div>

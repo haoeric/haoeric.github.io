@@ -12,7 +12,7 @@ tags: [research]
 
 - *"flowAI: automatic and interactive anomaly discerning tools for flow cytometry"*. **Bioinformatics**, 2016. ([Second Author](http://bioinformatics.oxfordjournals.org/content/early/2016/05/06/bioinformatics.btw191))
 
-- *"ARG-walker: Inference of Individual Specific Strengths of Meiotic Recombination Hotspots by Population Genomics Analysis"*. **BMC Bioinformatics**, 2015. ([First Author](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S12-S1))
+- *"ARG-walker: Inference of Individual Specific Strengths of Meiotic Recombination Hotspots by Population Genomics Analysis"*. **BMC Genomics**, 2015. ([First Author](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S12-S1))
 
 - *"Optimization of production conditions for mushroom polysaccharides with high yield and antitumor activity"*. **Carbohydrate Polymers**, 2012. ([Third Author](https://www.researchgate.net/publication/256975016_Optimization_of_production_conditions_for_mushroom_polysaccharides_with_high_yield_and_antitumor_activity))
 
