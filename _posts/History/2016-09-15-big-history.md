@@ -2,6 +2,7 @@
 layout: post
 title: 人类大历史
 comments: true
+author: Chen Hao
 categories: [History]
 tags: [big, history]
 ---

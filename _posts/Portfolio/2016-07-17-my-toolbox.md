@@ -54,14 +54,17 @@ tags: [toolbox]
     [Typora](http://www.typora.io) -- a minimal markdown writing reading & writing app  
     [MWeb](http://www.mweb.im) -- the most powerful markdown editor    
 - <u>Widgets:</u>       
-    [caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12) -- keep the screen on when presentation    
-    [AnkiApp](https://www.ankiapp.com) -- knowledge accumulation using flashcard       
+    [caffeine](https://itunes.apple.com/en/app/caffeine/id411246225?mt=12) -- keep the screen on when presentation  
+    [Magnet](http://magnet.crowdcafe.com) -- window manager for Mac  
+    [snap](https://itunes.apple.com/sg/app/snap/id418073146?mt=12) -- easy shorcut management for Mac  
+    [AnkiApp](https://www.ankiapp.com) -- knowledge accumulation using flashcard        
     [Noizio](http://noiz.io) -- noise cancelling    
     [Dr. Cleaner](https://itunes.apple.com/us/app/dr.-cleaner-disk-memory-clean/id921458519?mt=12) -- profile of memory, storage, and network.     
     [Snappy](http://go-snappy.com) -- easy manage, edit and share screen snapshots   
     [Go2Shell](http://zipzapmac.com/go2shell) -- go to shell from Finder   
     [CheatSheet](https://www.mediaatelier.com/CheatSheet/) -- cheat sheet for any app   
-    [Pngyu](http://nukesaq88.github.io/Pngyu/) -- simple PNG image file compression tool 
+    [Pngyu](http://nukesaq88.github.io/Pngyu/) -- simple PNG image file compression tool   
+    [Wikiwand](http://www.wikiwand.com) -- the world's leading Wikipedia reader  
 - <u>Dictionary:</u>  
     [欧陆词典](http://www.eudic.net)     
     [有道词典](http://www.youdao.com)
