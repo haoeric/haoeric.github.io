@@ -12,6 +12,7 @@ tags: [toolbox]
 - <u>Notes Taking:</u>    
     [Evernote](https://evernote.com) + [Evernote Web Clipper](https://evernote.com/webclipper/) + [Marxico](https://marxi.co) -- perfect combination for writing notes, save webpage, writing using markdown     
     [OneNote](https://www.onenote.com) -- powerful for dynamic and multi-media notes
+    [draw.io](https://www.draw.io) -- wonderful and open source tool for drawing flow chart, mind map.  
 - <u>Cloud Storage:</u>       
     [iCloud](https://www.icloud.com) -- for macbook, iphone and ipad   
     [google drive](https://www.google.com/drive/) -- fast stable and efficient synchronization   
