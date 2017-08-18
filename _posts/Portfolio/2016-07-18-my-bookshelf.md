@@ -11,6 +11,7 @@ tags: [bookshelf]
 ### 2017
 -------------
 
+* [《耶路撒冷三千年》](https://book.douban.com/subject/22638869/) by Simon Sebag Montefiore  
 * [《大教堂与集市》](https://book.douban.com/subject/25881855/) by 【美】雷蒙德
 * [《货币简史》](https://book.douban.com/subject/26772766/) by 卡比尔·塞加尔
 * [《奥斯曼帝国的衰亡》](https://book.douban.com/subject/26869694/) by 尤金·罗根

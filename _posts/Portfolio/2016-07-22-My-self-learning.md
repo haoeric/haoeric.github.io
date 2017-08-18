@@ -1,13 +1,36 @@
 ---
 layout: postPortfolio
-title: Self-learning Map
+title: Self-learning Path
 comments: true
 categories: [Portfolio]
 tags: [research]
 ---  
 
+### Bioinformatics
+
+---------------------------------------
+
+<u>Courses</u>
+
+- [Introduction to Genomic Technologies](https://www.coursera.org/account/accomplishments/certificate/2QPUR3WNRJYA), Coursera 2016  
+- [Python for Genomic Data Science](https://www.coursera.org/account/accomplishments/certificate/KGN34B7APAXF), Coursera 2017  
+- [Command Line Tools for Genomic Data Science](https://www.coursera.org/account/accomplishments/certificate/57R39H5YY6TW), Coursera 2017  
+- [Genomic Data Science with Galaxy](https://www.coursera.org/account/accomplishments/certificate/LJBRS323C733), Coursera 2017  
+- [Algorithms for DNA Sequencing](https://www.coursera.org/account/accomplishments/certificate/LVPQU26BH3GX), Coursera 2017  
+- [Statistics for Genomic Data Science](https://www.coursera.org/account/accomplishments/certificate/M9735NYAUH52), Coursera 2017  
+- [Mathematical Biostatistics Boot Camp 2](https://www.coursera.org/learn/biostatistics-2), Coursera 2016
+
+
+### AWS 
+
+---------------------------------------
+
+- [Practical Implementation of Genomics Workflows on AWS using docker, EC2, ECS, batch, lambda, step, and API gateway](https://aws.amazon.com/blogs/compute/building-high-throughput-genomics-batch-workflows-on-aws-introduction-part-1-of-4/), AWS Compute Blog 2017
+
 
 ### R
+
+---------------------------------------
 
 <u>Courses</u>
 
@@ -25,6 +48,8 @@ tags: [research]
 
 ### Python  
 
+---------------------------------------
+
 <u>Courses</u> 
 
 - [Introduction to Computer Science and Programming Using Python](https://verify.edx.org/cert/dcb2d0a5fc6444a2b0209cf77688d2a3), edX 2014
@@ -32,9 +57,13 @@ tags: [research]
 
 ### Full Stack Development
 
+---------------------------------------
+
 - [freeCodeCamp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)
 
 
 ### Correct Typing
+
+---------------------------------------
 
 - [typing](https://www.typing.com/student)
