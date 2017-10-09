@@ -18,12 +18,19 @@ tags: [research]
 - [Statistics for Genomic Data Science](https://www.coursera.org/account/accomplishments/certificate/M9735NYAUH52), Coursera 2017  
 - [Mathematical Biostatistics Boot Camp 2](https://www.coursera.org/learn/biostatistics-2), Coursera 2016
 
+### Machine Learning
+
+---------------------------------------
+
+- [Deep Learning Specilication by Andrew Ng](https://www.coursera.org/specializations/deep-learning)   
+- [Tools You Can Use to Code Neural Networks](https://medium.freecodecamp.org/deep-learning-for-developers-tools-you-can-use-to-code-neural-networks-on-day-1-34c4435ae6b)
 
 ### AWS 
 
 ---------------------------------------
 
 - [Practical Implementation of Genomics Workflows on AWS using docker, EC2, ECS, batch, lambda, step, and API gateway](https://aws.amazon.com/blogs/compute/building-high-throughput-genomics-batch-workflows-on-aws-introduction-part-1-of-4/), AWS Compute Blog 2017
+
 
 
 ### R
@@ -44,7 +51,8 @@ tags: [research]
 
 ---------------------------------------
  
-- [Introduction to Computer Science and Programming Using Python](https://verify.edx.org/cert/dcb2d0a5fc6444a2b0209cf77688d2a3), edX 2014
+- [Introduction to Computer Science and Programming Using Python](https://verify.edx.org/cert/dcb2d0a5fc6444a2b0209cf77688d2a3), edX 2014   
+- [*Think Python: How to Think Like a Computer Scientist*](http://greenteapress.com/thinkpython2/html/thinkpython2007.html), 2nd Edition by Allen B. Downey
 
 
 ### Full Stack Development
