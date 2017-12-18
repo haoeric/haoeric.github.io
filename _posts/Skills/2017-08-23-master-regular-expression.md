@@ -50,7 +50,8 @@ tags: [regular expression, 正则表达式]
 
 - [RegexOne](https://regexone.com)   
 - [regexr](http://regexr.com)   
-- [sketchengine](https://regex.sketchengine.co.uk)  
+- [sketchengine](https://regex.sketchengine.co.uk) 
+- [Regular-Expressions.info](https://www.regular-expressions.info)
 
 
 
