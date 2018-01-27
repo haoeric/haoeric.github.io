@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 2018年1月-区块链
+title: 2018年1月-区块链和权利的游戏
 comments: true
 categories: [Trivia]
-tags: [github, blog, jekyll]
+tags: [区块链, bitcoin, game of thrones, 权利的游戏]
 ---
 
 去年年底的时候做了个计划，其中包括在新的一年每个月做一次学习总结，将学到的最有用的知识和相关的资源做一个整理和分享。这个月的业余时间基本都投入在了cryptocurrency和《权利的游戏》。
@@ -50,7 +50,7 @@ Principles: Life and Work」也就对这一现象不会惊讶了。所以知识�
 
 ![](/images/2018_Jan/trading_EMA_from_cryptoyoda.png)
 
-上面举的例子其实说的是一下三种trading的策略：
+上面举的例子其实说的是以下三种trading策略：
 
 * trading the breakout - scalping, enter with a considerable position size, only for a tiny movement of 0.5% or so. 
 * trading the leg - the whole up movement before we see any correction
