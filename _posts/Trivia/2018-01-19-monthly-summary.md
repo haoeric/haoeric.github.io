@@ -6,31 +6,39 @@ categories: [Trivia]
 tags: [区块链, bitcoin, game of thrones, 权利的游戏]
 ---
 
-去年年底的时候做了个计划，其中包括在新的一年每个月做一次学习总结，将学到的最有用的知识和相关的资源做一个整理和分享。这个月的业余时间基本都投入在了cryptocurrency和《权利的游戏》。
+去年年底的时候对新的一年做了个计划，其中包括在新的一年每个月做一次学习总结，将学到的最有用的知识和相关的资源做一个整理和分享。
+
+<u>**2018一点小计划:**</u>
+1. 将每个月获取的最有价值的资讯（评估标准以会改变自己行为，值得投入更多时间为准则）整理在blog上，所以每天审视自己获取的信息，一周抽一个时间来反思整理，一个月总结一次（用slack每天定时提醒）。
+2. 狠狠的训练自己的口语，资源锁定在effortless English。
+3. 用AWS做一个产品级别的side project。为下一个机会做准备。
+4. 预测未来值得深入学习的方向：深度学习的多维度运用，量子计算机原理和编程，区块链的多方位运动（基于stock psychology 的跟风运动），云计算的培训和企业级运用，语音交互，AR交互。
+
+这个月的业余时间基本都投入在了cryptocurrency和《权利的游戏》。
 
 ## Hype Cycle and Technology Adoption
 
-人们对新技术的**预期**和**接收程度**大致上有一定的规律，这个规律被总结成两条曲线：Gartner Hype Cycle 和 the Technology Adoption Lifecycle。区块链无疑是一个很有前景的技术，看看下面这个图再联想下最近几年互联网的发展，以及最近区块链的发展，你会坚信历史会再次遵循这样的规律。
+人们对新技术的**预期**和**接收程度**大致上有一定的规律，这个规律被总结成两条曲线：`Gartner Hype Cycle`和`Technology Adoption Lifecycle`。区块链无疑是一个很有前景的技术，看看下面这个图再联想下最近几年互联网的发展，以及最近区块链的发展，你会坚信历史会再次遵循同样的规律。
 
 ![](/images/2018_Jan/Hype_Cycle_and_Technology_Adoption.png)
 
 
-> Although the Gartner Hype Cycle and the Technology Adoption Lifecycle / Crossing the Chasm model measure different phenomena, they are related in time and by human beings’ reactions to the introduction of new technologies. The examples used above show how the two models succeed as descriptive models as long as the time frames mapped between them are well understood, and suggest that one could use these models to help make investment or product planning decisions. [ref](http://www.arteris.com/blog/bid/89308/The-Gartner-Hype-Cycle-Technology-Adoption-Lifecycle-Explained-using-NoC-Technology)
+> Although the Gartner Hype Cycle and the Technology Adoption Lifecycle / Crossing the Chasm model measure different phenomena, they are related in time and by human beings’ reactions to the introduction of new technologies. The examples used above show how the two models succeed as descriptive models as long as the time frames mapped between them are well understood, and suggest that one could use these models to help make investment or product planning decisions. [reference](http://www.arteris.com/blog/bid/89308/The-Gartner-Hype-Cycle-Technology-Adoption-Lifecycle-Explained-using-NoC-Technology)
 
 
 ![](/images/2018_Jan/Gartner_Hype_Cycle_for_Emerging_Technologies_2017.png)
 
-上面是2017年[The Gartner Hype Cycle for Emerging Technologies](https://www.gartner.com/smarterwithgartner/top-trends-in-the-gartner-hype-cycle-for-emerging-technologies-2017/)对新技术的分析，区块链已经接近peak of inflated expectations的尾声，所以现在加入还算是early adopter。当然，不投自己不懂得，不投超过自己所能负担的，discipline and patient所以先学习下[BlockChain Demo](https://anders.com/blockchain/?ref=producthunt)。
+上图来自2017年[The Gartner Hype Cycle for Emerging Technologies](https://www.gartner.com/smarterwithgartner/top-trends-in-the-gartner-hype-cycle-for-emerging-technologies-2017/)对新技术的分析，区块链已经接近`peak of inflated expectations`的尾声，所以现在加入还算是`early adopter`。当然，不投自己不懂得，不投超过自己所能负担的，`discipline and patience`，所以先学习下[BlockChain Demo](https://anders.com/blockchain/?ref=producthunt)。
 
 
 ## Market Capitalizations
 
-前不久区块链的[总市值](https://coinmarketcap.com)突破700billion，新年将至，套现回家过年的中国人民给市场带来了一个健康的调整😝，目前总市值在550 billion左右，有小道消息报道有很多的hedge fund将注入到区块链市场，估计几年会涨到trillion级别，如果是真的，那么，那么就赶紧掏腰包买币了。
+前不久区块链的[总市值](https://coinmarketcap.com)突破700billion，新年将至，套现回家过年的中国人民给市场带来了一个健康的调整😝，目前总市值在550 billion左右，有小道消息报道今年会有更多的hedge fund注入到区块链市场，估计今年会市值涨进trillion级别，如果是真的，那么，那么就赶紧掏腰包买币了。
 
 
 ## News Resources
 
-如果对比一下google上bitcoin的搜索热度和市场价格，你会惊奇的发现他们的相关度是如此的高。也就是说目前的区块链的市场是被大众的情绪所主导的。读过这两本书「The Psychology of the Stock Market」，「
+如果对比一下g这几年oogle上bitcoin的搜索热度和市bitcoin的场价格，你会惊奇的发现他们的相关度是如此的高。也就是说目前的区块链的市场是被大众的情绪所主导的。读过这两本书「The Psychology of the Stock Market」，「
 Principles: Life and Work」也就对这一现象不会惊讶了。所以知识就是力量，是真的。怎么证明，能拿来赚钱是不是就更有说服力的。看看这个[Giving a twitter bot ability to predict bitcoin value based on historical data](https://hackernoon.com/giving-a-twitter-bot-ability-to-predict-bitcoin-value-based-on-historical-data-dbe237c40430)，还有这样一个很有意思的公司[santiment](https://santiment.net)。
 
 
