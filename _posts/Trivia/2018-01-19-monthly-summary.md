@@ -8,7 +8,8 @@ tags: [区块链, bitcoin, game of thrones, 权利的游戏]
 
 去年年底的时候对新的一年做了个计划，其中包括在新的一年每个月做一次学习总结，将学到的最有用的知识和相关的资源做一个整理和分享。
 
-<u>**2018一点小计划:**</u>
+**<u>2018一点小计划:</u>**
+
 1. 将每个月获取的最有价值的资讯（评估标准以会改变自己行为，值得投入更多时间为准则）整理在blog上，所以每天审视自己获取的信息，一周抽一个时间来反思整理，一个月总结一次（用slack每天定时提醒）。
 2. 狠狠的训练自己的口语，资源锁定在effortless English。
 3. 用AWS做一个产品级别的side project。为下一个机会做准备。
@@ -33,12 +34,12 @@ tags: [区块链, bitcoin, game of thrones, 权利的游戏]
 
 ## Market Capitalizations
 
-前不久区块链的[总市值](https://coinmarketcap.com)突破700billion，新年将至，套现回家过年的中国人民给市场带来了一个健康的调整😝，目前总市值在550 billion左右，有小道消息报道今年会有更多的hedge fund注入到区块链市场，估计今年会市值涨进trillion级别，如果是真的，那么，那么就赶紧掏腰包买币了。
+前不久区块链的[总市值](https://coinmarketcap.com)突破700billion，新年将至，套现回家过年的中国人民给市场带来了一个健康的调整😝，目前总市值在550 billion左右，有小道消息报道今年会有更多的hedge fund注入到区块链市场，估计今年市值会进到trillion级别，如果是真的，那么，那么就赶紧掏腰包买币了。
 
 
 ## News Resources
 
-如果对比一下g这几年oogle上bitcoin的搜索热度和市bitcoin的场价格，你会惊奇的发现他们的相关度是如此的高。也就是说目前的区块链的市场是被大众的情绪所主导的。读过这两本书「The Psychology of the Stock Market」，「
+如果对比一下这几年google上bitcoin的搜索热度和bitcoin的市场价格，你会惊奇的发现他们的相关度是如此的高。也就是说目前的区块链的市场是被大众的情绪所主导的。读过这两本书「The Psychology of the Stock Market」，「
 Principles: Life and Work」也就对这一现象不会惊讶了。所以知识就是力量，是真的。怎么证明，能拿来赚钱是不是就更有说服力的。看看这个[Giving a twitter bot ability to predict bitcoin value based on historical data](https://hackernoon.com/giving-a-twitter-bot-ability-to-predict-bitcoin-value-based-on-historical-data-dbe237c40430)，还有这样一个很有意思的公司[santiment](https://santiment.net)。
 
 
