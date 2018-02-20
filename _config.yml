@@ -15,7 +15,7 @@ collections:
     output:   true
 
 # Setup
-title:               Home
+title:               Chen Hao's Blog
 tagline:             Keep Simple Heart
 url:                 http://haoeric.com
 paginate:            1
