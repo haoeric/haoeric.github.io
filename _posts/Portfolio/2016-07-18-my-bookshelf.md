@@ -6,6 +6,14 @@ categories: [Portfolio]
 tags: [bookshelf]
 ---  
 
+### 2018
+-------------
+
+* [The Psychology of the Stock Market](https://www.amazon.com/gp/product/B001C4PTUY/ref=oh_aui_d_detailpage_o02_?ie=UTF8&psc=1) by G. C. Selden    
+* [How Jesus Became God](https://www.amazon.com/gp/product/B00DB39V2Q/ref=oh_aui_d_detailpage_o01_?ie=UTF8&psc=1) by Bart D. Ehrman       
+* [Principles: Life and Work](https://www.amazon.com/gp/product/B071CTK28D/ref=oh_aui_d_detailpage_o00_?ie=UTF8&psc=1) by Ray Dalio    
+* [Crossing the Chasm](https://www.scribd.com/book/197209100/Crossing-the-Chasm-3rd-Edition-Marketing-and-Selling-Disruptive-Products-to-Mainstream-Customers) by Geoffrey A. Moore       
+* [How To Win Friends and Influence People](https://www.scribd.com/book/224349281/How-To-Win-Friends-and-Influence-People) by Dale Carnegie            
 
 
 ### 2017
