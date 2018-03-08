@@ -23,7 +23,8 @@ tags: [research]
 ---------------------------------------
 
 - [Deep Learning Specilication by Andrew Ng](https://www.coursera.org/specializations/deep-learning)   
-- [Tools You Can Use to Code Neural Networks](https://medium.freecodecamp.org/deep-learning-for-developers-tools-you-can-use-to-code-neural-networks-on-day-1-34c4435ae6b)
+- [Tools You Can Use to Code Neural Networks](https://medium.freecodecamp.org/deep-learning-for-developers-tools-you-can-use-to-code-neural-networks-on-day-1-34c4435ae6b)    
+- [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)
 
 ### AWS 
 
