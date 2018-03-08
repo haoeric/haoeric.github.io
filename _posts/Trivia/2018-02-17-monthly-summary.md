@@ -11,7 +11,7 @@ tags: [Kondratieff Waves, Web 3.0, AWS, 套路, 铺垫]
 
 苏联著名经济学家尼古拉·康德拉季耶夫在1952年出版了「大经济周期」一书，提出了著名的[康德拉季耶夫长波](http://www.wikiwand.com/zh/康德拉季耶夫长波)理论。该理论指出资本主义经济发展以50-60年为一个周期，自工业革命以后，世界经济已经历了五个周期(如下图）。
 
-![](images/2018_Feb/Kondratieff_wave_of_economy.png)
+![](/images/2018_Feb/Kondratieff_wave_of_economy.png)
 
 按照这一理论，第六个周期即将展开，我们正处在第五周期的转折点。2018年很有可能是经济大变革的一年，从今年[央行加息，美联储缩表](https://mp.weixin.qq.com/s/5F2xIzc7C4vXNQLTmJaDvQ)，到中国的[债务战争](https://asia.nikkei.com/Features/Cover-story/The-hidden-risks-of-China-s-war-on-debt)，这个变化正在发生。这几篇文章值得一读：
 
@@ -56,7 +56,7 @@ There are [three types of SSL certificates](https://www.symantec.com/connect/blo
 
 Following this post [get free DV SSL certificate from Cloudflare](https://medium.freecodecamp.org/free-https-c051ca570324), I added SSL for my personal website. Actually it is quite easy, Firstly, I changed my website's nameserver from [DNSPod](https://www.dnspod.cn) to [Cloudflare](https://www.cloudflare.com) on my domain registrar [GoDaddy](https://sg.godaddy.com), then I updated my DNS records on Cloudflare.
 
-![](images/2018_Feb/haoeric_DNS_records.png)
+![](/images/2018_Feb/haoeric_DNS_records.png)
 
 原理方面，就得好好看看这两篇了：
 
