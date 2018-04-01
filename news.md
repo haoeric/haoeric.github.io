@@ -11,7 +11,5 @@ title: News
 
 - [Bloomberg Businessweek](https://www.bloomberg.com/businessweek)
 
-- [Reddit](https://www.reddit.com/r/programming/)
 
-- [Hacker News](https://news.ycombinator.com)
 

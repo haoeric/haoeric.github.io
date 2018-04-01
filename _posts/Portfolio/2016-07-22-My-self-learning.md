@@ -16,7 +16,8 @@ tags: [research]
 - [Genomic Data Science with Galaxy](https://www.coursera.org/account/accomplishments/certificate/LJBRS323C733), Coursera 2017  
 - [Algorithms for DNA Sequencing](https://www.coursera.org/account/accomplishments/certificate/LVPQU26BH3GX), Coursera 2017  
 - [Statistics for Genomic Data Science](https://www.coursera.org/account/accomplishments/certificate/M9735NYAUH52), Coursera 2017  
-- [Mathematical Biostatistics Boot Camp 2](https://www.coursera.org/learn/biostatistics-2), Coursera 2016
+- [Mathematical Biostatistics Boot Camp 2](https://www.coursera.org/learn/biostatistics-2), Coursera 2016    
+- [learn AWK](https://www.shortcutfoo.com/app/dojos/awk)
 
 ### Machine Learning
 
@@ -48,7 +49,8 @@ tags: [research]
 - [Exploratory Data Analysis](https://www.coursera.org/course/exdata), Coursera 2014
 - [Reproducible Research](https://www.coursera.org/course/repdata), Coursera 2014  
 - [*Advanced R*](http://adv-r.had.co.nz) by Hadley Wickham
-- [*R Packages*](http://r-pkgs.had.co.nz) by Hadley Wickham
+- [*R Packages*](http://r-pkgs.had.co.nz) by Hadley Wickham    
+- [learn data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)   
 
 ### Python  
 
@@ -62,7 +64,9 @@ tags: [research]
 
 ---------------------------------------
 
-- [freeCodeCamp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)
+- [freeCodeCamp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)     
+- [The Complete Node.js Developer Course](https://www.udemy.com/the-complete-nodejs-developer-course-2/learn/v4/overview)    
+- [Learn Bootstrap 4 for free](https://scrimba.com/g/gbootstrap4)    
 
 
 ### Correct Typing

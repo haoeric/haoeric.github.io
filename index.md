@@ -23,6 +23,10 @@ title: Welcome
 
 - Search for interesting open source projects from [Github](https://github.com/haoeric)
 
+- The so-caller front page of the internet [Reddit](https://www.reddit.com/r/programming/)
+
+- To be cool, read [Hacker News](https://news.ycombinator.com)
+
 - Practice your keyboard typing from [typing](https://www.typing.com/student)
 
 - Read my [posts]({{ site.BASE_PATH }}/posts/) 

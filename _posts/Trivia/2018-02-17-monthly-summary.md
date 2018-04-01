@@ -13,7 +13,7 @@ tags: [Kondratieff Waves, Web 3.0, AWS, 套路, 铺垫]
 
 ![](/images/2018_Feb/Kondratieff_wave_of_economy.png)
 
-按照这一理论，第六个周期即将展开，我们正处在第五周期的转折点。2018年很有可能是经济大变革的一年，从今年[央行加息，美联储缩表](https://mp.weixin.qq.com/s/5F2xIzc7C4vXNQLTmJaDvQ)，到中国的[债务战争](https://asia.nikkei.com/Features/Cover-story/The-hidden-risks-of-China-s-war-on-debt)，这个变化正在发生。这几篇文章值得一读：
+按照这一理论，我们现在处在第六个周期。2018年很有可能是经济大变革的一年，从今年[央行加息，美联储缩表](https://mp.weixin.qq.com/s/5F2xIzc7C4vXNQLTmJaDvQ)，到中美的贸易战争，这个变化正在发生。这几篇文章值得一读：
 
 - [【全球股市大跌，财富大势骤然清晰！你再不懂就晚了！】](https://mp.weixin.qq.com/s/2VaKacBKYqKAhSBzIehS3g) by 周金涛      
 - [【未来五年在中国最赚钱的不是股市、房地产，而是......】](https://mp.weixin.qq.com/s/bDyJ6CB26JeEBdtn88Pnuw) by 吴晓波  
@@ -105,5 +105,5 @@ https://aws.amazon.com/blogs/startups/launch-your-app-with-the-aws-startup-kit/?
 
 ## 套路和铺垫
 
-一切的看似微不足道的努力都是铺垫，一切痛定思痛后的领悟都能总结成改变行动的套路。加油吧，不用隐藏你是个有梦想有目标的人，对我们做的就是铺垫，学习的就是套路。
+一切的看似微不足道的努力都是铺垫，一切痛定思痛后的领悟都能总结成改变行动的套路。加油吧，不用隐藏你是个有梦想有目标的人，对，我们做的就是铺垫，学习的就是套路。
 
