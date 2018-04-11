@@ -33,6 +33,8 @@ tags: [research]
 
 - [Practical Implementation of Genomics Workflows on AWS using docker, EC2, ECS, batch, lambda, step, and API gateway](https://aws.amazon.com/blogs/compute/building-high-throughput-genomics-batch-workflows-on-aws-introduction-part-1-of-4/), AWS Compute Blog 2017
 
+- [Build a Serverless Web Application](https://aws.amazon.com/getting-started/serverless-web-app/)
+
 - [AWS Certified Solutions Architect - Associate 2018](https://www.udemy.com/aws-certified-solutions-architect-associate/learn/v4/overview) [certificate](https://www.certmetrics.com/amazon/electronic_certificate.aspx?cert=224697)
 
 

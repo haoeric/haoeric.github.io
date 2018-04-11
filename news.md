@@ -11,5 +11,8 @@ title: News
 
 - [Bloomberg Businessweek](https://www.bloomberg.com/businessweek)
 
+- Get news from [Tweet](https://twitter.com) 
+
+- Read a technology review on [MIT Technology Review](https://www.technologyreview.com)
 
 

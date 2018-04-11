@@ -5,11 +5,17 @@ title: Welcome
 
 ------------------
 
-- Get news from [Tweet](https://twitter.com) 
+- The so-caller front page of the internet [Reddit](https://www.reddit.com/r/programming/)
 
-- Learn R news from [R-bloggers](http://www.r-bloggers.com)
+- To be cool, read [Hacker News](https://news.ycombinator.com)
 
-- Read a technology review on [MIT Technology Review](https://www.technologyreview.com)
+- Explore the web ocean - [webscrawler](http://www.webcrawler.com)
+
+- Find top-ranking website - [alexa](https://www.alexa.com/topsites)
+
+- Analysis a website - [similarweb](https://www.similarweb.com/)
+
+- Learn some interesting staff on [Wait But Why](http://waitbutwhy.com)
 
 - Have a question? Ask [Quora](https://www.quora.com) or [知乎](https://www.zhihu.com)
 
@@ -17,15 +23,7 @@ title: Welcome
 
 - Search for good books, movies or songs, [豆瓣](https://www.douban.com) fits all these. 
 
-- Learn some interesting staff on [Wait But Why](http://waitbutwhy.com)
-
 - Find a data analysis competetion on [Kaggle](https://www.kaggle.com)
-
-- Search for interesting open source projects from [Github](https://github.com/haoeric)
-
-- The so-caller front page of the internet [Reddit](https://www.reddit.com/r/programming/)
-
-- To be cool, read [Hacker News](https://news.ycombinator.com)
 
 - Practice your keyboard typing from [typing](https://www.typing.com/student)
 
