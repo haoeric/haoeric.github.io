@@ -8,6 +8,10 @@
 - There is a quick a way to start: [Jekyll-Bootstrap](http://jekyllbootstrap.com) -- a full blog scaffold for Jekyll based blogs. Follow this [quick start guide](http://jekyllbootstrap.com/usage/jekyll-quick-start.html) to host your blog on github in 3 minutes.
 
 
+## Jekyll installation on mac
+
+Since OS X ships with a copy of `Ruby` in `/Library/Ruby`, a directory which is owned and controlled by the OS. If we install `jelyll` using system `gem`, we will have permission issues which will be quite annoying for development. So better to install own version of `Ruby` using `homebrew`, then export the path to use this as default. Refer to document [here](https://jekyllrb.com/docs/troubleshooting/#jekyll--mac-os-x-1011) 
+    
 ## File Structure
 
 - `_cache` -- store all caches from knitr the rmarkdown files in `_knitr` (ignored by gitignore, only kept locally).
@@ -25,6 +29,8 @@
 - add code highlight: add file `_sass/_syntax.scss` with contents copied from[^3], modify the fonts in `_sass/_code.scss` with `font-family:  "Courier New", "Courier New", "Courier New", "Courier New";`. In `_config.yml` file, add `syntax_highlighter: rouge` following[^4].
   [^3]: https://gist.github.com/demisx/8408522
   [^4]: https://sacha.me/articles/jekyll-rouge/
-    
+  
+  
+
 
 
