@@ -34,7 +34,6 @@ github_username:  haoeric
 pages_list:       
   Posts: '/posts'
   Portfolio: '/portfolio'
-  News: '/news'
   Feed: '/atom.xml'
 
 # Using Rouge with Jekyll
