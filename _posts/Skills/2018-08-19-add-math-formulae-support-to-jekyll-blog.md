@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  简单两步让Jekyll支持Latex公式编译
+title:  简单两步让Jekyll支持Latex公式插入
 comments: true
 author: Chen Hao
 categories: [Skills]
@@ -46,7 +46,7 @@ MathJax是一个开源JavaScript引擎，能够将LaTeX语法书写的公式在�
 来个文中显示，比如$x - \mu$，不错吧。再来个高斯分布方程：
 
 $$
-P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}
+P(x) = \frac{1} {{\sigma \sqrt {2\pi } }} e^ {{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}
 $$
 
 关于Latex公式的语法，参考[Wiki LaTeX Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
