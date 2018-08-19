@@ -49,6 +49,8 @@ $$
 P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}
 $$
 
+关于Latex公式的语法，参考[Wiki LaTeX Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+
 ### 2. 定制公式显示的CSS Styles
 
 MathJax使用网络字体，支持CSS配置产生高质量的排版。另外，使用MathJax显示数学公式是基于文本的，而非图片，在所有分辨率中都可缩放和显示也可以被搜索引擎直接搜索。
@@ -75,4 +77,3 @@ body div.content {}
  [1] [用Markdown写blog的常用操作](http://www.cnblogs.com/mo-wang/p/5117819.html)     
  [2] [Loading and Configuring MathJax](http://docs.mathjax.org/en/latest/configuration.html#loading-and-configuring-mathjax)    
  [3] [CSS Style Objects](http://docs.mathjax.org/en/latest/reference/CSS-styles.html)    
- [4] [Wiki LaTeX Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
