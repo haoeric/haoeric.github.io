@@ -33,9 +33,14 @@ MathJax是一个开源JavaScript引擎，能够将LaTeX语法书写的公式在�
 </script>
 ```
 
-然后在`_layouts/default.html`文件中添加如下一行代码：`{% include mathJax_support.html %}`。
+然后在`_layouts/default.html`文件中添加如下一行代码：
 
-简单来讲，上面的操作就是博客页面中包含MathJax脚本（注意MathJax原来的DNS地址[已经失效](https://liam0205.me/2015/09/09/fix-conflict-between-mathjax-and-markdown/)，这里是更新过的），同时做一些配置让JavaScript能识别我们定义的公式标签，将Latex编译成我们想要的公式。
+```
+include mathJax_support.html
+## 注意需要使用\{% 和 %\}来包裹以上的代码 
+```
+
+简单来讲，上面的操作就是博客页面中加载MathJax脚本（注意MathJax原来的DNS地址[已经失效](https://liam0205.me/2015/09/09/fix-conflict-between-mathjax-and-markdown/)，这里是更新过的），同时做一些配置让JavaScript能识别我们定义的公式标签，将Latex编译成我们想要的公式。
 
 通过上面的配置，我们在markdown文本中添加特定的标识符`$`或者`\(`，就可以在文本中插入公式或者单独以段落显示公式，具体效果如下：
 
