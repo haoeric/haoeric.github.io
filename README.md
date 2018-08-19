@@ -29,6 +29,13 @@ Since OS X ships with a copy of `Ruby` in `/Library/Ruby`, a directory which is 
 - add code highlight: add file `_sass/_syntax.scss` with contents copied from[^3], modify the fonts in `_sass/_code.scss` with `font-family:  "Courier New", "Courier New", "Courier New", "Courier New";`. In `_config.yml` file, add `syntax_highlighter: rouge` following[^4].
   [^3]: https://gist.github.com/demisx/8408522
   [^4]: https://sacha.me/articles/jekyll-rouge/
+
+
+## SEO
+
+[1] [10 Must Do Jekyll SEO Optimizations](https://blog.webjeda.com/optimize-jekyll-seo/)   
+
+
   
   
 

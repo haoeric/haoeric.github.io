@@ -1,7 +1,5 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink: pretty
+# Permalinks, just title to tidy up the page url
+permalink: /:title/
 
 # Where things are
 source:       .
@@ -48,6 +46,7 @@ gems:
   - jemoji
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
 
   
 # Assets
