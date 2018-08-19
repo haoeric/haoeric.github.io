@@ -23,23 +23,19 @@
   <!-- use canonical tag to tell the Search Engine bots that your content is only available at one URL -->
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link href="http://gmpg.org/xfn/11" rel="profile">
-  
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <!-- Fontawesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <title>
     {%if page.title %}
       {{ page.title }} &middot; {{ site.title }}
     {% else %}
       {{ site.title }} &middot; {{ site.tagline }}
     {% endif %}
- </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-  <!-- Fontawesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
-  
+ </title> 
 </head>
