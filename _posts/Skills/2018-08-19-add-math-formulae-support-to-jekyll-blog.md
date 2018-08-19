@@ -43,10 +43,10 @@ MathJax是一个开源JavaScript引擎，能够将LaTeX语法书写的公式在�
 
 通过上面的配置，我们在markdown文本中添加特定的标识符`$`或者`\(`，就可以在文本中插入公式或者单独以段落显示公式，具体效果如下：
 
-来个文中显示，比如$x - \mu$，不错吧。再来个高斯分布方程：
+来个文中显示，比如$x - \mu$，不错吧。再来个质能方程：
 
 $$
-P(x) = \frac{1} {{\sigma \sqrt {2\pi } }} e^ {{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}
+E=mc^2
 $$
 
 关于Latex公式的语法，参考[Wiki LaTeX Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
