@@ -7,7 +7,7 @@ categories: [Skills]
 tags: [Jekyll, MathJax, Latex, 公式]
 ---
 
-MathJax是一个开源JavaScript引擎，能够将LaTeX语法书写的公式在网页上显示出来，而且效果杠杠的。在你的 Jekyll 博客系统中，做如下简单两部配置，就可以愉快的博客中插入Latex公式了。
+MathJax是一个开源JavaScript引擎，能够将LaTeX语法书写的公式在网页上显示出来，而且效果杠杠的。在你的Jekyll博客系统中，做如下简单两部配置，就可以愉快的博客中插入Latex公式了。
 
 ### 1. 加载和配置MathJax
 
