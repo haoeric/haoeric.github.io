@@ -1,9 +1,9 @@
 ---
 layout: post
-title: LH2L P1 Focused and Diffuse Modes
+title: Two Thinking Modes - Focused and Diffuse
 comments: true
 author: Chen Hao
-categories: [Course Notes]
+categories: [Thinking]
 tags: [LH2L, procrastination, focused, diffuse]
 ---
 

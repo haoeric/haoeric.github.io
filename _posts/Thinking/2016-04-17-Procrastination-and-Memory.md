@@ -1,9 +1,9 @@
 ---
 layout: post
-title: LH2L P3 Procrastination and Memory
+title: Procrastination and Memory
 comments: true
 author: Chen Hao
-categories: [Course Notes]
+categories: [Thinking]
 tags: [LH2L, procrastination, memory]
 ---
 

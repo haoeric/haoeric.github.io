@@ -2,7 +2,7 @@
 layout: post
 title: 2018年6月-Relax Month
 comments: true
-categories: [Trivia]
+categories: [Thinking]
 tags: [SEO, Alexa, freelancer]
 ---
 

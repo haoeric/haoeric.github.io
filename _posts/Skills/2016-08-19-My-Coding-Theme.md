@@ -2,7 +2,7 @@
 layout: post
 title: 给自己一个赏心悦目的命令行终端
 comments: true
-categories: [Trivia]
+categories: [Skills]
 tags: [commander, shell, theme]
 ---
 

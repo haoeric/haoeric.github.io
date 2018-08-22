@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MBBC2 L3 Two Sample Tests (Matched or Independent)
+title: Two Sample Tests (Matched or Independent)
 comments: true
-categories: [Course Notes]
+categories: [Statistics and Algorithms]
 tags: [MBBC2, stastics, R]
 ---
 

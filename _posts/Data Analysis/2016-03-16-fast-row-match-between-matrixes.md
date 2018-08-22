@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: Extremely fast row match between two matrixes using data.table
+title: Extremely Fast Row Match between Two Matrixes using data.table
 comments: true
 categories: [Data Analysis]
 tags: [R, data.table, match]

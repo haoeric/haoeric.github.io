@@ -1,8 +1,8 @@
 ---
 layout: post
-title: MBBC2 L1 Hypothesis Test (Z-test)
+title: Hypothesis Test (Z-test)
 comments: true
-categories: [Course Notes]
+categories: [Statistics and Algorithms]
 tags: [MBBC2, stastics, R]
 ---
 

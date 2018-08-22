@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: Visual Comparation of Different Transformation Methods for Cytometry data
+title: Visual Comparation of Different Transformation Methods for Cytometry Data
 comments: true
 categories: [Data Analysis]
 tags: [Transformation, cytometry]

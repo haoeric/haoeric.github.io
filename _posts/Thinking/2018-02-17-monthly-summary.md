@@ -2,7 +2,7 @@
 layout: post
 title: 2018年2月-Kondratieff Waves, Web 3.0, 套路和铺垫
 comments: true
-categories: [Trivia]
+categories: [Thinking]
 tags: [Kondratieff Waves, Web 3.0, AWS, 套路, 铺垫, 区块链, 加密货币]
 ---
 

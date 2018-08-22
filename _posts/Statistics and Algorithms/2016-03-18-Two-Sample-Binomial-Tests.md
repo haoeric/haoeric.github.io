@@ -1,9 +1,9 @@
 ---
 layout: post
-title: MBBC2 L4,5,6,7,8 Two Sample Binomial Tests
+title: Two Sample Binomial Tests
 comments: true
 author: Chen Hao
-categories: [Course Notes]
+categories: [Statistics and Algorithms]
 tags: [MBBC2, stastics, R]
 ---
 

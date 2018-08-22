@@ -2,7 +2,7 @@
 layout: post
 title: 2018年3月-Effortless English，刻意练习
 comments: true
-categories: [Trivia]
+categories: [Thinking]
 tags: [Effortless English, 刻意，练习, 肌肉, 乐器]
 ---
 
