@@ -2,6 +2,19 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
+.header {
+  background-color: #f0f0f0;
+  color:  rgba(33,33,33,0.6);
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  transition: transform .3s, background-color 0.5s ease;
+  transform: translateY(0%);
+}
+
 .container {
   max-width: 45rem;
   padding-left:  1.5rem;
