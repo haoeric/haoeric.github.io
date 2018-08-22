@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: My First Taste of data.table
+title: Extremely fast row match between two matrixes using data.table
 comments: true
 categories: [Data Analysis]
 tags: [R, data.table, match]

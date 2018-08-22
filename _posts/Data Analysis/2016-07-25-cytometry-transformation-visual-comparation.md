@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: "Transformation Methods for FCM data"
+title: Visual Comparation of Different Transformation Methods for Cytometry data
 comments: true
 categories: [Data Analysis]
 tags: [Transformation, cytometry]
