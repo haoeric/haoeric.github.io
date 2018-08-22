@@ -6,7 +6,9 @@ categories: [Portfolio]
 tags: [research]
 ---  
 
-### <u>Paper</u>
+### <u>Publications</u>
+
+- *"LDSplitDB: A database for studies of meiotic recombination hotspots in MHC using human genomic data"*. **BMC Medical Genomics**, 2018. ([Second Author](https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-018-0351-0))      
 
 - *"Cytofkit: A Bioconductor Package for an Integrated Mass Cytometry Data Analysis Pipeline"*. **PLoS Comput Biol**, 2016. ([First Author](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1005112))
 
@@ -17,7 +19,7 @@ tags: [research]
 - *"Optimization of production conditions for mushroom polysaccharides with high yield and antitumor activity"*. **Carbohydrate Polymers**, 2012. ([Third Author](https://www.researchgate.net/publication/256975016_Optimization_of_production_conditions_for_mushroom_polysaccharides_with_high_yield_and_antitumor_activity))
 
 
-### <u>Bioinformatics Tools</u>
+### <u>Developed Softwares</u>
 
 &emsp; ***R packages*** 
 
