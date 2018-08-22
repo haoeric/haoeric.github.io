@@ -2,7 +2,7 @@
 layout: post
 title: 2018年5月-Serious about SmartRecommendation
 comments: true
-categories: [Trivia]
+categories: [Thinking]
 tags: [E-Commerce, serverless, recommendation, affilicate, associate]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 2018年4月-Customer Acquisition and Build Bitcoin
 comments: true
-categories: [Trivia]
+categories: [Thinking]
 tags: [Market analysis, Customer Acquisition, Bitcoin, 给予]
 ---
 

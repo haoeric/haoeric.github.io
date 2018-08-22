@@ -2,7 +2,7 @@
 layout: post
 title: 2018年1月-区块链和权利的游戏
 comments: true
-categories: [Trivia]
+categories: [Thinking]
 tags: [区块链, bitcoin, game of thrones, 权利的游戏]
 ---
 
