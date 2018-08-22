@@ -23,10 +23,13 @@ tags: [research]
 
 ---------------------------------------
 
+- [Linear Algebra by Prof. Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)  
 - [Deep Learning Specilication by Andrew Ng](https://www.coursera.org/specializations/deep-learning)   
+- [Deep Learning book by Ian Goodfellow](https://www.deeplearningbook.org)       
 - [Tools You Can Use to Code Neural Networks](https://medium.freecodecamp.org/deep-learning-for-developers-tools-you-can-use-to-code-neural-networks-on-day-1-34c4435ae6b)    
-- [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)      
-- [Machine Learning on Google Cloud Platform](https://cloudacademy.com/learning-paths/machine-learning-on-google-cloud-platform-206/?utm_campaign=ATH-GCP-Machine-Learning-on-GCP-April19&utm_source=hs_email&utm_medium=email&utm_content=62265305&_hsenc=p2ANqtz-_MTVqeF2RrqNOkQtK1x0Qq5qZuXhoypQGb67htYaSz7FTDTZ0gsG6vN3Fsu-XdBYr7_IPaF26T4HTLa2FfUGdMQLNNFQ&_hsmi=62265305)       
+- [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)  
+- [Machine Learning on Google Cloud Platform](https://cloudacademy.com/learning-paths/machine-learning-on-google-cloud-platform-206/?utm_campaign=ATH-GCP-Machine-Learning-on-GCP-April19&utm_source=hs_email&utm_medium=email&utm_content=62265305&_hsenc=p2ANqtz-_MTVqeF2RrqNOkQtK1x0Qq5qZuXhoypQGb67htYaSz7FTDTZ0gsG6vN3Fsu-XdBYr7_IPaF26T4HTLa2FfUGdMQLNNFQ&_hsmi=62265305)    
+- [R for Data Science](http://r4ds.had.co.nz)   
 - [Think Stats - Probability and Statistics for Programmers](https://greenteapress.com/wp/think-stats-2e/)
 
 
@@ -34,10 +37,8 @@ tags: [research]
 
 ---------------------------------------
 
-- [Practical Implementation of Genomics Workflows on AWS using docker, EC2, ECS, batch, lambda, step, and API gateway](https://aws.amazon.com/blogs/compute/building-high-throughput-genomics-batch-workflows-on-aws-introduction-part-1-of-4/), AWS Compute Blog 2017
-
-- [Build a Serverless Web Application](https://aws.amazon.com/getting-started/serverless-web-app/)
-
+- [Practical Implementation of Genomics Workflows on AWS using docker, EC2, ECS, batch, lambda, step, and API gateway](https://aws.amazon.com/blogs/compute/building-high-throughput-genomics-batch-workflows-on-aws-introduction-part-1-of-4/), AWS Compute Blog 2017    
+- [Build a Serverless Web Application](https://aws.amazon.com/getting-started/serverless-web-app/)    
 - [AWS Certified Solutions Architect - Associate 2018](https://www.udemy.com/aws-certified-solutions-architect-associate/learn/v4/overview) [certificate](https://www.certmetrics.com/amazon/electronic_certificate.aspx?cert=224697)
 
 
