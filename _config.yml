@@ -41,8 +41,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Plugins
-# use GitHub-flavored Emoji plugin for Jekyll(https://github.com/jekyll/jemoji)  
-gems:
+plugins:
   - jemoji
   - jekyll-paginate
   - jekyll-seo-tag
