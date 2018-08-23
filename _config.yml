@@ -17,7 +17,7 @@ collections:
 title: Hao Chen | 陈浩
 tagline: Keep Simple Heart
 email: haoeric@hotmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >
   Write an awesome description for your new site here. You can edit this
   line. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -31,8 +31,7 @@ github_username:  haoeric
 
 pages_list:       
   Posts: '/posts'
-  Portfolio: '/portfolio'
-  Feed: '/atom.xml'
+  About Me: '/portfolio'
 
 # Using Rouge with Jekyll
 # https://sacha.me/articles/jekyll-rouge/
@@ -51,8 +50,8 @@ plugins:
 # Assets
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: compressed
 
 # About/contact
 author:
@@ -61,6 +60,6 @@ author:
   email: haoeric@hotmail.com
 
 # Custom vars
-version:             1.0.0
-github:
-  repo:              https://github.com/haoeric/haoeric.github.io
+version: 1.0.0
+github: 
+  repo: https://github.com/haoeric/haoeric.github.io
