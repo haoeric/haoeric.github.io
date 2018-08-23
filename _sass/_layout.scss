@@ -8,6 +8,57 @@
   width: 80%;
 }
 
+.nav {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+  overflow: auto;
+
+  &-container {
+    margin: 1rem auto;
+    position: relative;
+    text-align: center;
+  }
+
+  &-title {
+    color: #555;
+    display: inline-block;
+    margin: 0;
+    padding-right: .2rem;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    color: #555;
+    display: inline-block;
+    opacity: .6;
+    padding: 0 2rem 0 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: #555;
+  }
+}
+
 footer {
   margin-bottom: 2rem;
+  text-align: center;
 }
