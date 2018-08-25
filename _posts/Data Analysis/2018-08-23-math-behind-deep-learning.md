@@ -7,16 +7,16 @@ tags: [neural network, deep learning, math, 神经网络, 数学模型]
 desscription: 如今我们如果需要创建一个神经网络，可以非常方便地使用Keras，TensorFlow或PyTorch等专业的库和框架来实现。即使是一个结构非常复杂的神经网络，也只需要几行代码。我们不需要过多担心权重矩阵的大小，也不需要记住我们使用的activation function的导数公式。这使得我们花在程序debug的时间大大减少，并简化了我们的工作。然而，了解神经网络内部的数学模型对于我们诸如架构选择，超参数调整或优化等都有很大帮助。
 ---
 
-如今我们如果需要创建一个神经网络，可以很方便地使用Keras，TensorFlow或PyTorch等专业的库和框架来实现。即使是一个结构非常复杂的神经网络，也只需要几行代码。我们不需要过多担心权重矩阵的大小，也不需要记住我们使用的activation function的导数公式。这使得我们花在程序debug的时间大大减少，并简化了我们的工作。然而，了解神经网络内部的数学模型对于我们诸如架构选择，超参数调整或优化等都有很大的帮助。为了更多地了解神经网络是如何工作的，我决定花一些时间来研究下在这些框架下面隐藏的数学模型，并且总结和分享在这遍文章中。
+> 如今我们如果需要创建一个神经网络，可以很方便地使用Keras，TensorFlow或PyTorch等专业的库和框架来实现。即使是一个结构非常复杂的神经网络，也只需要几行代码。我们不需要过多担心权重矩阵的大小，也不需要记住我们使用的activation function的导数公式。这使得我们花在程序debug的时间大大减少，并简化了我们的工作。然而，了解神经网络内部的数学模型对于我们诸如架构选择，超参数调整或优化等都有很大的帮助。为了更多地了解神经网络是如何工作的，我决定花一些时间来研究下在这些框架下面隐藏的数学模型，并且总结和分享在这遍文章中。
 
+作为一个例子，我们来解决如图1所示的一个二元分类问题。这个分类问题对于许多传统的Machine Learning算法来说是不太容易的，但是神经网络确可以很轻松地驾驭。
 
 ![](/images/deeplearning_math/binary_classification_circle.png)
 
 {:.image-caption}
 *图1.可视化训练数据集*
 
-
-作为一个例子，我们来解决如上图所示的一个二元分类问题。这个分类问题对于许多传统的Machine Learning算法来说是不太容易的，但是神经网络确可以很好的轻松驾驭。为了解决这个问题，我们将构建一个如图2所示的神经网络模型。其中包括五个完全连接的layers，每一个layer具有不同数量的units。我们将使用ReLU作为hidden layers的activation function，然后使用Sigmoid作为output layer的activation function。 这是一个非常简单的架构，但足以让我们阐明神经网络的一些核心理念和数学原理。
+为了解决这个问题，我们将构建一个如图2所示的神经网络模型。其中包括五个完全连接的layers，每一个layer具有不同数量的units。我们将使用ReLU作为hidden layers的activation function，然后使用Sigmoid作为output layer的activation function。 这是一个非常简单的架构，但足以帮助我们阐明神经网络的一些核心理念和数学原理。
 
 ![](/images/deeplearning_math/neural_network_architecture.png)
 
@@ -42,7 +42,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.fit(X_train, y_train, epochs=50, verbose=0)
 ```
 
-就这样就完成了，并且这个模型能几乎以100％的准确度对我们的测试数据进行进行分类。通过下面的动图我们来直观的感受下隐藏在模型背后的训练过程：
+就这样就完成了，并且这个模型能几乎能以100％的准确度对我们的测试数据进行分类。通过下面的动图我们来直观的感受下隐藏在模型背后的训练过程：
 
 ![](/images/deeplearning_math/visualization-of-training-process.gif)
 
@@ -51,7 +51,7 @@ model.fit(X_train, y_train, epochs=50, verbose=0)
 
 ## Neural Network
 
-那么到底什么是神经网络（Neural Network）？简单来讲，它是一种受生物学启发来构建计算学习程序的方法，能够独立学习并找到数据中的连接关系。如图2所示，神经网络是按layer排列的多个‘neurons’的集合，以相互通信的方式连接在一起。接下来我们展开来各个突破。
+那么到底什么是神经网络（Neural Network）？简单来讲，它是一种受生物学启发来构建计算学习程序的方法，能够独立学习并找到数据中的连接关系。如图2所示，神经网络是按layer排列的多个‘neurons’的集合，以相互通信的方式连接在一起。接下来我们展开来各个突破这其中的概念。
 
 ### 1. Neuron
 
@@ -161,6 +161,8 @@ $$
 
 {:.image-caption}
 *图9.Forward and Backward Propagation*
+
+## 小结
 
 希望大致讲清楚了神经网络的主要数学模型，这里分享的只我个人认为最重要的几个点，但也只是冰山一角。如果有兴趣，强烈建议动手写一个小型神经网络，不使用高级框架，只能使用Numpy，试一下。
 
