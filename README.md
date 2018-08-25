@@ -30,10 +30,9 @@ Since OS X ships with a copy of `Ruby` in `/Library/Ruby`, a directory which is 
   [^3]: https://gist.github.com/demisx/8408522
   [^4]: https://sacha.me/articles/jekyll-rouge/
 
+- configure [caption for image](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll) 
 
-## SEO
-
-[1] [10 Must Do Jekyll SEO Optimizations](https://blog.webjeda.com/optimize-jekyll-seo/)   
+- SEO, configured referring to [10 Must Do Jekyll SEO Optimizations](https://blog.webjeda.com/optimize-jekyll-seo/)   
 
 
   
