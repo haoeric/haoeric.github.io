@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: 深入学习神经网络背后的数学模型
+title: 学习神经网络背后的数学模型[译]
 comments: true
 categories: [Data Analysis]
 tags: [neural network, deep learning, math, 神经网络, 数学模型]
@@ -169,4 +169,4 @@ $$
 
 ## Reference
 
-- [Deep Dive into Math Behind Deep Networks](https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba)
+原文 [Deep Dive into Math Behind Deep Networks](https://towardsdatascience.com/https-medium-com-piotr-skalski92-deep-dive-into-deep-networks-math-17660bc376ba)
