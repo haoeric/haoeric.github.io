@@ -13,7 +13,10 @@ tags: [bookshelf]
 * [How Jesus Became God](https://www.amazon.com/gp/product/B00DB39V2Q/ref=oh_aui_d_detailpage_o01_?ie=UTF8&psc=1) by Bart D. Ehrman       
 * [Principles: Life and Work](https://www.amazon.com/gp/product/B071CTK28D/ref=oh_aui_d_detailpage_o00_?ie=UTF8&psc=1) by Ray Dalio    
 * [Crossing the Chasm](https://www.scribd.com/book/197209100/Crossing-the-Chasm-3rd-Edition-Marketing-and-Selling-Disruptive-Products-to-Mainstream-Customers) by Geoffrey A. Moore       
-* [How To Win Friends and Influence People](https://www.scribd.com/book/224349281/How-To-Win-Friends-and-Influence-People) by Dale Carnegie            
+* [How To Win Friends and Influence People](https://www.scribd.com/book/224349281/How-To-Win-Friends-and-Influence-People) by Dale Carnegie             
+* [Where China Meets India]() by Myint-U, Thant    
+* [Beyond Feelings]() by Vincent Ruggiero
+
 
 
 ### 2017
@@ -26,6 +29,9 @@ tags: [bookshelf]
 * [《丝绸之路》](https://book.douban.com/subject/26853835/) by 彼得·弗兰科潘 
 * [《上帝之饮：六个瓶子里的历史》](https://book.douban.com/subject/26827323/) by 汤姆·斯丹迪奇 
 * [《让你爱不释手的极简世界史》](https://book.douban.com/subject/26808901/) by 姚尧 / 磨剑
+* [《极简人类史》]() by 大卫·克里斯蒂安    
+* [《富爸爸穷爸爸》]() by 罗伯特·清崎    
+* [《记忆魔法工具箱》]() by 多米尼克·奥布莱恩    
 
 
 ### 2016
