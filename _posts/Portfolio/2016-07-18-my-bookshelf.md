@@ -13,9 +13,10 @@ tags: [bookshelf]
 * [How Jesus Became God](https://www.amazon.com/gp/product/B00DB39V2Q/ref=oh_aui_d_detailpage_o01_?ie=UTF8&psc=1) by Bart D. Ehrman       
 * [Principles: Life and Work](https://www.amazon.com/gp/product/B071CTK28D/ref=oh_aui_d_detailpage_o00_?ie=UTF8&psc=1) by Ray Dalio    
 * [Crossing the Chasm](https://www.scribd.com/book/197209100/Crossing-the-Chasm-3rd-Edition-Marketing-and-Selling-Disruptive-Products-to-Mainstream-Customers) by Geoffrey A. Moore       
-* [How To Win Friends and Influence People](https://www.scribd.com/book/224349281/How-To-Win-Friends-and-Influence-People) by Dale Carnegie             
-* [Where China Meets India]() by Myint-U, Thant    
-* [Beyond Feelings]() by Vincent Ruggiero
+* [How To Win Friends and Influence People](https://www.scribd.com/book/224349281/How-To-Win-Friends-and-Influence-People) by Dale Carnegie           
+* [Where China Meets India](https://www.amazon.com/Where-China-Meets-India-Crossroads/dp/0374533520) by Myint-U, Thant       
+* [Beyond Feelings](https://www.amazon.com/Beyond-Feelings-Guide-Critical-Thinking/dp/0078038189/ref=sr_1_1?s=books&ie=UTF8&qid=1544025781&sr=1-1&keywords=Beyond+Feelings) by Vincent Ruggiero       
+* [Managing the Unmanageable](https://www.amazon.com/Managing-Unmanageable-Insights-Software-People/dp/032182203X/ref=sr_1_1?s=books&ie=UTF8&qid=1544025720&sr=1-1&keywords=managing+the+unmanageable) by Mickey W. Mantle
 
 
 

@@ -8,6 +8,10 @@ tags: [research]
 
 ### <u>Publications</u>
 
+- *"Application of a comprehensive platform technology for detection of cancer-associated genomic alterations and viral DNA in liquid biopsies"*. **Annals of Oncology**, 2018. ([Second Author](https://academic.oup.com/annonc/article/29/suppl_9/mdy441.010/5200219))     
+
+- *"An enhanced next-generation sequencing liquid biopsy assay for simultaneous detection of somatic variants, microsatellite instability and viral DNA."*. **Journal of Clinical Oncology**, 2018. ([Second Author](http://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.e24107)) 
+
 - *"LDSplitDB: A database for studies of meiotic recombination hotspots in MHC using human genomic data"*. **BMC Medical Genomics**, 2018. ([Second Author](https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-018-0351-0))      
 
 - *"Cytofkit: A Bioconductor Package for an Integrated Mass Cytometry Data Analysis Pipeline"*. **PLoS Comput Biol**, 2016. ([First Author](http://journals.plos.org/ploscompbiol/article?id=info:doi/10.1371/journal.pcbi.1005112))
@@ -17,6 +21,16 @@ tags: [research]
 - *"ARG-walker: Inference of Individual Specific Strengths of Meiotic Recombination Hotspots by Population Genomics Analysis"*. **BMC Genomics**, 2015. ([First Author](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-16-S12-S1))
 
 - *"Optimization of production conditions for mushroom polysaccharides with high yield and antitumor activity"*. **Carbohydrate Polymers**, 2012. ([Third Author](https://www.researchgate.net/publication/256975016_Optimization_of_production_conditions_for_mushroom_polysaccharides_with_high_yield_and_antitumor_activity))
+
+
+### <u>Patent</u>
+
+- *"Method for Detection and Quantification of Genetic Alterations"*. **10201805450Y**, 2018.
+
+- *"Methods for Identifying Clusters in a Dataset, Methods of Analyzing Cytometry Data with the Aid of a Computer and Methods of Detecting Cell Sub-populations in a Plurality of Cells"*. **US 2017-0371886 A1**, 2017.
+
+- *"ModalGATE: An Efficient Gating Algorithm Facilitating Automated and Reproducible Analysis of Flow Cytometry Data"*. **SIGN/P/09834/00/SG**, 2017.
+
 
 
 ### <u>Developed Softwares</u>
