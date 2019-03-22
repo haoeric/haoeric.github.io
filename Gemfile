@@ -13,4 +13,5 @@ group :jekyll_plugins do
 
 # gem "rails"
 
-gem "jekyll", "~> 3.8"
+gem "nokogiri", ">= 1.8.2"
+gem "jekyll", ">= 3.8.4"
