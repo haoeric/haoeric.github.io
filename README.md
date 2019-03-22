@@ -36,7 +36,9 @@ Since OS X ships with a copy of `Ruby` in `/Library/Ruby`, a directory which is 
 
 
   
+  ## Update Notes:
   
+  - Change this repos to private results in 404. 
 
 
 
