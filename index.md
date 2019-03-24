@@ -20,13 +20,11 @@ layout: page
 
 - Have a question? Ask [Quora](https://www.quora.com) or [知乎](https://www.zhihu.com)
 
-- Wanna watch a talk? open [TED](https://www.ted.com/talks?sort=newest)
-
-- Search for good books, movies or songs, [豆瓣](https://www.douban.com) fits all these. 
+- Search for papers, books, movies or songs, [豆瓣](https://www.douban.com), [Sci-hub](https://sci-hub.tw) or [library Genesis](http://gen.lib.rus.ec)
 
 - Find a data analysis competetion on [Kaggle](https://www.kaggle.com)
 
-- Practice your keyboard typing from [typing](https://www.typing.com/student)
+- Practice your keyboard typing on [typing](https://www.typing.com/student)
 
 - Read my [posts]({{ site.BASE_PATH }}/posts/) 
 
