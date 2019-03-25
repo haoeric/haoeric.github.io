@@ -26,7 +26,5 @@ layout: page
 
 - Practice your keyboard typing on [typing](https://www.typing.com/student)
 
-- Read my [posts]({{ site.BASE_PATH }}/posts/) 
-
-- Look into my [portfolio]({{ site.BASE_PATH }}/portfolio/)
+- Read my [posts]({{ site.BASE_PATH }}/posts/) or look into my [portfolio]({{ site.BASE_PATH }}/portfolio/)
 
