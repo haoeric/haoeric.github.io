@@ -41,7 +41,7 @@ Add your key to the ssh-agent
 ssh-add -K ~/.ssh/id_rsa
 ```
 
-## 3. Adding a new SSH key to your GitHub account
+### 3. Adding a new SSH key to your GitHub account
 
 Copy the SSH public key to your clipboard with command `pbcopy < ~/.ssh/id_rsa.pub`, then go to **profile photo > Settings > SSH and GPG keys > New SSH key > Paste your key into the "Key" field**.
 

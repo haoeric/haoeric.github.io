@@ -15,7 +15,7 @@ collections:
 
 # Setup
 title: Hao Chen | 陈浩
-tagline: Keep Simple Heart
+tagline: focus and diffuse
 email: haoeric@hotmail.com
 description: >
   Bioinformatician, Data Enthusiast, Certified AWS Solution Architect, Top Ranking R Packages Developer 
@@ -24,12 +24,11 @@ paginate: 1
 baseurl: ""
 markdown: kramdown
 encoding: "utf-8"
-twitter_username: haoeric_T
 github_username:  haoeric
 
 pages_list:       
   Posts: '/posts'
-  About Me: '/portfolio'
+  About Me: '/readme'
 
 # Using Rouge with Jekyll
 # https://sacha.me/articles/jekyll-rouge/
