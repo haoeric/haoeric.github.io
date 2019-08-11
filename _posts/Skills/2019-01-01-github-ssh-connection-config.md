@@ -7,8 +7,7 @@ tags: [terminal, bash, bash-it, macbook, shell, theme]
 ---
 
 
-When you set up SSH, you'll generate an SSH key and add it to the `ssh-agent` and then add the key to your GitHub account. Adding the SSH key to the `ssh-agent` ensures that your SSH key has an extra layer of security through the use of a `passphrase`. 
-
+When you set up SSH, you'll generate an SSH key and add it to the `ssh-agent` and then add the key to your GitHub account. Adding the SSH key to the `ssh-agent` ensures that your SSH key has an extra layer of security through the use of a `passphrase`.
 
 ### 1. Generating a new SSH key
 
@@ -47,4 +46,3 @@ ssh-add -K ~/.ssh/id_rsa
 Copy the SSH public key to your clipboard with command `pbcopy < ~/.ssh/id_rsa.pub`, then go to **profile photo > Settings > SSH and GPG keys > New SSH key > Paste your key into the "Key" field**.
 
 Then you are done, you can start working with your github repositories.
-
