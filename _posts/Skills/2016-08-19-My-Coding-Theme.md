@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set Up your Ideal Terminal on Macbook in 5 Minutes
+title: Setup your Ideal Terminal on Macbook in 5 Minutes
 comments: true
 categories: [Skills]
 tags: [terminal, bash, bash-it, macbook, shell, theme]
