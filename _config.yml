@@ -28,7 +28,7 @@ github_username:  haoeric
 
 pages_list:       
   Posts: '/posts'
-  About Me: '/readme'
+  About Me: '/aboutme'
 
 # Using Rouge with Jekyll
 # https://sacha.me/articles/jekyll-rouge/
