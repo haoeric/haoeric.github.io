@@ -1,6 +1,6 @@
 ---
 layout: postDataAnalysis
-title: "Coding Marathon Caused by An Interest Calculation Problem"
+title: A Simple Interest Calculation Challenge
 comments: true
 categories: [Data Analysis]
 tags: [Transformation, cytometry]
@@ -147,7 +147,6 @@ saveEarn <- function(annualPut, annualInterest, saveYears){
                    "; lump sum:", round(lumpSum, 2), 
                    "; earn:", round(lumpSum-annualPut * i,2), "\n"))
         base <- lumpSum + annualPut
-        i <- i + 1
     }
     totalPut <- annualPut * saveYears
     totalEarn <- lumpSum - totalPut
