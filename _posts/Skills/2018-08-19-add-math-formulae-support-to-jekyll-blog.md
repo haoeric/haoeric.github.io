@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  简单两步让Jekyll支持Latex公式插入
+title:  Add Latex Formula in Jekyll in Simple Two Steps
 comments: true
 author: Chen Hao
 categories: [Skills]

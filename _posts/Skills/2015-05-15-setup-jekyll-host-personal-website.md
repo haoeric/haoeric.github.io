@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup Jekyll to Host your Personal Website on AWS S3
+title: Setup Jekyll to Build your Personal Website
 comments: true
 categories: [Skills]
 tags: [jekyll, website, aws, s3, s3_website]

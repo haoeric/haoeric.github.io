@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 常用Google搜索语法
+title: Pratical Google Search Tips
 comments: true
 author: Chen Hao
 categories: [Skills]
@@ -8,7 +8,7 @@ tags: [google, 语法]
 ---
 
 
-### 1. 常用语法
+### 1. Common-use Google Search Grammar
 
 |符号|表达意思|解释|  
 |:---:|:------|:---|
@@ -25,14 +25,34 @@ tags: [google, 语法]
 |site|搜索某个域名下的所有文件|e.g. site:haoeric.com google|  
 
 
-### 2. 实例图解
+### 2. Example Study
 
 ![](/images/google_grammar/1.png)
 ![](/images/google_grammar/2.png)
 ![](/images/google_grammar/3.png)
 
+### 3. Use Cases
+
+- Search all the sub domains of a comany website, eg. amazon.com
+
+```txt
+site:amazon.com -inurl:www
+```
+
+- Search all the domains with amazon but not end with .com
+
+```txt
+site:amazon.* -site:amazon.com
+```
+
+- Search all PDF documents from amazon.com
+
+```txt
+site:amazon.com filetype:pdf
+```
 
 
-### 3. 参考
+
+### References
 
 - https://www.zhihu.com/question/20161362

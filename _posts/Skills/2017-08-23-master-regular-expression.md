@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 学习《正则表达式》笔记
+title: Master Regular Expression
 comments: true
 author: Chen Hao
 categories: [Skills]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 让你的Markdown用起来得心应手
+title: Markdown - All You Need to Know
 comments: true
 author: Chen Hao
 categories: [Skills]

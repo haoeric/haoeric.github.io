@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 五色标签分类法
+title: Categorise Your Folders using Five-color Tags
 comments: true
 author: Chen Hao
 categories: [Skills]
