@@ -22,3 +22,12 @@ tags: [macbook, keyboard, shortcut]
 ### Show/Hide Hidden Files
 
 `command + shift + .`
+
+### Type a Check Symbol
+
+`Option + V`
+
+### Show all Special Symbols
+
+`Control + Cmd + Space`
+
