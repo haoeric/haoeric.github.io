@@ -8,7 +8,7 @@ tags: [Japan, Japanese, wars]
 ---
     
 
-![](/images/japan_wars/japan_wars.png)
+![](/images/japan_wars/Japan_wars.png)
 
 
 ## 征韩论
