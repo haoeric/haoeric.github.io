@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pratical Google Search Tips
+title: Practical Google Search Tips
 comments: true
 author: Chen Hao
 categories: [Skills]
@@ -51,7 +51,17 @@ site:amazon.* -site:amazon.com
 site:amazon.com filetype:pdf
 ```
 
+- Search news before certain date or year
 
+```txt
+wuhan virus before:2020-01-01
+```
+
+- Search news after certain date or year
+
+```txt
+wuhan virus wuhan after:2019
+```
 
 ### References
 
