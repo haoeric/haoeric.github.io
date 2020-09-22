@@ -31,3 +31,6 @@ tags: [macbook, keyboard, shortcut]
 
 `Control + Cmd + Space`
 
+### Turn Selected Text to A Sticky Note
+
+`Command + Shift + Y`
