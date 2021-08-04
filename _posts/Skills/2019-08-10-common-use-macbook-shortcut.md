@@ -34,3 +34,11 @@ tags: [macbook, keyboard, shortcut]
 ### Turn Selected Text to A Sticky Note
 
 `Command + Shift + Y`
+
+
+
+## My default settings
+
+### Change the default saving path of screenshots
+
+`defaults write com.apple.screencapture location /Users/chenhao/Downloads`
