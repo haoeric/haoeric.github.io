@@ -6,7 +6,7 @@ layout: page
 
 ------------------
 
-- The so-caller front page of the internet [Reddit](https://www.reddit.com/r/programming/)
+- The so-called front page of the internet [Reddit](https://www.reddit.com/r/programming/)
 
 - To be cool, read [Hacker News](https://news.ycombinator.com)
 
