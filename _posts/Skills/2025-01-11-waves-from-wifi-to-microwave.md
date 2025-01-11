@@ -17,10 +17,15 @@ In this post, we'll dive into the fascinating world of waves, comparing and cont
 ## Types of Waves
 
 ### Radio Waves vs. Sound Waves
+
 - **Radio Waves:**
-  - **Nature:** [Electromagnetic waves](https://www.noaa.gov/jetstream/satellites/electromagnetic-waves) that travel at the speed of light.
+  - **Nature:** Electromagnetic waves that travel at the speed of light.
   - **Medium:** Don't need a medium to propagate; can travel through space.
   - **Wavelength & Frequency:** Long wavelengths (1mm - 100s km), low to high frequencies (3 kHz - 300 GHz).
+
+![Electromagnetic spectrum](/figures/2025-01-11-waves-from-wifi-to-microwave/em_spectrum.gif)
+
+Further read on [Electromagnetic waves](https://www.noaa.gov/jetstream/satellites/electromagnetic-waves).
 
 - **Sound Waves:**
   - **Nature:** Mechanical waves that require a medium (air, water, solids) to travel.
@@ -79,8 +84,8 @@ In this post, we'll dive into the fascinating world of waves, comparing and cont
 - **Modulation Techniques:** AM, FM, PM, or QAM for data encoding.
 - **Error Correction:** Ensures data integrity despite potential interference.
 
+Further reads: [How Data Moves](https://howdatamoves.com/) and watch [How Electromagnetic Waves Transmit Music, Messages, & More](https://www.youtube.com/watch?v=whEqaxlCVSs)
+
 ## Conclusion
 
 Understanding the basics of wave technology can demystify how everyday gadgets like Wi-Fi routers and microwave ovens work. While both use similar frequencies, their application, power levels, and interaction with matter are what set them apart. Next time you connect to the internet or heat your food, you'll have a deeper appreciation for the science behind these technologies.
-
-Keep this post bookmarked for a quick refresh on how waves influence our daily lives!
