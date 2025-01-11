@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Waves: From Microwaves to Wi-Fi
+title: Understanding Waves - From Microwaves to Wi-Fi
 comments: true
 author: Chen Hao
 categories: [Skills]
