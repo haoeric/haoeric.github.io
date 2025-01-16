@@ -7,7 +7,7 @@ categories: [Skills]
 tags: [SSH, Cybersecurity, linux]
 ---
 
-Secure Shell (SSH) is a powerful tool for remote server access, but it can be daunting for beginners. This guide demystifies SSH, walking you through key concepts, setup processes, and best practices. Whether you're a budding developer or a curious tech enthusiast, you'll learn how to securely connect to remote servers like a pro.
+To replace password-based SSH authentication with SSH key authentication, follow these steps:
 
 ## Understanding SSH Key Authentication
 
