@@ -17,6 +17,12 @@
             "rawValue": ".googleGemini",
             "versions": ["gemini-2.0-flash-lite-preview-02-05", "gemini-1.5-flash", "gemini-1.5-flash-8b"],
             "apiURL": "https://generativelanguage.googleapis.com"
+        },
+        {
+            "name": "Groq",
+            "rawValue": ".Groq",
+            "versions": ["llama-3.3-70b-versatile", "gemma2-9b-it", "llama3-8b-8192"],
+            "apiURL": "https://api.groq.com/openai/v1/chat/completions"
         }
     ]
 }
