@@ -19,6 +19,12 @@
             "apiURL": "https://api.deepseek.com/chat/completions"
         },
         {
+            "name": "Grok",
+            "rawValue": ".grok",
+            "versions": ["grok-2-latest"],
+            "apiURL": "https://api.x.ai/v1/chat/completions"
+        },
+        {
             "name": "Gemini",
             "rawValue": ".googleGemini",
             "versions": ["gemini-2.0-flash-lite-preview-02-05", "gemini-1.5-flash", "gemini-1.5-flash-8b"],
