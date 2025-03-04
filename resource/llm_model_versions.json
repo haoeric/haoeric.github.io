@@ -3,7 +3,7 @@
         {
             "name": "Groq",
             "rawValue": ".Groq",
-            "versions": ["gemma2-9b-it", "llama3-8b-8192", "llama-3.3-70b-versatile"],
+            "versions": ["qwen-2.5-32b", "deepseek-r1-distill-qwen-32b", "llama-3.3-70b-versatile"],
             "apiURL": "https://api.groq.com/openai/v1/chat/completions"
         },
         {
@@ -27,7 +27,7 @@
         {
             "name": "Gemini",
             "rawValue": ".googleGemini",
-            "versions": ["gemini-2.0-flash-lite-preview-02-05", "gemini-1.5-flash", "gemini-1.5-flash-8b"],
+            "versions": ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-flash-8b"],
             "apiURL": "https://generativelanguage.googleapis.com"
         }
     ]
