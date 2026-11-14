@@ -2,16 +2,10 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# Use the same Jekyll + plugin versions that GitHub Pages builds the site with.
+# Update with `bundle update github-pages`.
+# Includes jemoji, jekyll-paginate, jekyll-seo-tag and jekyll-sitemap.
+gem "github-pages", ">= 232", group: :jekyll_plugins
 
-group :jekyll_plugins do
-    gem "jemoji"
-    gem "jekyll-paginate"
-    gem "jekyll-seo-tag"
-    gem "jekyll-sitemap"
-  end
-
-# gem "rails"
-
-gem "nokogiri", ">= 1.8.2"
-gem "jekyll", ">= 3.8.4"
+# Needed to run `jekyll serve` locally on Ruby 3+.
+gem "webrick"
